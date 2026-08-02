@@ -3,40 +3,37 @@
   "days": [
     {
       "date": "2026-08-02",
-      "ymd": "2026/08/02",
-      "kicker": "2026 年 8 月 2 日 · 週日",
-      "headline": "AI 資本支出續強,竹科房價再創高;台股高檔震盪逾千點",
-      "invest": [
-        {"src":"中央社","status":"注意","title":"台股單日震盪逾1100點,收42449點","desc":"受全球去槓桿效應影響,盤中劇烈波動。高檔震盪加大,留意過熱回檔。","tags":["台股","波動"],"url":"https://www.cna.com.tw/list/headlines.aspx","img":"https://imgcdn.cna.com.tw/www/images/pic_fb.jpg"},
-        {"src":"口袋學堂","status":"選股","title":"高盛點名2026台股25檔AI與半導體名單","desc":"鴻海、緯創列首選,聚焦AI伺服器與供應鏈龍頭。","tags":["AI","選股"],"url":"https://www.pocket.tw/school/report/perspective/6959/","img":"https://www.pocket.tw/media/images/38161512_MotionElements_investment-concept-co.width-1280.jpg"},
-        {"src":"MoneyDJ","status":"觀察中","title":"AI非泡沫,資金寬鬆、供應鏈動能續旺","desc":"法人看2026台股仍具動能,惟評價偏高需分批。","tags":["產業展望"],"url":"https://www.moneydj.com/funddj/yb/yp052000.djhtm?a=C454B1EE-ECEF-42E8-BE5E-33BD8DE3E09D","img":"https://www.moneydj.com/InfoSvc/Thumbnail.aspx?id=c454b1ee-ecef-42e8-be5e-33bd8de3e09d"},
-        {"src":"操作提醒","status":"紀律","title":"以週線20轉折抓多空","desc":"維持積極雙向。指數高檔震盪時保留避險部位,轉折確認再加碼。此為紀律提醒,非投資建議。","tags":["紀律","雙向"],"url":""},
-        {"src":"產品機會","status":"待推進","title":"排班軟體推向第一筆收入","desc":"本季產品重心。鎖定輪班族痛點,先做付費驗證。","tags":["副業","MVP"],"url":""}
-      ],
-      "news": [
-        {"src":"中央社","status":"政策","title":"食安法修法推進,納10大重點","desc":"行政院研議加重隱匿通報處罰,擬送院會。","tags":["政策","食安"],"url":"https://www.cna.com.tw/list/headlines.aspx","img":"https://imgcdn.cna.com.tw/www/images/pic_fb.jpg"},
-        {"src":"中央社","status":"國際","title":"2026世界盃:西班牙擊敗阿根廷奪冠","desc":"馬德里球迷徹夜狂歡,慶祝聲量驚人。","tags":["國際","運動"],"url":"https://www.cna.com.tw/list/headlines.aspx","img":"https://imgcdn.cna.com.tw/www/images/pic_fb.jpg"},
-        {"src":"中央社","status":"產業","title":"中聯油品22批檢驗合格","desc":"第三方專家將進廠調查,一週內查明主因。","tags":["產業"],"url":"https://www.cna.com.tw/list/headlines.aspx","img":"https://imgcdn.cna.com.tw/www/images/pic_fb.jpg"},
-        {"src":"中央社","status":"地緣","title":"美伊局勢升溫","desc":"美軍增派F-16/F-35赴中東,衝突恐危及波灣航運。","tags":["國際"],"url":"https://www.cna.com.tw/list/headlines.aspx","img":"https://imgcdn.cna.com.tw/www/images/pic_fb.jpg"}
-      ],
-      "house": [
-        {"src":"聯合新聞網","status":"創新高","title":"新竹每坪63.8萬,居七都之冠","desc":"季增9.72%、年增20.53%,竹科AI鏈擴張撐盤。","tags":["房價","新高"],"url":"https://udn.com/news/story/7241/9649089","img":"https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/07/24/35168032.jpg&M=1&s=Y&x=0&y=0&sw=1280&sh=853&exp=3600"},
-        {"src":"聯合新聞網","status":"量價俱揚","title":"全台唯一「價量俱揚」縣市","desc":"成交量指數季增110.54%,推案金額301億。","tags":["量價"],"url":"https://udn.com/news/story/7241/9649089","img":"https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/07/24/35168032.jpg&M=1&s=Y&x=0&y=0&sw=1280&sh=853&exp=3600"},
-        {"src":"自由地產","status":"觀察","title":"重劃區降溫、湖口傳建商降價","desc":"資金轉向竹北舊市區與特定潛力區,留意價量背離。","tags":["選區"],"url":"https://estate.ltn.com.tw/article/28372","img":"https://img.ltn.com.tw/Upload/house/page/2026/07/07/260707-28372-1-9w27D.jpeg"},
-        {"src":"中時房產","status":"潛力","title":"專家點名兩區最具潛力","desc":"漲跌互見的盤整期,挑抗跌與剛需區塊較穩。","tags":["潛力區"],"url":"https://house.chinatimes.com/20260706003240-264401","img":"https://images.chinatimes.com/newsphoto/2026-07-06/1024/20260706003242.jpg"}
-      ],
-      "life": [
-        {"src":"親子天下","status":"雙北","title":"櫻桃小丸子原作40週年特展","desc":"松山文創園區,展至9/28,懷舊又適合親子。","tags":["雙北","特展"],"url":"https://www.parenting.com.tw/article/6002432","img":"https://www-gcs.parenting.com.tw/files/upload/article-images/01KY1FJ1H3XWM8BA8XVAR6DGGD.jpg"},
-        {"src":"親子天下","status":"雙北","title":"愛麗絲夢遊仙境沈浸式互動特展","desc":"松山文創園區,展至9/13,互動性高。","tags":["沈浸式"],"url":"https://www.parenting.com.tw/article/6002432","img":"https://www-gcs.parenting.com.tw/files/upload/article-images/01KY1FJ1H3XWM8BA8XVAR6DGGD.jpg"},
-        {"src":"親子天下","status":"雙北","title":"華山親子表藝節","desc":"華山1914,活動至8/30,表演與體驗多。","tags":["表演"],"url":"https://www.parenting.com.tw/article/6002432","img":"https://www-gcs.parenting.com.tw/files/upload/article-images/01KY1FJ1H3XWM8BA8XVAR6DGGD.jpg"},
-        {"src":"親子天下","status":"桃園","title":"兒童劇《仙界小霹靂-圖書館特工》","desc":"桃園市立圖書館,8/22 一場。","tags":["桃園","兒童劇"],"url":"https://www.parenting.com.tw/article/6002432","img":"https://www-gcs.parenting.com.tw/files/upload/article-images/01KY1FJ1H3XWM8BA8XVAR6DGGD.jpg"},
-        {"src":"懶人包","status":"新竹","title":"新竹親子一日遊","desc":"觀光工廠、特色公園、休閒農場,週末放電首選。","tags":["新竹","一日遊"],"url":"https://fullfenblog.tw/hsinchu-parent-child/","img":"https://fullfenblog.tw/wp-content/uploads/2024/08/04-9.jpg"}
-      ],
-      "fun": [
-        {"src":"Gamania","status":"夏番","title":"無職轉生S3 / BLEACH 千年血戰-禍進譚-","desc":"BLEACH 進入最終季,將揭一護身世。","tags":["動畫"],"url":"https://blog.shopping.gamania.com/anime/anime-list2607"},
-        {"src":"巴哈姆特","status":"夏番","title":"攻殼機動隊2026 / 京阿尼《二十世紀電氣目錄》","desc":"京阿尼延期八年新作終於登場。","tags":["動畫"],"url":"https://gnn.gamer.com.tw/detail.php?sn=306922"},
-        {"src":"蝦皮部落格","status":"排行","title":"漫畫熱門榜:咒術迴戰、鏈鋸人、排球少年","desc":"人氣長銷作,適合補番前後入坑。","tags":["漫畫"],"url":"https://shopee.tw/blog/comictop10/"},
-        {"src":"udn部落格","status":"榜單","title":"「這本輕小說真厲害!2026」年度榜單","desc":"年度輕小說榜單公佈,可挑新書入手。","tags":["輕小說"],"url":"https://blog.udn.com/G_104836483809641870/184933371"}
+      "headline": "AI 資本支出續強，竹科房價再創高；台股高檔震盪逾千點",
+      "entries": [
+        {"category":"invest","title":"台股單日震盪逾 1100 點，收 42449 點","summary":"受全球去槓桿效應影響，盤中劇烈波動；高檔震盪加大，留意過熱回檔。","tags":["台股","波動"],"meta":"注意","image":"https://imgcdn.cna.com.tw/www/images/pic_fb.jpg","url":"https://www.cna.com.tw/list/headlines.aspx","source":"中央社","hot":98},
+        {"category":"invest","title":"高盛點名 2026 台股 25 檔 AI 與半導體名單","summary":"鴻海、緯創列首選，聚焦 AI 伺服器與供應鏈龍頭。","tags":["AI","選股"],"meta":"選股","image":"https://www.pocket.tw/media/images/38161512_MotionElements_investment-concept-co.width-1280.jpg","url":"https://www.pocket.tw/school/report/perspective/6959/","source":"口袋學堂","hot":92},
+        {"category":"invest","title":"AI 非泡沫，資金寬鬆、供應鏈動能續旺","summary":"法人看 2026 台股仍具動能，惟評價偏高，分批布局為宜。","tags":["產業展望"],"meta":"觀察中","image":"https://www.moneydj.com/InfoSvc/Thumbnail.aspx?id=c454b1ee-ecef-42e8-be5e-33bd8de3e09d","url":"https://www.moneydj.com/funddj/yb/yp052000.djhtm?a=C454B1EE-ECEF-42E8-BE5E-33BD8DE3E09D","source":"MoneyDJ","hot":85},
+        {"category":"invest","title":"操作紀律：以週線 20 轉折抓多空","summary":"維持積極雙向；指數高檔震盪時保留避險部位，轉折確認再加碼。此為紀律提醒，非投資建議。","tags":["紀律","雙向"],"meta":"紀律","image":"","url":"https://tw.tradingview.com/","source":"操作筆記","hot":70},
+        {"category":"invest","title":"產品機會：排班軟體推向第一筆收入","summary":"本季產品重心，鎖定輪班族痛點，先做付費驗證。","tags":["副業","MVP"],"meta":"待推進","image":"","url":"https://mops.twse.com.tw/mops/web/index","source":"點子池","hot":60},
+
+        {"category":"news","title":"食安法修法推進，納 10 大重點","summary":"行政院研議加重隱匿通報處罰，擬送院會。","tags":["政策","食安"],"meta":"政策","image":"https://imgcdn.cna.com.tw/www/images/pic_fb.jpg","url":"https://www.cna.com.tw/list/headlines.aspx","source":"中央社","hot":95},
+        {"category":"news","title":"2026 世界盃：西班牙擊敗阿根廷奪冠","summary":"馬德里球迷徹夜狂歡，慶祝聲量驚人。","tags":["國際","運動"],"meta":"國際","image":"https://imgcdn.cna.com.tw/www/images/pic_fb.jpg","url":"https://www.cna.com.tw/list/headlines.aspx","source":"中央社","hot":88},
+        {"category":"news","title":"中聯油品 22 批檢驗合格","summary":"第三方專家將進廠調查，一週內查明主因。","tags":["產業"],"meta":"產業","image":"","url":"https://www.cna.com.tw/list/headlines.aspx","source":"中央社","hot":76},
+        {"category":"news","title":"美伊局勢升溫","summary":"美軍增派 F-16／F-35 赴中東，衝突恐危及波灣航運。","tags":["國際"],"meta":"地緣","image":"","url":"https://www.cna.com.tw/list/headlines.aspx","source":"中央社","hot":64},
+        {"category":"news","title":"一週大事：本週國內外焦點回顧","summary":"整理本週最受關注的政經與國際事件，快速補進度。","tags":["回顧"],"meta":"回顧","image":"","url":"https://www.cna.com.tw/topic/newstopic/300.aspx","source":"中央社","hot":52},
+
+        {"category":"realty","title":"新竹每坪 63.8 萬，居七都之冠","summary":"季增 9.72%、年增 20.53%，竹科 AI 鏈擴張撐盤。","tags":["房價","新高"],"meta":"創新高","image":"https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/07/24/35168032.jpg&M=1&s=Y&x=0&y=0&sw=1280&sh=853&exp=3600","url":"https://udn.com/news/story/7241/9649089","source":"聯合新聞網","hot":96},
+        {"category":"realty","title":"竹北時華預售實登首破 9 字頭","summary":"竹北房價再創里程碑，高價案定錨效應值得留意。","tags":["竹北","預售"],"meta":"里程碑","image":"https://annewsmedia.com/wp-content/uploads/2026/06/2026-06-16-132700.jpg","url":"https://annewsmedia.com/2026/06/16/market-news/19371/","source":"安傳媒","hot":90},
+        {"category":"realty","title":"全台唯一「價量俱揚」縣市","summary":"成交量指數季增 110.54%，推案金額 301 億。","tags":["量價"],"meta":"量價俱揚","image":"https://images.chinatimes.com/newsphoto/2026-07-06/1024/20260706003242.jpg","url":"https://udn.com/news/story/7241/9649089","source":"聯合新聞網","hot":82},
+        {"category":"realty","title":"重劃區降溫、湖口傳建商降價","summary":"資金轉向竹北舊市區與特定潛力區，留意價量背離。","tags":["選區"],"meta":"觀察","image":"https://img.ltn.com.tw/Upload/house/page/2026/07/07/260707-28372-1-9w27D.jpeg","url":"https://estate.ltn.com.tw/article/28372","source":"自由地產","hot":74},
+        {"category":"realty","title":"專家點名兩區最具潛力","summary":"漲跌互見的盤整期，挑抗跌與剛需區塊較穩。","tags":["潛力區"],"meta":"潛力","image":"","url":"https://house.chinatimes.com/20260706003240-264401","source":"中時房產","hot":62},
+
+        {"category":"family","title":"櫻桃小丸子原作 40 週年特展","summary":"松山文創園區，展至 9/28，懷舊又適合親子。","tags":["雙北","特展"],"meta":"雙北","image":"https://www-gcs.parenting.com.tw/files/upload/article-images/01KY1FJ1H3XWM8BA8XVAR6DGGD.jpg","url":"https://www.parenting.com.tw/article/6002432","source":"親子天下","hot":94},
+        {"category":"family","title":"愛麗絲夢遊仙境沈浸式互動特展","summary":"松山文創園區，展至 9/13，互動性高。","tags":["沈浸式"],"meta":"雙北","image":"","url":"https://www.parenting.com.tw/article/6002432","source":"親子天下","hot":86},
+        {"category":"family","title":"華山親子表藝節","summary":"華山 1914，活動至 8/30，表演與體驗多。","tags":["表演"],"meta":"雙北","image":"","url":"https://www.parenting.com.tw/article/6002432","source":"親子天下","hot":75},
+        {"category":"family","title":"兒童劇《仙界小霹靂-圖書館特工》","summary":"桃園市立圖書館，8/22 一場。","tags":["桃園","兒童劇"],"meta":"桃園","image":"","url":"https://www.parenting.com.tw/article/6002432","source":"親子天下","hot":64},
+        {"category":"family","title":"新竹親子一日遊懶人包","summary":"觀光工廠、特色公園、休閒農場，週末放電首選。","tags":["新竹","一日遊"],"meta":"新竹","image":"https://fullfenblog.tw/wp-content/uploads/2024/08/04-9.jpg","url":"https://fullfenblog.tw/hsinchu-parent-child/","source":"懶人包","hot":55},
+
+        {"category":"hobby","title":"夏番：無職轉生 S3 / BLEACH 千年血戰-禍進譚-","summary":"BLEACH 進入最終季，將揭一護身世。","tags":["動畫","夏番"],"meta":"夏番","image":"","url":"https://blog.shopping.gamania.com/anime/anime-list2607","source":"Gamania","hot":90},
+        {"category":"hobby","title":"攻殼機動隊 2026 / 京阿尼《二十世紀電氣目錄》","summary":"京阿尼延期八年新作終於登場。","tags":["動畫"],"meta":"夏番","image":"","url":"https://gnn.gamer.com.tw/detail.php?sn=306922","source":"巴哈姆特","hot":80},
+        {"category":"hobby","title":"動畫瘋 2026 必看清單：42 部整理","summary":"依類型分類的追番指南，方便一次挑好片。","tags":["追番","清單"],"meta":"指南","image":"https://cdn.wattbrother.com/2025/05/27163042/%E3%80%90%E5%B7%B4%E5%93%88%E5%A7%86%E7%89%B9%E3%80%912026-%E5%8B%95%E7%95%AB%E7%98%8B%E5%BF%85%E7%9C%8B%E6%B8%85%E5%96%AE%EF%BC%81-12-%E7%A8%AE%E9%A1%9E%E5%9E%8B%E5%85%A8-42-%E9%83%A8%E5%8B%95%E7%95%AB%E6%8E%A8%E8%96%A6-%E5%A4%A7%E5%9C%96-%E5%86%AC.jpg","url":"https://wattbrother.com/367090","source":"Wattbrother","hot":74},
+        {"category":"hobby","title":"漫畫熱門榜：咒術迴戰、鏈鋸人、排球少年","summary":"人氣長銷作，適合補番前後入坑。","tags":["漫畫"],"meta":"排行","image":"","url":"https://shopee.tw/blog/comictop10/","source":"蝦皮部落格","hot":66},
+        {"category":"hobby","title":"「這本輕小說真厲害！2026」年度榜單","summary":"年度輕小說榜單公佈，可挑新書入手。","tags":["輕小說"],"meta":"榜單","image":"","url":"https://blog.udn.com/G_104836483809641870/184933371","source":"udn 部落格","hot":58}
       ]
     }
   ]

@@ -1,183 +1,301 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="生活公司每日誌:投資、新聞、新竹房地產、育兒景點美食、小說漫畫動畫的每日看板。">
-<title>每日誌 · 生活公司</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>每日誌 — 投資、新聞、育兒與興趣的每日看板</title>
+<meta name="description" content="每天一頁的個人看板：投資分析、每日新聞、新竹房地產、親子景點與美食、小說漫畫動畫推薦，每類每日精選五則，可依日期往前翻閱。" />
+<meta property="og:title" content="每日誌 — 每日看板" />
+<meta property="og:description" content="投資、新聞、新竹房地產、育兒景點美食、小說漫畫動畫，每類每日精選五則。" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --cream:#f7f3ea; --cream2:#f3ecdd; --panel:#fffdf8; --card:#ffffff;
-    --ink:#2a2823; --sub:#6f685b; --faint:#a99f8c; --line:#e7ddc9;
-    --green:#2f4a3f; --tagbg:#efe7d6;
-    --serif:"Noto Serif TC",Georgia,"Songti TC",serif;
-    --sans:"Noto Sans TC",-apple-system,BlinkMacSystemFont,"PingFang TC","Microsoft JhengHei",sans-serif;
-    --shadow:0 1px 2px rgba(60,50,30,.05),0 10px 30px rgba(60,50,30,.07);
+    --radius:0.625rem;
+    --background:oklch(0.985 0.008 85);
+    --foreground:oklch(0.24 0.02 60);
+    --card:oklch(0.998 0.004 90);
+    --primary:oklch(0.42 0.1 175);
+    --primary-foreground:oklch(0.99 0.005 90);
+    --secondary:oklch(0.94 0.015 85);
+    --secondary-foreground:oklch(0.3 0.03 70);
+    --muted-foreground:oklch(0.52 0.02 70);
+    --accent:oklch(0.72 0.15 65);
+    --border:oklch(0.9 0.015 80);
+    --cat-invest:oklch(0.45 0.11 175);
+    --cat-news:oklch(0.5 0.12 255);
+    --cat-realty:oklch(0.5 0.13 145);
+    --cat-family:oklch(0.62 0.15 45);
+    --cat-hobby:oklch(0.52 0.14 330);
+    --serif:"Noto Serif TC",Georgia,serif;
+    --sans:"Noto Sans TC",ui-sans-serif,system-ui,-apple-system,"PingFang TC",sans-serif;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;font-family:var(--sans);color:var(--ink);line-height:1.65;
-    background:
-      radial-gradient(1100px 380px at 78% -60px, #f7e8dd 0%, rgba(247,232,221,0) 60%),
-      radial-gradient(900px 360px at 12% -40px, #f0efe0 0%, rgba(240,239,224,0) 55%),
-      var(--cream);
-    -webkit-font-smoothing:antialiased;min-height:100vh}
+  body{margin:0;background:var(--background);color:var(--foreground);font-family:var(--sans);
+    line-height:1.65;-webkit-font-smoothing:antialiased;
+    background-image:
+      radial-gradient(1100px 400px at 82% -80px, oklch(0.9 0.05 55 / .5), transparent 60%),
+      radial-gradient(900px 380px at 8% -60px, oklch(0.93 0.04 150 / .45), transparent 58%);}
   a{color:inherit;text-decoration:none}
-  .topbar{position:sticky;top:0;z-index:60;background:rgba(247,243,234,.82);
-    backdrop-filter:saturate(160%) blur(10px);border-bottom:1px solid var(--line)}
-  .tin{max-width:1160px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:14px}
-  .word{font-family:var(--serif);font-weight:900;font-size:22px;letter-spacing:1px;display:flex;align-items:baseline;gap:9px}
-  .word small{font-family:var(--sans);font-weight:500;font-size:12px;letter-spacing:2px;color:var(--faint);text-transform:uppercase}
-  .tnav{margin-left:auto;display:flex;align-items:center;gap:10px}
-  .btn-green{background:var(--green);color:#fff;font-weight:700;font-size:13px;padding:9px 16px;border-radius:999px;border:none;cursor:pointer}
-  .tnav a.plain{font-size:13px;color:var(--sub);padding:8px 6px}
-  main{max-width:1160px;margin:0 auto;padding:26px 22px 90px}
-  .hero{background:var(--panel);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:22px 26px 24px;position:relative;overflow:hidden}
-  .hero-top{display:flex;align-items:center;gap:10px;margin-bottom:16px}
-  .daybtn{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer}
+  .serif{font-family:var(--serif)}
+  .wrap{max-width:1024px;margin:0 auto;padding:0 20px}
+
+  header.top{position:sticky;top:0;z-index:40;border-bottom:1px solid var(--border);
+    background:oklch(0.985 0.008 85 / .85);backdrop-filter:blur(8px)}
+  header .row{max-width:1024px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:baseline;gap:8px;cursor:pointer}
+  .brand b{font-family:var(--serif);font-size:20px;font-weight:900;letter-spacing:.5px}
+  .brand span{font-size:12px;color:var(--muted-foreground)}
+  nav.tabs{display:flex;gap:4px;font-size:14px}
+  nav.tabs button{border:none;background:none;cursor:pointer;border-radius:999px;padding:6px 14px;color:var(--muted-foreground);font-family:var(--sans)}
+  nav.tabs button:hover{background:var(--secondary)}
+  nav.tabs button.active{background:var(--primary);color:var(--primary-foreground);font-weight:500}
+
+  main{max-width:1024px;margin:0 auto;padding:40px 20px 80px}
+
+  .hero{border:1px solid var(--border);background:oklch(0.998 0.004 90 / .7);border-radius:16px;padding:28px}
+  .hero .nav{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+  .daybtn{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--border);background:var(--card);
+    border-radius:999px;padding:7px 14px;font-size:14px;cursor:pointer;color:var(--foreground);font-family:var(--sans)}
   .daybtn:disabled{opacity:.4;cursor:default}
-  .datebadge{margin-left:auto;display:flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:var(--sub);background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 13px}
-  .kicker{font-size:13px;letter-spacing:3px;color:var(--faint);font-weight:600}
-  .hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(26px,4vw,40px);line-height:1.28;margin:8px 0 12px;letter-spacing:1px}
-  .hero .lead{color:var(--sub);font-size:14.5px;margin:0}
-  .todaypill{display:inline-block;margin-top:14px;background:var(--cream2);color:var(--green);font-size:12px;font-weight:700;padding:5px 14px;border-radius:999px;border:1px solid var(--line)}
-  .filters{display:flex;flex-wrap:wrap;gap:9px;margin:26px 2px 6px}
-  .fpill{font-size:13.5px;font-weight:600;color:var(--sub);background:#fff;border:1px solid var(--line);padding:9px 17px;border-radius:999px;cursor:pointer;transition:.15s}
-  .fpill:hover{border-color:var(--green)}
-  .fpill.active{background:var(--ink);color:#fff;border-color:var(--ink)}
-  .cat{margin-top:34px;scroll-margin-top:80px}
-  .cathead{display:flex;align-items:baseline;gap:12px;margin-bottom:16px}
-  .cathead h2{font-family:var(--serif);font-weight:900;font-size:22px;margin:0;letter-spacing:.5px}
-  .cathead .csub{font-size:13px;color:var(--faint)}
-  .cathead .count{margin-left:auto;font-size:12.5px;color:var(--faint);font-weight:600}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .16s,box-shadow .16s}
-  .card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(60,50,30,.13)}
-  .media{position:relative;height:172px;display:grid;place-items:center;overflow:hidden;background:#eee}
-  .media img{width:100%;height:100%;object-fit:cover;display:block}
-  .media .glyph{font-size:52px;filter:drop-shadow(0 4px 10px rgba(0,0,0,.15))}
-  .media .wm{position:absolute;right:14px;bottom:10px;font-family:var(--serif);font-weight:900;font-size:15px;color:rgba(255,255,255,.9);letter-spacing:2px}
-  .num{position:absolute;top:12px;left:12px;z-index:2;background:rgba(30,28,22,.82);color:#fff;font-size:12.5px;font-weight:800;padding:3px 11px;border-radius:999px;letter-spacing:.5px}
-  .body{padding:15px 17px 16px;display:flex;flex-direction:column;flex:1}
-  .srcrow{display:flex;align-items:center;gap:8px;margin-bottom:7px}
-  .srcrow .dot{width:9px;height:9px;border-radius:50%}
-  .srcrow .sname{font-size:12.5px;font-weight:700;color:var(--sub)}
-  .srcrow .status{margin-left:auto;font-size:11.5px;font-weight:700;color:var(--green)}
-  .card h3{font-family:var(--serif);font-weight:700;font-size:16.5px;line-height:1.4;margin:0 0 7px}
-  .card h3 .ext{font-size:12px;color:var(--faint);margin-left:3px}
-  .card p{margin:0;font-size:13.5px;color:var(--sub);flex:1}
-  .tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:7px}
-  .tag{font-size:11.5px;color:var(--sub);background:var(--tagbg);padding:3px 10px;border-radius:999px;font-weight:600}
-  .disc{margin-top:40px;background:var(--panel);border:1px dashed var(--line);border-radius:14px;padding:15px 20px;color:var(--sub);font-size:12.5px}
-  footer{text-align:center;color:var(--faint);font-size:12px;margin-top:24px;line-height:1.9}
-  .loading{text-align:center;color:var(--faint);padding:60px 0;font-size:14px}
-  @media(max-width:620px){.grid{grid-template-columns:1fr}.word{font-size:19px}.word small{display:none}.tnav a.plain{display:none}main{padding:18px 14px 70px}}
+  .datepick{margin-left:auto;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);
+    border-radius:999px;padding:6px 14px;font-size:14px;color:var(--muted-foreground)}
+  .datepick input{border:none;background:none;font:inherit;color:var(--foreground);outline:none}
+  .kicker{margin-top:24px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-foreground)}
+  .hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(28px,4.4vw,40px);line-height:1.25;margin:8px 0 0}
+  .hero .lead{margin-top:12px;font-size:14px;color:var(--muted-foreground)}
+  .todaypill{display:inline-block;margin-top:16px;border-radius:999px;background:oklch(0.72 0.15 65 / .25);
+    padding:4px 12px;font-size:12px;font-weight:500}
+
+  .filters{margin-top:32px;display:flex;flex-wrap:wrap;gap:8px}
+  .pill{border-radius:999px;padding:6px 15px;font-size:14px;cursor:pointer;border:1px solid var(--border);
+    background:transparent;color:var(--muted-foreground);font-family:var(--sans);transition:.15s}
+  .pill:hover{background:var(--secondary)}
+  .pill.active{background:var(--foreground);color:var(--background);border-color:var(--foreground)}
+
+  section.cat{margin-top:40px}
+  .cathead{display:flex;align-items:baseline;gap:12px;margin-bottom:14px}
+  .cathead h2{font-family:var(--serif);font-size:22px;font-weight:700;margin:0}
+  .cathead .desc{font-size:12px;color:var(--muted-foreground)}
+  .cathead .count{margin-left:auto;font-size:12px;color:var(--muted-foreground)}
+
+  .grid{display:grid;gap:16px}
+  @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+
+  .card{display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--border);
+    border-radius:12px;background:var(--card);transition:box-shadow .2s,transform .2s}
+  .card:hover{box-shadow:0 14px 34px -18px oklch(0.3 0.05 70 / .6);transform:translateY(-2px)}
+  .media{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--secondary)}
+  .media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+  .card:hover .media img{transform:scale(1.04)}
+  .media.ph{display:grid;place-items:center}
+  .media.ph .g{font-size:44px;filter:drop-shadow(0 3px 8px rgba(0,0,0,.25))}
+  .rank{position:absolute;top:8px;left:8px;border-radius:999px;background:oklch(0.985 0.008 85 / .9);
+    padding:2px 9px;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}
+  .body{padding:20px;display:flex;flex-direction:column;flex:1}
+  .srcrow{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted-foreground)}
+  .srcrow .dot{width:6px;height:6px;border-radius:999px;flex:none}
+  .srcrow .date{font-variant-numeric:tabular-nums}
+  .srcrow .src{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .srcrow .meta{margin-left:auto;font-weight:500;flex:none}
+  .card h3{font-family:var(--serif);margin:8px 0 0;font-size:18px;font-weight:700;line-height:1.4;
+    display:flex;align-items:flex-start;gap:6px}
+  .card h3 .t{}
+  .card:hover h3 .t{text-decoration:underline}
+  .card h3 svg{margin-top:5px;flex:none;color:var(--muted-foreground)}
+  .card p{margin:8px 0 0;font-size:14px;color:var(--muted-foreground)}
+  .tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+  .tag{border-radius:999px;background:var(--secondary);color:var(--secondary-foreground);padding:2px 9px;font-size:12px}
+
+  .arc-head h1{font-family:var(--serif);font-size:clamp(28px,4.4vw,38px);font-weight:900;margin:0}
+  .arc-head p{margin-top:8px;font-size:14px;color:var(--muted-foreground)}
+  .arc-controls{margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+  .arc-controls input{margin-left:auto;width:100%;max-width:230px;border:1px solid var(--border);background:var(--card);
+    border-radius:999px;padding:7px 16px;font:inherit;font-size:14px;outline:none;color:var(--foreground)}
+  .arc-controls input:focus{border-color:var(--primary)}
+  .arc-count{margin-top:24px;font-size:14px;color:var(--muted-foreground)}
+  .empty{margin-top:40px;font-size:14px;color:var(--muted-foreground)}
+
+  footer{max-width:1024px;margin:0 auto;padding:0 20px 60px;color:var(--muted-foreground);font-size:12px;text-align:center;line-height:1.9}
+  .hidden{display:none !important}
 </style>
 </head>
 <body>
-  <div class="topbar"><div class="tin">
-    <div class="word">每日誌 <small>Daily Digest</small></div>
-    <nav class="tnav">
-      <button class="btn-green" onclick="window.scrollTo({top:0,behavior:'smooth'})">每日看板</button>
-      <a class="plain" href="#filters">分類彙整</a>
-    </nav>
-  </div></div>
+  <header class="top">
+    <div class="row">
+      <div class="brand" onclick="go('board')">
+        <b class="serif">每日誌</b><span>Daily Digest</span>
+      </div>
+      <nav class="tabs">
+        <button id="tab-board" class="active" onclick="go('board')">每日看板</button>
+        <button id="tab-archive" onclick="go('archive')">分類彙整</button>
+      </nav>
+    </div>
+  </header>
 
-  <main>
+  <!-- 每日看板 -->
+  <main id="view-board">
     <section class="hero">
-      <div class="hero-top">
+      <div class="nav">
         <button class="daybtn" id="prevBtn">‹ 前一天</button>
         <button class="daybtn" id="nextBtn">後一天 ›</button>
-        <span class="datebadge">📅 <span id="dateBadge">—</span></span>
+        <span class="datepick">📅 <input type="date" id="datePick"></span>
       </div>
       <div class="kicker" id="kicker">—</div>
       <h1 id="headline">載入中…</h1>
-      <p class="lead" id="lead">每個類別精選當日重點,點卡片可前往原始來源。</p>
-      <span class="todaypill" id="todaypill" style="display:none">今天</span>
+      <p class="lead">每個類別只留當日最熱門的 5 則，點卡片可前往原始來源。</p>
+      <span class="todaypill" id="todaypill">今天</span>
     </section>
     <div class="filters" id="filters"></div>
-    <div id="report"><div class="loading">載入資料中…</div></div>
-    <div class="disc">房價與市場數字為當下快照、會變動;投資段落僅供資訊整理,<b>非投資建議</b>,實際進出以個人紀律為準。
-      每日更新投資、新聞、新竹房產;每週五加碼育兒好去處與新番。僅保留最近 7 天。</div>
-    <footer>每日誌 · 生活公司 Life Company　由 AI 團隊自動彙整　·　資料每日 08:00 更新</footer>
+    <div id="board"></div>
   </main>
 
-  <script>
-  const CATS = [
-    {key:"invest", id:"cat-invest", name:"投資分析",       csub:"盤勢、產業與個股觀察筆記",   accent:"#3a6b5f", grad:"linear-gradient(135deg,#2f5a4e,#173029)", glyph:"📈", wm:"MARKET"},
-    {key:"news",   id:"cat-news",   name:"每日新聞",       csub:"今日時事重點",             accent:"#4a6076", grad:"linear-gradient(135deg,#4a6076,#26333f)", glyph:"📰", wm:"NEWS"},
-    {key:"house",  id:"cat-house",  name:"新竹房地產",     csub:"在地行情、政策與選區",     accent:"#2f4a3f", grad:"linear-gradient(135deg,#3f6b4f,#233a2b)", glyph:"🏠", wm:"HSINCHU"},
-    {key:"life",   id:"cat-life",   name:"育兒·景點·美食", csub:"新竹＋雙北桃園的親子好去處", accent:"#b06a86", grad:"linear-gradient(135deg,#c47f98,#7d4258)", glyph:"🧸", wm:"FAMILY"},
-    {key:"fun",    id:"cat-fun",    name:"小說·漫畫·動畫", csub:"補番、追漫、輕小說",       accent:"#6d5aa6", grad:"linear-gradient(135deg,#7d6bc0,#453a78)", glyph:"🎬", wm:"OTAKU"}
-  ];
-  const CATMAP = Object.fromEntries(CATS.map(c=>[c.key,c]));
-  let DAYS=[], idx=0, filter="all";
-  const $=s=>document.querySelector(s);
-  const esc=t=>(t==null?"":String(t)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  <!-- 分類彙整 -->
+  <main id="view-archive" class="hidden">
+    <div class="arc-head">
+      <h1 class="serif">分類彙整</h1>
+      <p>跨越所有日期，把同一類別的內容集中在一起回顧。</p>
+    </div>
+    <div class="arc-controls" id="arcTabs"></div>
+    <div class="arc-count" id="arcCount"></div>
+    <div class="grid" id="arcGrid" style="margin-top:16px"></div>
+    <p class="empty hidden" id="arcEmpty">找不到符合的內容。</p>
+  </main>
 
-  function mediaFallback(img){
-    const m=img.closest(".media"); if(!m) return;
-    m.style.background=m.dataset.grad||"#ccc";
-    m.innerHTML=`<span class="num">${esc(m.dataset.num)}</span><div class="glyph">${m.dataset.glyph||""}</div>`+(m.dataset.wm?`<span class="wm">${esc(m.dataset.wm)}</span>`:"");
-  }
-  function mediaHTML(cat,item,n){
-    const num=`#${n}`;
-    if(item.img){
-      return `<div class="media" style="background:#fff" data-grad="${cat.grad}" data-glyph="${cat.glyph}" data-wm="${cat.wm}" data-num="${num}">
-        <span class="num">${num}</span>
-        <img src="${esc(item.img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="mediaFallback(this)"></div>`;
-    }
-    return `<div class="media" style="background:${cat.grad}"><span class="num">${num}</span><div class="glyph">${cat.glyph}</div><span class="wm">${cat.wm}</span></div>`;
-  }
-  function cardHTML(cat,item,n){
-    const tags=(item.tags||[]).map(t=>`<span class="tag">#${esc(t)}</span>`).join("");
-    const ext=item.url?`<span class="ext">↗</span>`:"";
-    const hs=item.url?`<a href="${esc(item.url)}" target="_blank" rel="noopener">`:`<div>`;
-    const he=item.url?`</a>`:`</div>`;
-    return `<div class="card">${mediaHTML(cat,item,n)}<div class="body">
-      <div class="srcrow"><span class="dot" style="background:${cat.accent}"></span>
-        <span class="sname">${esc(item.src)}</span>${item.status?`<span class="status">${esc(item.status)}</span>`:""}</div>
-      ${hs}<h3>${esc(item.title)}${ext}</h3>${he}
-      <p>${esc(item.desc)}</p>${tags?`<div class="tags">${tags}</div>`:""}</div></div>`;
-  }
-  function renderFilters(){
-    const p=[`<button class="fpill${filter==="all"?" active":""}" data-f="all">全部</button>`]
-      .concat(CATS.map(c=>`<button class="fpill${filter===c.key?" active":""}" data-f="${c.key}">${c.name}</button>`));
-    $("#filters").innerHTML=p.join("");
-    $("#filters").querySelectorAll(".fpill").forEach(b=>b.onclick=()=>{filter=b.dataset.f;renderFilters();renderReport();});
-  }
-  function renderReport(){
-    const r=DAYS[idx]; if(!r){$("#report").innerHTML="";return;}
-    let html="";
-    CATS.forEach(c=>{
-      if(filter!=="all"&&filter!==c.key) return;
-      const items=r[c.key]||[]; if(!items.length) return;
-      html+=`<section class="cat" id="${c.id}"><div class="cathead"><h2>${c.name}</h2>
-        <span class="csub">${c.csub}</span><span class="count">共 ${items.length} 則</span></div>
-        <div class="grid">${items.map((it,i)=>cardHTML(c,it,i+1)).join("")}</div></section>`;
-    });
-    $("#report").innerHTML=html||`<div class="loading">這天這個分類沒有資料。</div>`;
-  }
-  function renderHero(){
-    const r=DAYS[idx]; if(!r) return;
-    $("#dateBadge").textContent=r.ymd||r.date;
-    $("#kicker").textContent=r.kicker||r.date;
-    $("#headline").textContent=r.headline||"每日誌";
-    $("#todaypill").style.display=(idx===0)?"inline-block":"none";
-    $("#prevBtn").disabled=idx>=DAYS.length-1;
-    $("#nextBtn").disabled=idx<=0;
-  }
-  $("#prevBtn").onclick=()=>{if(idx<DAYS.length-1){idx++;renderHero();renderReport();window.scrollTo({top:0,behavior:"smooth"});}};
-  $("#nextBtn").onclick=()=>{if(idx>0){idx--;renderHero();renderReport();window.scrollTo({top:0,behavior:"smooth"});}};
+  <footer>每日誌 · 生活公司 Life Company　由 AI 團隊自動彙整　·　僅保留最近 7 天</footer>
 
-  fetch("./data.json?ts="+Date.now()).then(r=>r.json()).then(d=>{
-    DAYS=(d.days||[]).slice().sort((a,b)=>(a.date<b.date?1:-1)).slice(0,7);
-    if(!DAYS.length){$("#headline").textContent="尚無資料";$("#report").innerHTML="";return;}
-    renderFilters();renderHero();renderReport();
-  }).catch(e=>{$("#headline").textContent="資料載入失敗";$("#report").innerHTML=`<div class="loading">${esc(e.message)}</div>`;});
-  </script>
+<script>
+const CATEGORIES=[
+  {id:"invest",label:"投資分析",desc:"盤勢、產業與個股觀察筆記",color:"var(--cat-invest)",glyph:"📈"},
+  {id:"news",label:"每日新聞",desc:"當日最熱門的必讀重點",color:"var(--cat-news)",glyph:"📰"},
+  {id:"realty",label:"新竹房地產",desc:"竹科周邊行情、建案與政策",color:"var(--cat-realty)",glyph:"🏠"},
+  {id:"family",label:"育兒 · 景點 · 美食",desc:"新竹＋雙北桃園的親子好去處",color:"var(--cat-family)",glyph:"🧸"},
+  {id:"hobby",label:"小說 · 漫畫 · 動畫",desc:"本日推坑與追番進度",color:"var(--cat-hobby)",glyph:"🎬"},
+];
+const CATMAP=Object.fromEntries(CATEGORIES.map(c=>[c.id,c]));
+const MAX=5;
+const EXT='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>';
+const esc=t=>(t==null?"":String(t)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+let DAYS=[], TODAY="", curDate="", filter="all", arcActive="invest", arcQ="";
+const $=s=>document.querySelector(s);
+
+function dayEntriesByCat(day,cat){
+  return (day.entries||[]).filter(e=>e.category===cat).slice().sort((a,b)=>(b.hot||0)-(a.hot||0)).slice(0,MAX);
+}
+function fmtDate(d){
+  const [y,m,dd]=d.split("-").map(Number);
+  const w=["日","一","二","三","四","五","六"][new Date(y,m-1,dd).getDay()];
+  return `${y} 年 ${m} 月 ${dd} 日 · 週${w}`;
+}
+function mediaHTML(e,rank){
+  const cat=CATMAP[e.category]||{};
+  const badge=rank?`<span class="rank">#${rank}</span>`:"";
+  if(e.image){
+    return `<div class="media">${badge}<img src="${esc(e.image)}" alt="" loading="lazy" referrerpolicy="no-referrer"
+      onerror="this.closest('.media').classList.add('ph');this.closest('.media').style.background=this.dataset.c;this.outerHTML='<div class=g>'+this.dataset.g+'</div>'"
+      data-c="${cat.color}" data-g="${cat.glyph}"></div>`;
+  }
+  return `<div class="media ph" style="background:${cat.color}">${badge}<div class="g">${cat.glyph}</div></div>`;
+}
+function cardHTML(e,{rank,date}={}){
+  const cat=CATMAP[e.category]||{};
+  const tags=(e.tags||[]).map(t=>`<span class="tag">#${esc(t)}</span>`).join("");
+  return `<a class="card" href="${esc(e.url||'#')}" ${e.url?'target="_blank" rel="noopener"':''}>
+    ${mediaHTML(e,rank)}
+    <div class="body">
+      <div class="srcrow"><span class="dot" style="background:${cat.color}"></span>
+        ${date?`<span class="date">${esc(date)}</span>`:""}
+        <span class="src">${esc(e.source||"")}</span>
+        ${e.meta?`<span class="meta" style="color:${cat.color}">${esc(e.meta)}</span>`:""}</div>
+      <h3><span class="t">${esc(e.title)}</span>${EXT}</h3>
+      <p>${esc(e.summary)}</p>
+      ${tags?`<div class="tags">${tags}</div>`:""}
+    </div></a>`;
+}
+
+/* ---- 每日看板 ---- */
+function renderFilters(){
+  const list=[{id:"all",label:"全部"},...CATEGORIES];
+  $("#filters").innerHTML=list.map(c=>`<button class="pill${filter===c.id?' active':''}" data-f="${c.id}">${c.label}</button>`).join("");
+  $("#filters").querySelectorAll(".pill").forEach(b=>b.onclick=()=>{filter=b.dataset.f;renderFilters();renderBoard();});
+}
+function renderBoard(){
+  const day=DAYS.find(d=>d.date===curDate);
+  const idx=DAYS.findIndex(d=>d.date===curDate);
+  $("#datePick").value=curDate;
+  $("#kicker").textContent=fmtDate(curDate);
+  $("#headline").textContent=day?day.headline:"這天還沒有紀錄";
+  $("#todaypill").style.display=curDate===TODAY?"inline-block":"none";
+  $("#prevBtn").disabled=idx<0||idx>=DAYS.length-1;
+  $("#nextBtn").disabled=curDate>=TODAY;
+  if(!day){$("#board").innerHTML=`<p class="empty">這一天沒有內容，試試往前翻一天。</p>`;return;}
+  let html="";
+  CATEGORIES.forEach(c=>{
+    if(filter!=="all"&&filter!==c.id)return;
+    const items=dayEntriesByCat(day,c.id);
+    if(!items.length)return;
+    html+=`<section class="cat"><div class="cathead"><h2>${c.label}</h2><span class="desc">${c.desc}</span>
+      <span class="count">最熱門 ${items.length} 則</span></div>
+      <div class="grid">${items.map((e,i)=>cardHTML(e,{rank:i+1})).join("")}</div></section>`;
+  });
+  $("#board").innerHTML=html||`<p class="empty">這天這個分類沒有資料。</p>`;
+}
+function stepDay(delta){
+  const [y,m,d]=curDate.split("-").map(Number);
+  const nd=new Date(y,m-1,d+delta);
+  const s=`${nd.getFullYear()}-${String(nd.getMonth()+1).padStart(2,"0")}-${String(nd.getDate()).padStart(2,"0")}`;
+  if(s>TODAY)return; const oldest=DAYS[DAYS.length-1]?.date; if(oldest&&s<oldest)return;
+  curDate=s;renderBoard();window.scrollTo({top:0,behavior:"smooth"});
+}
+
+/* ---- 分類彙整 ---- */
+function renderArcTabs(){
+  $("#arcTabs").innerHTML=CATEGORIES.map(c=>`<button class="pill${arcActive===c.id?' active':''}" data-a="${c.id}">${c.label}</button>`).join("")
+    +`<input id="arcSearch" placeholder="搜尋關鍵字或標籤…" value="${esc(arcQ)}">`;
+  $("#arcTabs").querySelectorAll(".pill").forEach(b=>b.onclick=()=>{arcActive=b.dataset.a;renderArcTabs();renderArc();});
+  const si=$("#arcSearch");
+  si.oninput=()=>{arcQ=si.value;renderArc();};
+}
+function renderArc(){
+  const kw=arcQ.trim().toLowerCase();
+  const items=[];
+  DAYS.forEach(d=>{(d.entries||[]).filter(e=>e.category===arcActive).forEach(e=>{
+    if(!kw||e.title.toLowerCase().includes(kw)||(e.summary||"").toLowerCase().includes(kw)||(e.tags||[]).some(t=>t.toLowerCase().includes(kw)))
+      items.push({e,date:d.date});
+  });});
+  const c=CATMAP[arcActive];
+  $("#arcCount").textContent=`${c.desc} · 共 ${items.length} 則`;
+  $("#arcGrid").innerHTML=items.map(({e,date})=>cardHTML(e,{date})).join("");
+  $("#arcEmpty").classList.toggle("hidden",items.length>0);
+}
+
+function go(view){
+  const board=view!=="archive";
+  $("#view-board").classList.toggle("hidden",!board);
+  $("#view-archive").classList.toggle("hidden",board);
+  $("#tab-board").classList.toggle("active",board);
+  $("#tab-archive").classList.toggle("active",!board);
+  if(!board){renderArcTabs();renderArc();}
+  window.scrollTo({top:0});
+  location.hash=board?"":"archive";
+}
+
+$("#prevBtn").onclick=()=>stepDay(-1);
+$("#nextBtn").onclick=()=>stepDay(1);
+$("#datePick").onchange=e=>{if(e.target.value){curDate=e.target.value;renderBoard();}};
+
+fetch("./data.json?ts="+Date.now()).then(r=>r.json()).then(d=>{
+  DAYS=(d.days||[]).slice().sort((a,b)=>a.date<b.date?1:-1).slice(0,7);
+  if(!DAYS.length){$("#headline").textContent="尚無資料";return;}
+  TODAY=DAYS[0].date;curDate=TODAY;
+  $("#datePick").max=TODAY;$("#datePick").min=DAYS[DAYS.length-1].date;
+  renderFilters();renderBoard();
+  if(location.hash==="#archive")go("archive");
+}).catch(e=>{$("#headline").textContent="資料載入失敗";$("#board").innerHTML=`<p class="empty">${esc(e.message)}</p>`;});
+</script>
 </body>
 </html>
