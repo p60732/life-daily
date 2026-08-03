@@ -140,6 +140,8 @@
   .rfnote{margin:0 0 14px;font-size:14px;color:var(--foreground);line-height:1.85}
   .rfbtn{display:inline-block;background:var(--cat-realty);color:#fff;border-color:var(--cat-realty)}
   .rfbtn:hover{background:var(--cat-realty);opacity:.9}
+  .ttips{margin:16px 0 4px;padding:14px 22px 14px 40px;border:1px dashed var(--border);border-radius:14px;background:var(--card);font-size:13.5px;color:var(--muted-foreground);line-height:1.95}
+  .ttips li{margin:3px 0}
   .hidden{display:none !important}
 </style>
 </head>
@@ -153,6 +155,7 @@
         <button id="tab-board" class="active" onclick="go('board')">每日看板</button>
         <button id="tab-archive" onclick="go('archive')">分類彙整</button>
         <button id="tab-rent" onclick="go('rent')">租屋</button>
+        <button id="tab-travel" onclick="go('travel')">旅遊</button>
       </nav>
     </div>
   </header>
@@ -195,6 +198,15 @@
     <div id="rentBody"></div>
   </main>
 
+  <!-- 旅遊專欄 -->
+  <main id="view-travel" class="hidden">
+    <div class="arc-head">
+      <h1 class="serif">旅遊 · 幼兒家庭</h1>
+      <p>適合 1–6 歲幼兒的推薦組合，依最適合季節分組，含天數、CP 值與幼兒友善重點。</p>
+    </div>
+    <div id="travelBody"></div>
+  </main>
+
   <footer>每日誌 · 生活公司 Life Company　由 AI 團隊自動彙整　·　僅保留最近 7 天</footer>
 
 <script>
@@ -210,7 +222,7 @@ const MAX=5;
 const EXT='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>';
 const esc=t=>(t==null?"":String(t)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
-let DAYS=[], TODAY="", curDate="", filter="all", arcActive="invest", arcQ="", RENT=null;
+let DAYS=[], TODAY="", curDate="", filter="all", arcActive="invest", arcQ="", RENT=null, TRAVEL=null;
 const $=s=>document.querySelector(s);
 
 function dayEntriesByCat(day,cat){
@@ -338,13 +350,37 @@ function renderRent(){
     <div class="rsearches">${search}</div>
     <p class="rnote">物件每天變動，精選為擷取當下的快照；要看最新請點上方「即時查詢入口」。租金區間為概估，實際以房東／仲介公告為準。</p>`;
 }
+function tcard(c){
+  return `<a class="card rentcard" href="${esc(c.url||'#')}" ${c.url?'target="_blank" rel="noopener"':''}>
+    <div class="body">
+      <div class="srcrow"><span class="dot" style="background:var(--cat-family)"></span>
+        <span class="src">${esc(c.area||"")}${c.days?` · ${esc(c.days)}`:""}</span>
+        ${c.tag?`<span class="meta" style="color:var(--cat-family)">${esc(c.tag)}</span>`:""}</div>
+      <h3><span class="t">${esc(c.title)}</span></h3>
+      <p>${esc(c.why||"")}</p>
+    </div></a>`;
+}
+function renderTravel(){
+  const t=TRAVEL;
+  if(!t){$("#travelBody").innerHTML='<p class="empty">尚無旅遊資料。</p>';return;}
+  const tips=(t.tips||[]).map(x=>`<li>${esc(x)}</li>`).join("");
+  const seasons=(t.seasons||[]).map(s=>`
+    <h2 class="rsec">${esc(s.emoji||"")} ${esc(s.name)}</h2>
+    <div class="grid">${(s.combos||[]).map(tcard).join("")}</div>`).join("");
+  $("#travelBody").innerHTML=`
+    <p class="rintro">${esc(t.intro)}</p>
+    ${tips?`<ul class="ttips">${tips}</ul>`:""}
+    ${seasons}
+    <p class="rnote">組合為幼兒家庭取向的策展建議，實際開放時間、票價與花季／溫泉水溫請以各景點官方公告為準。</p>`;
+}
 function go(view){
-  ["board","archive","rent"].forEach(v=>{
+  ["board","archive","rent","travel"].forEach(v=>{
     $("#view-"+v).classList.toggle("hidden",v!==view);
     $("#tab-"+v).classList.toggle("active",v===view);
   });
   if(view==="archive"){renderArcTabs();renderArc();}
   if(view==="rent"){renderRent();}
+  if(view==="travel"){renderTravel();}
   window.scrollTo({top:0});
   location.hash=view==="board"?"":view;
 }
@@ -354,7 +390,7 @@ $("#nextBtn").onclick=()=>stepDay(1);
 $("#datePick").onchange=e=>{if(e.target.value){curDate=e.target.value;renderBoard();}};
 
 fetch("./data.json?ts="+Date.now()).then(r=>r.json()).then(d=>{
-  RENT=d.rent||null;
+  RENT=d.rent||null; TRAVEL=d.travel||null;
   DAYS=(d.days||[]).slice().sort((a,b)=>a.date<b.date?1:-1).slice(0,7);
   if(!DAYS.length){$("#headline").textContent="尚無資料";return;}
   TODAY=DAYS[0].date;curDate=TODAY;
@@ -362,6 +398,7 @@ fetch("./data.json?ts="+Date.now()).then(r=>r.json()).then(d=>{
   renderFilters();renderBoard();
   if(location.hash==="#archive")go("archive");
   else if(location.hash==="#rent")go("rent");
+  else if(location.hash==="#travel")go("travel");
 }).catch(e=>{$("#headline").textContent="資料載入失敗";$("#board").innerHTML=`<p class="empty">${esc(e.message)}</p>`;});
 </script>
 </body>

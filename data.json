@@ -41,6 +41,63 @@
       {"label":"樂屋 · 新莊車站","url":"https://rent.rakuya.com.tw/result?keyword=新莊車站&zipcode=390"}
     ]
   },
+  "travel": {
+    "updated": "2026-08-02",
+    "intro": "專為 1–6 歲幼兒家庭挑的旅遊組合：每天只排 1–2 個定點、優先推車與親子廁所友善、室內雨備＋午睡時間預留，並盡量挑淡季出遊——人少、又省。以下按最適合的季節分組，標了天數、CP 值與幼兒友善重點。",
+    "tips": [
+      "行程排鬆：每天 1–2 個定點就好，留午睡與吃點心的空檔",
+      "優先選推車友善、有親子廁所／哺乳室、室內雨備的點",
+      "帶幼兒挑平日或淡季：人潮少、機票住宿也便宜（CP 值最高）",
+      "戲水／溫泉挑有分齡淺水區的，安全又放電"
+    ],
+    "seasons": [
+      {
+        "name": "春 · 3–5 月",
+        "emoji": "🌸",
+        "combos": [
+          {"title":"竹子湖海芋＋陽明山一日","area":"台北","days":"當天","tag":"賞花","why":"3–4 月海芋田步道平緩好推車；下雨改士林兒童新樂園或科教館雨備。銅板價拍到飽。","url":"https://tw.trip.com/blog/flower-viewing-attraction/"},
+          {"title":"苗栗大湖採草莓＋飛牛牧場","area":"苗栗","days":"當天～一泊","tag":"CP值高","why":"草莓季到 5 月初、論斤採；牧場草地大、餵牛羊擠奶近距離，幼兒最愛。門票親民。","url":"https://tisshuang.com/blog/post/459116491"},
+          {"title":"台中新社花海＋薰衣草森林","area":"台中","days":"當天","tag":"賞花","why":"春季花海、園區平坦好推車，附親子餐食與草地，走走停停剛好。","url":"https://tw.trip.com/guide/destination/%E8%A6%AA%E5%AD%90%E6%97%85%E9%81%8A.html"}
+        ]
+      },
+      {
+        "name": "夏 · 6–8 月",
+        "emoji": "🌊",
+        "combos": [
+          {"title":"宜蘭親水公園＋冬山河","area":"宜蘭","days":"一泊二日","tag":"夏季限定","why":"暑假童玩節、戲水區分深淺，幼兒玩淺水安全；搭配羅東夜市與親子飯店泳池。","url":"https://tw.trip.com/guide/stay/%E5%AE%9C%E8%98%AD%E8%A6%AA%E5%AD%90%E4%BD%8F%E5%AE%BF.html"},
+          {"title":"免費玩水公園串連（大台北）","area":"台北","days":"當天","tag":"CP值高·免費","why":"大安森林、大佳河濱、各特色公園噴水池免門票消暑，幼兒帶泳衣就能玩半天。","url":"https://www.parenting.com.tw/article/6002193"},
+          {"title":"屏東海生館＋墾丁","area":"屏東","days":"二泊","tag":"室內涼爽","why":"看鯨鯊白鯨吹冷氣、可夜宿海生館；動線平緩好推車，避開烈日最消暑。","url":"https://tw.trip.com/guide/destination/%E8%A6%AA%E5%AD%90%E6%97%85%E9%81%8A.html"}
+        ]
+      },
+      {
+        "name": "秋 · 9–11 月",
+        "emoji": "🍁",
+        "combos": [
+          {"title":"台中后里落羽松＋泰安","area":"台中","days":"當天","tag":"季節限定","why":"11–12 月落羽松大道好拍、園區平坦；搭配麗寶或月眉觀光工廠雨備。","url":"https://tw.trip.com/blog/taiwan-maple-and-bald-cypress/"},
+          {"title":"宜蘭羅東林場＋落羽松","area":"宜蘭","days":"一泊","tag":"CP值高","why":"林場免門票、小火車與湖畔散步秋涼舒服，幼兒推車一路好走。","url":"https://tw.trip.com/blog/taiwan-maple-and-bald-cypress/"},
+          {"title":"森林遊樂區踏青（東眼山／內洞）","area":"桃園·新北","days":"當天","tag":"放電","why":"秋高氣爽走平緩步道、看瀑布，幼兒背巾或推車皆可，清涼又天然。","url":"https://bobowin.blog/taiwan-forest/"}
+        ]
+      },
+      {
+        "name": "冬 · 12–2 月",
+        "emoji": "♨️",
+        "combos": [
+          {"title":"礁溪溫泉親子飯店","area":"宜蘭","days":"一泊二日","tag":"冬季首選","why":"溫水泳池＋滑水道＋球池，房內就有湯池不必外露天；幼兒泡暖湯戲水一次滿足。","url":"https://bobowin.blog/jiaoxi-hotel/"},
+          {"title":"谷關／泰安溫泉＋大坑","area":"台中·苗栗","days":"一泊","tag":"湯屋私密","why":"山區湯屋私密、適合帶幼兒；白天走大坑輕鬆步道或觀光工廠雨備。","url":"https://bobowin.blog/category/travel/%E5%85%A8%E5%8F%B0%E6%BA%AB%E6%B3%89%E9%A3%AF%E5%BA%97/"},
+          {"title":"台南暖冬避寒＋室內景點","area":"台南·嘉義","days":"二泊","tag":"CP值高","why":"冬天南部乾暖；奇美博物館、觀光工廠多為銅板門票且室內，幼兒不怕冷不怕雨。","url":"https://tw.trip.com/guide/destination/%E8%A6%AA%E5%AD%90%E6%97%85%E9%81%8A.html"}
+        ]
+      },
+      {
+        "name": "短程國外／離島",
+        "emoji": "✈️",
+        "combos": [
+          {"title":"沖繩親子 5 天 4 夜","area":"日本·沖繩","days":"5 天","tag":"短程首選","why":"直航約 3 小時、景點集中好租車；美麗海水族館、AEON、公園溜滑梯，嬰兒車超友善。淡季機票甜。","url":"https://www.wendyjourney.com/okinawa-attractions/"},
+          {"title":"小琉球一泊二日","area":"屏東·離島","days":"一泊","tag":"輕鬆","why":"船程 20 分、環島電動車機動；潮間帶看海龜生態近距離，行程輕、幼兒不累。","url":"https://tw.trip.com/guide/destination/%E8%A6%AA%E5%AD%90%E6%97%85%E9%81%8A.html"},
+          {"title":"澎湖夏季離島","area":"澎湖","days":"二泊","tag":"夏季限定","why":"隘門、山水沙灘淺水細沙適合幼兒玩沙戲水；提前訂淡季前機票最划算。","url":"https://tw.trip.com/guide/destination/%E8%A6%AA%E5%AD%90%E6%97%85%E9%81%8A.html"}
+        ]
+      }
+    ]
+  },
   "days": [
     {
       "date": "2026-08-02",
