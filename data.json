@@ -18,7 +18,22 @@
       {"title":"明湖・電梯大陽台套房","rent":"13,500 / 月","spec":"11坪 · 有車位／陽台 · 園區 5 分鐘","tag":"屋主直租","url":"https://rent.591.com.tw/list?region=4&section=371&keyword=明湖路"},
       {"title":"金山二十五街・精選雅房","rent":"5,288 / 月","spec":"6坪 · 含管理費／水費／網路 · 東區","tag":"代理人","url":"https://rent.591.com.tw/list?region=4&section=371&keyword=金山"}
     ],
+    "focus": {
+      "title": "兩房 ＋ 一個平面車位 · 精選",
+      "note": "整層 2 房、含一個平面車位（新竹東區目前約 26 筆）。這一帶行情多落在 28,000–38,000／月、20–26 坪，越靠園區越搶手。",
+      "searchLabel": "看全部 26 筆（591 即時）",
+      "searchUrl": "https://rent.591.com.tw/list?region=4&section=371&kind=1&layout=2&option=cartype2",
+      "listings": [
+        {"title":"國泰禾・竹科大門 精裝二房雙衛","rent":"38,000 / 月（含車位）","spec":"2房2廳 · 26坪 · 附平面車位 · 距金山街口 466m","tag":"仲介","url":"https://rent.591.com.tw/list?region=4&section=371&kind=1&layout=2&option=cartype2"},
+        {"title":"美麗華 大方・園區大門口 大兩房","rent":"38,000 / 月（含車位）","spec":"2房2廳 · 23坪 · B1 平面車位 · 介壽一路近園區","tag":"仲介","url":"https://rent.591.com.tw/list?region=4&section=371&kind=1&layout=2&option=cartype2"},
+        {"title":"竹科悅揚・好市多新貴 2 房景觀戶","rent":"28,000 / 月（含車位）","spec":"2房2廳 · 25坪 · 高樓景觀 · 慈濟路近光武國中","tag":"仲介","url":"https://rent.591.com.tw/list?region=4&section=371&kind=1&layout=2&option=cartype2"},
+        {"title":"東方明珠・慈雲路 設計裝潢大兩房","rent":"37,000 / 月","spec":"2房2廳 · 21坪 · 全新家電 · 距埔頂派出所 733m","tag":"代理人","url":"https://rent.591.com.tw/list?region=4&section=371&kind=1&layout=2&option=cartype2"},
+        {"title":"瑞典綠洲・東新路 兩房含車位","rent":"31,000 / 月（含車位）","spec":"2房1廳 · 18.5坪 · 洗碗機全附 · 竹科×園區","tag":"代理人","url":"https://rent.591.com.tw/list?region=4&section=371&kind=1&layout=2&option=cartype2"},
+        {"title":"關新東路・樓中樓 2 房（有車位）","rent":"整層 40,000 / 月","spec":"2房2廳 · 30坪 · 距新莊車站 429m","tag":"屋主直租","url":"https://rent.591.com.tw/list?region=4&section=371&kind=1&layout=2&option=cartype2"}
+      ]
+    },
     "search": [
+      {"label":"591 · 兩房＋平面車位","url":"https://rent.591.com.tw/list?region=4&section=371&kind=1&layout=2&option=cartype2"},
       {"label":"591 · 關新路","url":"https://rent.591.com.tw/list?region=4&section=371&keyword=關新路"},
       {"label":"591 · 新莊街","url":"https://rent.591.com.tw/list?region=4&section=371&keyword=新莊街"},
       {"label":"591 · 關新東路","url":"https://rent.591.com.tw/list?region=4&section=371&keyword=關新東路"},

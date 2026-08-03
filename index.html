@@ -136,6 +136,10 @@
   .rsearch{border:1px solid var(--border);background:var(--card);border-radius:999px;padding:10px 17px;font-size:14px;font-weight:600;color:var(--foreground)}
   .rsearch:hover{background:var(--secondary);border-color:var(--cat-realty)}
   .rnote{margin-top:18px;font-size:12px;color:var(--muted-foreground);line-height:1.8}
+  .rfocus{border:1px solid var(--cat-realty);border-radius:16px;padding:18px 20px;background:oklch(0.5 0.13 145 / .06)}
+  .rfnote{margin:0 0 14px;font-size:14px;color:var(--foreground);line-height:1.85}
+  .rfbtn{display:inline-block;background:var(--cat-realty);color:#fff;border-color:var(--cat-realty)}
+  .rfbtn:hover{background:var(--cat-realty);opacity:.9}
   .hidden{display:none !important}
 </style>
 </head>
@@ -299,23 +303,35 @@ function renderArc(){
   $("#arcEmpty").classList.toggle("hidden",items.length>0);
 }
 
-function renderRent(){
-  const r=RENT;
-  if(!r){$("#rentBody").innerHTML='<p class="empty">尚無租屋資料。</p>';return;}
-  const ranges=(r.ranges||[]).map(x=>`<div class="rrow"><div class="rt">${esc(x.type)}</div><div class="rp">${esc(x.price)}</div><div class="rn">${esc(x.note||"")}</div></div>`).join("");
-  const listings=(r.listings||[]).map(L=>`<a class="card rentcard" href="${esc(L.url||'#')}" ${L.url?'target="_blank" rel="noopener"':''}>
+function rcard(L){
+  return `<a class="card rentcard" href="${esc(L.url||'#')}" ${L.url?'target="_blank" rel="noopener"':''}>
     <div class="body">
       <div class="srcrow"><span class="dot" style="background:var(--cat-realty)"></span>
         <span class="src">${esc(L.spec||"")}</span>
         ${L.tag?`<span class="meta" style="color:var(--cat-realty)">${esc(L.tag)}</span>`:""}</div>
       <h3><span class="t">${esc(L.title)}</span></h3>
       <div class="rent">${esc(L.rent)}</div>
-    </div></a>`).join("");
+    </div></a>`;
+}
+function renderRent(){
+  const r=RENT;
+  if(!r){$("#rentBody").innerHTML='<p class="empty">尚無租屋資料。</p>';return;}
+  const ranges=(r.ranges||[]).map(x=>`<div class="rrow"><div class="rt">${esc(x.type)}</div><div class="rp">${esc(x.price)}</div><div class="rn">${esc(x.note||"")}</div></div>`).join("");
+  const f=r.focus;
+  const focusHTML=f?`
+    <h2 class="rsec">${esc(f.title)}</h2>
+    <div class="rfocus">
+      <p class="rfnote">${esc(f.note||"")}</p>
+      ${f.searchUrl?`<a class="rsearch rfbtn" href="${esc(f.searchUrl)}" target="_blank" rel="noopener">${esc(f.searchLabel||"看全部")} ↗</a>`:""}
+      <div class="grid" style="margin-top:16px">${(f.listings||[]).map(rcard).join("")}</div>
+    </div>`:"";
+  const listings=(r.listings||[]).map(rcard).join("");
   const search=(r.search||[]).map(s=>`<a class="rsearch" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)} ↗</a>`).join("");
   $("#rentBody").innerHTML=`
     <p class="rintro">${esc(r.intro)}</p>
     <h2 class="rsec">租金行情概覽</h2>
     <div class="rtable">${ranges}</div>
+    ${focusHTML}
     <h2 class="rsec">精選物件${r.updated?`（${esc(r.updated)} 快照）`:""}</h2>
     <div class="grid">${listings}</div>
     <h2 class="rsec">即時查詢入口</h2>
