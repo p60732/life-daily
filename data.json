@@ -1,5 +1,31 @@
 {
   "generatedAt": "2026-08-02",
+  "rent": {
+    "updated": "2026-08-02",
+    "intro": "關新路、新莊街一帶位於新竹市東區，緊鄰竹科（園區二路、新安路）與台鐵新莊車站（六家線），是竹科工程師與雙薪家庭最熱門的租屋圈。生活機能成熟——關新公園、好市多、大遠百／巨城商圈與多所明星學校都在車程內。物件以電梯套房與整層 2–4 房為主；越靠園區、越新的電梯大樓租金越高，整層附平面車位者再往上一階。",
+    "ranges": [
+      {"type":"雅房／分租套房","price":"約 4,000–7,500 / 月","note":"3–8 坪，多含水電網路"},
+      {"type":"獨立套房（電梯）","price":"約 10,000–20,000 / 月","note":"近園區、有陽台或車位者較高"},
+      {"type":"兩房整層","price":"約 17,000–38,000 / 月","note":"附平面車位偏高"},
+      {"type":"三房整層","price":"約 34,000–44,000 / 月","note":"20–45 坪，竹科／關埔常見"},
+      {"type":"四房／大坪數","price":"46,000 起","note":"巨城、市中心可破十萬"}
+    ],
+    "listings": [
+      {"title":"關新東路・樓中樓 2 房","rent":"整層 40,000 / 月（可分租套房 22,000）","spec":"2房2廳 · 30坪 · 距新莊車站 429m","tag":"屋主直租","url":"https://rent.591.com.tw/list?region=4&section=371&keyword=關新東路"},
+      {"title":"竹科老爺酒店旁・獨立套房","rent":"20,000 / 月","spec":"5坪 · 房浴皆對外窗 · 距新莊車站 636m","tag":"屋主直租","url":"https://rent.591.com.tw/list?region=4&section=371&keyword=光復路一段"},
+      {"title":"竹科大門・國泰禾 精裝 2 房","rent":"38,000 / 月（含車位）","spec":"2房2廳 · 26坪 · 距金山街口 466m","tag":"仲介","url":"https://rent.591.com.tw/list?region=4&section=371&keyword=介壽路"},
+      {"title":"關埔・東昊生活館 3 房","rent":"35,000 / 月","spec":"3房2廳 · 40坪 · 頂規家電 · 近光武國中","tag":"屋主直租","url":"https://rent.591.com.tw/list?region=4&section=371&keyword=科學園路"},
+      {"title":"明湖・電梯大陽台套房","rent":"13,500 / 月","spec":"11坪 · 有車位／陽台 · 園區 5 分鐘","tag":"屋主直租","url":"https://rent.591.com.tw/list?region=4&section=371&keyword=明湖路"},
+      {"title":"金山二十五街・精選雅房","rent":"5,288 / 月","spec":"6坪 · 含管理費／水費／網路 · 東區","tag":"代理人","url":"https://rent.591.com.tw/list?region=4&section=371&keyword=金山"}
+    ],
+    "search": [
+      {"label":"591 · 關新路","url":"https://rent.591.com.tw/list?region=4&section=371&keyword=關新路"},
+      {"label":"591 · 新莊街","url":"https://rent.591.com.tw/list?region=4&section=371&keyword=新莊街"},
+      {"label":"591 · 關新東路","url":"https://rent.591.com.tw/list?region=4&section=371&keyword=關新東路"},
+      {"label":"591 · 東區獨立套房","url":"https://rent.591.com.tw/list?region=4&section=371&kind=2"},
+      {"label":"樂屋 · 新莊車站","url":"https://rent.rakuya.com.tw/result?keyword=新莊車站&zipcode=390"}
+    ]
+  },
   "days": [
     {
       "date": "2026-08-02",

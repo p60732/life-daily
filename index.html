@@ -120,6 +120,22 @@
   .empty{margin-top:40px;font-size:14px;color:var(--muted-foreground)}
 
   footer{max-width:1024px;margin:0 auto;padding:0 20px 60px;color:var(--muted-foreground);font-size:12px;text-align:center;line-height:1.9}
+  .rintro{margin-top:20px;font-size:14.5px;color:var(--foreground);line-height:1.95;
+    border:1px solid var(--border);background:var(--card);border-radius:14px;padding:18px 20px}
+  .rsec{font-family:var(--serif);font-size:20px;font-weight:700;margin:34px 0 14px}
+  .rtable{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--card)}
+  .rrow{display:grid;grid-template-columns:130px 210px 1fr;gap:14px;padding:13px 18px;border-top:1px solid var(--border);align-items:center;font-size:14px}
+  .rrow:first-child{border-top:none}
+  .rrow .rt{font-weight:700}
+  .rrow .rp{color:var(--cat-realty);font-weight:700}
+  .rrow .rn{color:var(--muted-foreground);font-size:13px}
+  @media(max-width:600px){.rrow{grid-template-columns:1fr;gap:3px;padding:12px 16px}}
+  .rentcard .body{padding:16px 18px}
+  .rentcard .rent{color:var(--cat-realty);font-weight:700;font-size:16px;margin-top:8px}
+  .rsearches{display:flex;flex-wrap:wrap;gap:10px}
+  .rsearch{border:1px solid var(--border);background:var(--card);border-radius:999px;padding:10px 17px;font-size:14px;font-weight:600;color:var(--foreground)}
+  .rsearch:hover{background:var(--secondary);border-color:var(--cat-realty)}
+  .rnote{margin-top:18px;font-size:12px;color:var(--muted-foreground);line-height:1.8}
   .hidden{display:none !important}
 </style>
 </head>
@@ -132,6 +148,7 @@
       <nav class="tabs">
         <button id="tab-board" class="active" onclick="go('board')">每日看板</button>
         <button id="tab-archive" onclick="go('archive')">分類彙整</button>
+        <button id="tab-rent" onclick="go('rent')">租屋</button>
       </nav>
     </div>
   </header>
@@ -165,6 +182,15 @@
     <p class="empty hidden" id="arcEmpty">找不到符合的內容。</p>
   </main>
 
+  <!-- 租屋專欄 -->
+  <main id="view-rent" class="hidden">
+    <div class="arc-head">
+      <h1 class="serif">租屋 · 關新路／新莊街</h1>
+      <p>竹科生活圈的租金行情、精選物件與即時查詢入口。</p>
+    </div>
+    <div id="rentBody"></div>
+  </main>
+
   <footer>每日誌 · 生活公司 Life Company　由 AI 團隊自動彙整　·　僅保留最近 7 天</footer>
 
 <script>
@@ -180,7 +206,7 @@ const MAX=5;
 const EXT='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>';
 const esc=t=>(t==null?"":String(t)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
-let DAYS=[], TODAY="", curDate="", filter="all", arcActive="invest", arcQ="";
+let DAYS=[], TODAY="", curDate="", filter="all", arcActive="invest", arcQ="", RENT=null;
 const $=s=>document.querySelector(s);
 
 function dayEntriesByCat(day,cat){
@@ -273,15 +299,38 @@ function renderArc(){
   $("#arcEmpty").classList.toggle("hidden",items.length>0);
 }
 
+function renderRent(){
+  const r=RENT;
+  if(!r){$("#rentBody").innerHTML='<p class="empty">尚無租屋資料。</p>';return;}
+  const ranges=(r.ranges||[]).map(x=>`<div class="rrow"><div class="rt">${esc(x.type)}</div><div class="rp">${esc(x.price)}</div><div class="rn">${esc(x.note||"")}</div></div>`).join("");
+  const listings=(r.listings||[]).map(L=>`<a class="card rentcard" href="${esc(L.url||'#')}" ${L.url?'target="_blank" rel="noopener"':''}>
+    <div class="body">
+      <div class="srcrow"><span class="dot" style="background:var(--cat-realty)"></span>
+        <span class="src">${esc(L.spec||"")}</span>
+        ${L.tag?`<span class="meta" style="color:var(--cat-realty)">${esc(L.tag)}</span>`:""}</div>
+      <h3><span class="t">${esc(L.title)}</span></h3>
+      <div class="rent">${esc(L.rent)}</div>
+    </div></a>`).join("");
+  const search=(r.search||[]).map(s=>`<a class="rsearch" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)} ↗</a>`).join("");
+  $("#rentBody").innerHTML=`
+    <p class="rintro">${esc(r.intro)}</p>
+    <h2 class="rsec">租金行情概覽</h2>
+    <div class="rtable">${ranges}</div>
+    <h2 class="rsec">精選物件${r.updated?`（${esc(r.updated)} 快照）`:""}</h2>
+    <div class="grid">${listings}</div>
+    <h2 class="rsec">即時查詢入口</h2>
+    <div class="rsearches">${search}</div>
+    <p class="rnote">物件每天變動，精選為擷取當下的快照；要看最新請點上方「即時查詢入口」。租金區間為概估，實際以房東／仲介公告為準。</p>`;
+}
 function go(view){
-  const board=view!=="archive";
-  $("#view-board").classList.toggle("hidden",!board);
-  $("#view-archive").classList.toggle("hidden",board);
-  $("#tab-board").classList.toggle("active",board);
-  $("#tab-archive").classList.toggle("active",!board);
-  if(!board){renderArcTabs();renderArc();}
+  ["board","archive","rent"].forEach(v=>{
+    $("#view-"+v).classList.toggle("hidden",v!==view);
+    $("#tab-"+v).classList.toggle("active",v===view);
+  });
+  if(view==="archive"){renderArcTabs();renderArc();}
+  if(view==="rent"){renderRent();}
   window.scrollTo({top:0});
-  location.hash=board?"":"archive";
+  location.hash=view==="board"?"":view;
 }
 
 $("#prevBtn").onclick=()=>stepDay(-1);
@@ -289,12 +338,14 @@ $("#nextBtn").onclick=()=>stepDay(1);
 $("#datePick").onchange=e=>{if(e.target.value){curDate=e.target.value;renderBoard();}};
 
 fetch("./data.json?ts="+Date.now()).then(r=>r.json()).then(d=>{
+  RENT=d.rent||null;
   DAYS=(d.days||[]).slice().sort((a,b)=>a.date<b.date?1:-1).slice(0,7);
   if(!DAYS.length){$("#headline").textContent="尚無資料";return;}
   TODAY=DAYS[0].date;curDate=TODAY;
   $("#datePick").max=TODAY;$("#datePick").min=DAYS[DAYS.length-1].date;
   renderFilters();renderBoard();
   if(location.hash==="#archive")go("archive");
+  else if(location.hash==="#rent")go("rent");
 }).catch(e=>{$("#headline").textContent="資料載入失敗";$("#board").innerHTML=`<p class="empty">${esc(e.message)}</p>`;});
 </script>
 </body>
