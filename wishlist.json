@@ -99,6 +99,17 @@
       "source": "日誌 08-06 社群",
       "url": "",
       "addedAt": "2026-08-06"
+    },
+    {
+      "id": "auto-2026-08-06-10",
+      "name": "2026台灣美食展",
+      "type": "place",
+      "area": "台北",
+      "note": "6大必吃神店攤位、餐券優惠",
+      "status": "want",
+      "source": "日誌08-06 社群",
+      "url": "https://www.myhousing.com.tw/l/l04/285225/",
+      "addedAt": "2026-08-06"
     }
   ]
 }

@@ -316,15 +316,15 @@
   "days": [
     {
       "date": "2026-08-06",
-      "headline": "竹北房價逼近百萬、台積電目標價創高，颱風白鹿路徑待觀察（投資內容非投資建議）",
+      "headline": "颱風白海豚逼近、漢光演習登場；台股高檔震盪台積電回檔；竹北房價逼近百萬。",
       "entries": [
         {
           "category": "realty",
-          "title": "竹北房價逼近百萬/坪 科技新貴回流",
-          "summary": "竹北近一年成交約62萬/坪，新竹史上首座百萬宅倒數中。",
+          "title": "竹北房價逼近百萬 科技新貴買氣回籠",
+          "summary": "新竹史上首座百萬宅倒數，竹北蛋黃區單價續攀。",
           "tags": [
             "竹北",
-            "房價創高"
+            "房價"
           ],
           "meta": "竹北",
           "image": "https://img.ltn.com.tw/Upload/house/page/2026/07/13/260713-28417-1-tL4ty.jpg",
@@ -333,198 +333,227 @@
         },
         {
           "category": "realty",
-          "title": "竹北「時華」預售實登首破9字頭",
-          "summary": "大陸建設新案改寫竹北預售價里程碑。",
+          "title": "新竹蛋白區逆襲 竹東年漲7.3%稱王",
+          "summary": "房市降溫下資金轉向蛋白區，竹東漲幅居大新竹之冠。",
           "tags": [
-            "竹北",
-            "新建案"
+            "竹東",
+            "漲幅"
           ],
-          "meta": "竹北",
-          "image": "https://annewsmedia.com/wp-content/uploads/2026/06/2026-06-16-132700.jpg",
-          "url": "https://annewsmedia.com/2026/06/16/market-news/19371/",
-          "hot": 88
+          "meta": "蛋白區",
+          "image": "https://images.chinatimes.com/newsphoto/2026-07-06/656/20260706002121.jfif",
+          "url": "https://www.chinatimes.com/realtimenews/20260706002120-260410",
+          "hot": 90
         },
         {
           "category": "realty",
-          "title": "新竹市東區房價約54萬/坪",
-          "summary": "東區近一年實價成交價維持穩健區間。",
+          "title": "大陸建設「時華」預售實登首破9字頭",
+          "summary": "竹北再創單價里程碑，指標建案帶動區域行情。",
           "tags": [
-            "東區",
-            "實價登錄"
+            "竹北",
+            "建案"
           ],
-          "meta": "東區",
-          "image": "",
-          "url": "https://www.leju.com.tw/map/region?mode=price&city=O&area=O390",
+          "meta": "預售",
+          "image": "https://annewsmedia.com/wp-content/uploads/2026/06/2026-06-16-132700.jpg",
+          "url": "https://annewsmedia.com/2026/06/16/market-news/19371/",
+          "hot": 85
+        },
+        {
+          "category": "realty",
+          "title": "大新竹首購指南 竹北新成屋站上8字頭",
+          "summary": "縣三、芎林、新豐、湖口比較，科技首購族選區攻略。",
+          "tags": [
+            "湖口",
+            "首購"
+          ],
+          "meta": "首購",
+          "image": "https://content.fundodo.com.tw/wp-content/uploads/2026/07/zac-gudakov-UPbYh3A5cdg-unsplash-1024x683.jpg",
+          "url": "https://content.fundodo.com.tw/708/",
           "hot": 80
         },
         {
-          "category": "realty",
-          "title": "竹北市成交行情 近一年約62萬/坪",
-          "summary": "樂居實價數據反映竹北買氣延續。",
-          "tags": [
-            "竹北",
-            "成交量"
-          ],
-          "meta": "竹北",
-          "image": "",
-          "url": "https://www.leju.com.tw/map/region?mode=price&city=J&area=J302",
-          "hot": 72
-        },
-        {
           "category": "invest",
-          "title": "台積電目標價頻創新高",
-          "summary": "AI浪潮助攻，多家機構上修台積電目標價。",
+          "title": "台股8/6收跌214點 台積電跌40元、鴻海逆勢漲",
+          "summary": "高檔震盪換手，資金輪動；非投資建議，留意週線20轉折。",
           "tags": [
-            "台積電",
-            "半導體"
+            "台股",
+            "非投資建議"
           ],
-          "meta": "創新高",
-          "image": "https://cimg.cnyes.cool/prod/news/6537278/m/97ca6e69fa2f8b392f4c503c1b3b3da7.jpg",
-          "url": "https://news.cnyes.com/news/id/6537278",
+          "meta": "回檔",
+          "image": "https://static-cdn.nextapple.tw/prod/2026-08/6DE3041EFA227518948A412C3927EA38/56cba8c09715a7056424322045bcc79f_1280.jpeg",
+          "url": "https://news.nextapple.com/finance/20260806/6DE3041EFA227518948A412C3927EA38",
           "hot": 95
         },
         {
           "category": "invest",
-          "title": "外資喊買六大半導體廠",
-          "summary": "外資指AI多頭才剛開始，變現疑慮免驚。",
+          "title": "台積電壓盤、聯發科漲停 AI電子股重掌焦點",
+          "summary": "題材股接棒資金回流AI鏈；非投資建議，僅供觀察。",
           "tags": [
-            "外資",
-            "AI供應鏈"
+            "AI",
+            "選股",
+            "非投資建議"
           ],
-          "meta": "多頭",
-          "image": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/08/04/35199257.jpg&M=1&s=Y&x=0&y=0&sw=1280&sh=853&exp=3600",
-          "url": "https://udn.com/news/story/7251/9670358",
+          "meta": "選股",
+          "image": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/04/24/34885641.jpg&M=1&s=Y&x=0&y=0&sw=1280&sh=853&exp=3600",
+          "url": "https://money.udn.com/money/story/5607/9667968",
           "hot": 90
         },
         {
           "category": "invest",
-          "title": "2026 AI概念股清單解析",
-          "summary": "散熱、ASIC、ABF、HBM龍頭清單整理供追蹤。",
+          "title": "2026 AI概念股清單：散熱、ASIC、ABF、HBM龍頭",
+          "summary": "半導體供應鏈分類整理，可作標的研究；非投資建議。",
           "tags": [
-            "AI概念股",
-            "題材"
+            "半導體",
+            "供應鏈",
+            "非投資建議"
           ],
-          "meta": "選股",
-          "image": "",
+          "meta": "AI鏈",
+          "image": "https://grenade.tw/wp-content/uploads/2026/05/scimgBtOeCv.webp",
           "url": "https://grenade.tw/blog/ai-concept-stocks-2026/",
-          "hot": 82
+          "hot": 85
         },
         {
           "category": "invest",
-          "title": "券商晨訊台股建議摘要(8/4)",
-          "summary": "盤面多空分歧，可搭週線20轉折抓進出。",
+          "title": "法人看好台積電 目標價頻創新高",
+          "summary": "AI出口動能延續，多家機構上修台股展望；非投資建議。",
           "tags": [
-            "台股",
-            "週線20"
+            "台積電",
+            "展望",
+            "非投資建議"
           ],
-          "meta": "轉折",
-          "image": "",
-          "url": "https://tw.stock.yahoo.com/news/%E5%88%B8%E5%95%86%E6%99%A8%E8%A8%8A%E5%8F%B0%E8%82%A1%E6%8A%95%E8%B3%87%E5%BB%BA%E8%AD%B0%E6%91%98%E8%A6%81-1-2026%E5%B9%B4-8%E6%9C%88-4%E6%97%A5-003541489.html",
-          "hot": 75
+          "meta": "台積",
+          "image": "https://cimg.cnyes.cool/prod/news/6537278/m/97ca6e69fa2f8b392f4c503c1b3b3da7.jpg",
+          "url": "https://news.cnyes.com/news/id/6537278",
+          "hot": 80
         },
         {
           "category": "news",
-          "title": "颱風白鹿路徑待觀察",
-          "summary": "氣象專家指8/8轉向為關鍵，牽動全台威脅程度。",
+          "title": "颱風白海豚路徑不確定 8日北轉角度為對台關鍵",
+          "summary": "氣象專家示警，北轉角度牽動是否直接威脅台灣。",
           "tags": [
             "颱風",
             "天氣"
           ],
-          "meta": "關注",
-          "image": "",
-          "url": "https://www.cna.com.tw/list/headlines.aspx",
-          "hot": 92
+          "meta": "颱風",
+          "image": "https://imgcdn.cna.com.tw/www/webphotos/WebOg/600/20260806/915x480_966662459716.jpg",
+          "url": "https://www.cna.com.tw/news/ahel/202608060018.aspx",
+          "hot": 95
         },
         {
           "category": "news",
-          "title": "漢光演習全面展開",
-          "summary": "海軍緊急出港、空軍戰力保存，實兵操演登場。",
+          "title": "漢光演習首日全面戰備 海軍緊急出港、空軍戰力保存",
+          "summary": "年度最大規模演訓登場，三軍進入實戰化部署。",
           "tags": [
             "國防",
             "漢光"
           ],
-          "meta": "時事",
-          "image": "",
-          "url": "https://www.cna.com.tw/list/headlines.aspx",
+          "meta": "國防",
+          "image": "https://imgcdn.cna.com.tw/www/webphotos/WebCover/800/20260806/1504x1127_641610271021.jpg",
+          "url": "https://www.cna.com.tw/news/ahel/202608065001.aspx",
+          "hot": 90
+        },
+        {
+          "category": "news",
+          "title": "川普擬對多晶矽產品課15%關稅 設最低進口價",
+          "summary": "新關稅政策恐衝擊太陽能與半導體上游供應鏈。",
+          "tags": [
+            "關稅",
+            "川普"
+          ],
+          "meta": "關稅",
+          "image": "https://imgcdn.cna.com.tw/www/webphotos/WebOg/600/20260806/2001x1049_878052190423.jpg",
+          "url": "https://www.cna.com.tw/news/aopl/202608060015.aspx",
+          "hot": 88
+        },
+        {
+          "category": "news",
+          "title": "美股道指連漲5天再登新高",
+          "summary": "多頭氣盛，市場聚焦企業財報與AI資本支出。",
+          "tags": [
+            "美股",
+            "財經"
+          ],
+          "meta": "美股",
+          "image": "https://imgcdn.cna.com.tw/www/webphotos/WebOg/600/20260806/1999x1049_619148436618.jpg",
+          "url": "https://www.cna.com.tw/news/afe/202608060014.aspx",
           "hot": 85
         },
         {
           "category": "news",
-          "title": "美股8/6盤勢重點",
-          "summary": "AI科技股與半導體動向牽動四大指數表現。",
+          "title": "SpaceX財報後股價暴跌13.6% 市值蒸發逾7兆",
+          "summary": "開支疑慮引發賣壓，仍獨家採用輝達晶片。",
           "tags": [
             "美股",
-            "盤勢"
+            "科技"
           ],
-          "meta": "國際",
-          "image": "https://cimg.cnyes.cool/prod/news/6561219/m/078b4ddf30dfb3389d81e7d4640bd50a.jpg",
-          "url": "https://m.cnyes.com/news/id/6561219",
-          "hot": 78
-        },
-        {
-          "category": "news",
-          "title": "央行估利率連六凍",
-          "summary": "市場預期本次理事會維持政策利率不變。",
-          "tags": [
-            "央行",
-            "利率"
-          ],
-          "meta": "政策",
-          "image": "",
-          "url": "https://tw.stock.yahoo.com/news/%E9%87%91%E8%9E%8D-%E5%A4%AE%E8%A1%8C23%E6%97%A5%E7%90%86%E4%BA%8B%E6%9C%83-%E4%BC%B0%E5%88%A9%E7%8E%87%E9%80%A3%E5%85%AD%E5%87%8D-000124158.html",
-          "hot": 70
+          "meta": "美股",
+          "image": "https://imgcdn.cna.com.tw/www/webphotos/WebOg/600/20260806/960x504_956228173839.jpg",
+          "url": "https://www.cna.com.tw/news/afe/202608060010.aspx",
+          "hot": 80
         },
         {
           "category": "social",
-          "title": "東京新景點：哈利波特影城、新宿新地標",
-          "summary": "2026東京最新18個景點，打卡熱點一次看。",
-          "tags": [
-            "日韓旅遊",
-            "東京"
-          ],
-          "meta": "旅遊",
-          "image": "https://ak-d.tripcdn.com/images/0103w12000a4on9dtB984_C_750_350_R5.png_.webp?proc=autoorient&proc=source%2ftrip",
-          "url": "https://tw.trip.com/blog/tokyo-new-attractions/",
-          "hot": 90
-        },
-        {
-          "category": "social",
-          "title": "2026台灣美食展6大必吃神店",
-          "summary": "美食展人氣攤位全攻略，吃貨必收藏。",
+          "title": "2026台灣美食展 6大必吃神店攻略",
+          "summary": "台北世貿登場，排隊神店與餐券優惠一次看。",
           "tags": [
             "台灣美食",
             "美食展"
           ],
-          "meta": "美食",
-          "image": "https://ni.yam.com/20260720/scaled-e095008296d5de52.jpg",
-          "url": "https://n.yam.com/Article/20260720472288",
-          "hot": 85
+          "meta": "台灣美食",
+          "image": "https://291fc98a.delivery.rocketcdn.me/wp-content/uploads/2026/07/myhousing1784541908.jpg",
+          "url": "https://www.myhousing.com.tw/l/l04/285225/",
+          "hot": 92
         },
         {
           "category": "social",
-          "title": "資策會公布2026十大AI關鍵技術",
-          "summary": "AI從虛擬躍入實體，代理型AI成主角。",
+          "title": "2026首爾新景點14大好去處",
+          "summary": "緊貼潮流的首爾打卡新點，行程必收。",
+          "tags": [
+            "日韓旅遊",
+            "首爾"
+          ],
+          "meta": "日韓旅遊",
+          "image": "",
+          "url": "https://18hall.com/seoul-tourist-attractions/",
+          "hot": 90
+        },
+        {
+          "category": "social",
+          "title": "韓國首爾景點Top40 IG打卡必去",
+          "summary": "首爾＋釜山40個熱門景點，自由行懶人包。",
+          "tags": [
+            "日韓旅遊",
+            "打卡"
+          ],
+          "meta": "日韓旅遊",
+          "image": "",
+          "url": "https://www.kkday.com/zh-tw/blog/4044/asia-korea-seoul-first-visit-spot",
+          "hot": 88
+        },
+        {
+          "category": "social",
+          "title": "台北美食25間口袋名單",
+          "summary": "餐廳、下午茶、平價小吃、異國料理一次收藏。",
+          "tags": [
+            "台灣美食",
+            "台北"
+          ],
+          "meta": "台灣美食",
+          "image": "https://gofunit.com/wp-content/uploads/2021/07/IMG_4416.jpg",
+          "url": "https://www.welcometw.com/%E5%8F%B0%E5%8C%97%E7%BE%8E%E9%A3%9F%E6%8E%A8%E8%96%A6/",
+          "hot": 86
+        },
+        {
+          "category": "social",
+          "title": "2026 AI工具生態系成形 代理型AI主導趨勢",
+          "summary": "專業化與Agent型AI崛起，重塑工作流。",
           "tags": [
             "AI新技術",
             "趨勢"
           ],
-          "meta": "AI",
-          "image": "https://www.ithome.com.tw/sites/default/files/field/image/1267-jiao_dian_-2p-yan_fen_-zi_ce_hui_ai_tu_biao_1_0.jpg",
-          "url": "https://www.ithome.com.tw/news/172987",
-          "hot": 82
-        },
-        {
-          "category": "social",
-          "title": "2026 AI工具生態系成形",
-          "summary": "專業化、代理型AI主導未來工具走向。",
-          "tags": [
-            "AI新技術",
-            "AI工具"
-          ],
-          "meta": "AI",
-          "image": "",
+          "meta": "AI新技術",
+          "image": "https://s.yimg.com/lo/mysterio/api/6c7af41d616c3caf0ae04fe564580fafcbcd993f6ef100a5d4eec2559a9b306e/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fko%2Fsunmedia_664%2F25f40ad05faf9f1749065d8d47a17fce",
           "url": "https://tw.stock.yahoo.com/news/2026%E5%B9%B4ai%E5%B7%A5%E5%85%B7%E7%94%9F%E6%85%8B%E7%B3%BB%E6%88%90%E5%BD%A2-%E5%B0%88%E6%A5%AD%E5%8C%96-%E4%BB%A3%E7%90%86%E5%9E%8Bai%E4%B8%BB%E5%B0%8E%E6%9C%AA%E4%BE%86%E8%B6%A8%E5%8B%A2-124259636.html",
-          "hot": 76
+          "hot": 85
         }
       ]
     },
