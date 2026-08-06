@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>每日誌 — 投資、新聞、育兒與興趣的每日看板</title>
+<meta name="description" content="每天一頁的個人看板：投資分析、每日新聞、新竹房地產、親子景點與美食、小說漫畫動畫推薦，每類每日精選五則，可依日期往前翻閱。" />
+<meta property="og:title" content="每日誌 — 每日看板" />
+<meta property="og:description" content="投資、新聞、新竹房地產、育兒景點美食、小說漫畫動畫，每類每日精選五則。" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --radius:0.625rem;
+    --background:oklch(0.985 0.008 85);
+    --foreground:oklch(0.24 0.02 60);
+    --card:oklch(0.998 0.004 90);
+    --primary:oklch(0.42 0.1 175);
+    --primary-foreground:oklch(0.99 0.005 90);
+    --secondary:oklch(0.94 0.015 85);
+    --secondary-foreground:oklch(0.3 0.03 70);
+    --muted-foreground:oklch(0.52 0.02 70);
+    --accent:oklch(0.72 0.15 65);
+    --border:oklch(0.9 0.015 80);
+    --cat-invest:oklch(0.45 0.11 175);
+    --cat-news:oklch(0.5 0.12 255);
+    --cat-realty:oklch(0.5 0.13 145);
+    --cat-family:oklch(0.62 0.15 45);
+    --cat-hobby:oklch(0.52 0.14 330);
+    --cat-social:oklch(0.55 0.13 300);
+    --serif:"Noto Serif TC",Georgia,serif;
+    --sans:"Noto Sans TC",ui-sans-serif,system-ui,-apple-system,"PingFang TC",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--background);color:var(--foreground);font-family:var(--sans);
+    line-height:1.65;-webkit-font-smoothing:antialiased;
+    background-image:
+      radial-gradient(1100px 400px at 82% -80px, oklch(0.9 0.05 55 / .5), transparent 60%),
+      radial-gradient(900px 380px at 8% -60px, oklch(0.93 0.04 150 / .45), transparent 58%);}
+  a{color:inherit;text-decoration:none}
+  .serif{font-family:var(--serif)}
+  .wrap{max-width:1024px;margin:0 auto;padding:0 20px}
+
+  header.top{position:sticky;top:0;z-index:40;border-bottom:1px solid var(--border);
+    background:oklch(0.985 0.008 85 / .85);backdrop-filter:blur(8px)}
+  header .row{max-width:1024px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:baseline;gap:8px;cursor:pointer}
+  .brand b{font-family:var(--serif);font-size:20px;font-weight:900;letter-spacing:.5px}
+  .brand span{font-size:12px;color:var(--muted-foreground)}
+  nav.tabs{display:flex;gap:4px;font-size:14px}
+  nav.tabs button{border:none;background:none;cursor:pointer;border-radius:999px;padding:6px 14px;color:var(--muted-foreground);font-family:var(--sans)}
+  nav.tabs button:hover{background:var(--secondary)}
+  nav.tabs button.active{background:var(--primary);color:var(--primary-foreground);font-weight:500}
+
+  main{max-width:1024px;margin:0 auto;padding:40px 20px 80px}
+
+  .hero{border:1px solid var(--border);background:oklch(0.998 0.004 90 / .7);border-radius:16px;padding:28px}
+  .hero .nav{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+  .daybtn{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--border);background:var(--card);
+    border-radius:999px;padding:7px 14px;font-size:14px;cursor:pointer;color:var(--foreground);font-family:var(--sans)}
+  .daybtn:disabled{opacity:.4;cursor:default}
+  .datepick{margin-left:auto;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);
+    border-radius:999px;padding:6px 14px;font-size:14px;color:var(--muted-foreground)}
+  .datepick input{border:none;background:none;font:inherit;color:var(--foreground);outline:none}
+  .kicker{margin-top:24px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-foreground)}
+  .hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(28px,4.4vw,40px);line-height:1.25;margin:8px 0 0}
+  .hero .lead{margin-top:12px;font-size:14px;color:var(--muted-foreground)}
+  .todaypill{display:inline-block;margin-top:16px;border-radius:999px;background:oklch(0.72 0.15 65 / .25);
+    padding:4px 12px;font-size:12px;font-weight:500}
+
+  .filters{margin-top:32px;display:flex;flex-wrap:wrap;gap:8px}
+  .pill{border-radius:999px;padding:6px 15px;font-size:14px;cursor:pointer;border:1px solid var(--border);
+    background:transparent;color:var(--muted-foreground);font-family:var(--sans);transition:.15s}
+  .pill:hover{background:var(--secondary)}
+  .pill.active{background:var(--foreground);color:var(--background);border-color:var(--foreground)}
+
+  section.cat{margin-top:40px}
+  .cathead{display:flex;align-items:baseline;gap:12px;margin-bottom:14px}
+  .cathead h2{font-family:var(--serif);font-size:22px;font-weight:700;margin:0}
+  .cathead .desc{font-size:12px;color:var(--muted-foreground)}
+  .cathead .count{margin-left:auto;font-size:12px;color:var(--muted-foreground)}
+
+  .grid{display:grid;gap:16px}
+  @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+
+  .card{display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--border);
+    border-radius:12px;background:var(--card);transition:box-shadow .2s,transform .2s}
+  .card:hover{box-shadow:0 14px 34px -18px oklch(0.3 0.05 70 / .6);transform:translateY(-2px)}
+  .media{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--secondary)}
+  .media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+  .card:hover .media img{transform:scale(1.04)}
+  .media.ph{display:grid;place-items:center}
+  .media.ph .g{font-size:44px;filter:drop-shadow(0 3px 8px rgba(0,0,0,.25))}
+  .rank{position:absolute;top:8px;left:8px;border-radius:999px;background:oklch(0.985 0.008 85 / .9);
+    padding:2px 9px;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}
+  .body{padding:20px;display:flex;flex-direction:column;flex:1}
+  .srcrow{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted-foreground)}
+  .srcrow .dot{width:6px;height:6px;border-radius:999px;flex:none}
+  .srcrow .date{font-variant-numeric:tabular-nums}
+  .srcrow .src{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .srcrow .meta{margin-left:auto;font-weight:500;flex:none}
+  .card h3{font-family:var(--serif);margin:8px 0 0;font-size:18px;font-weight:700;line-height:1.4;
+    display:flex;align-items:flex-start;gap:6px}
+  .card h3 .t{}
+  .card:hover h3 .t{text-decoration:underline}
+  .card h3 svg{margin-top:5px;flex:none;color:var(--muted-foreground)}
+  .card p{margin:8px 0 0;font-size:14px;color:var(--muted-foreground)}
+  .tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+  .tag{border-radius:999px;background:var(--secondary);color:var(--secondary-foreground);padding:2px 9px;font-size:12px}
+
+  .arc-head h1{font-family:var(--serif);font-size:clamp(28px,4.4vw,38px);font-weight:900;margin:0}
+  .arc-head p{margin-top:8px;font-size:14px;color:var(--muted-foreground)}
+  .arc-controls{margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+  .arc-controls input{margin-left:auto;width:100%;max-width:230px;border:1px solid var(--border);background:var(--card);
+    border-radius:999px;padding:7px 16px;font:inherit;font-size:14px;outline:none;color:var(--foreground)}
+  .arc-controls input:focus{border-color:var(--primary)}
+  .arc-count{margin-top:24px;font-size:14px;color:var(--muted-foreground)}
+  .empty{margin-top:40px;font-size:14px;color:var(--muted-foreground)}
+
+  footer{max-width:1024px;margin:0 auto;padding:0 20px 60px;color:var(--muted-foreground);font-size:12px;text-align:center;line-height:1.9}
+  .rintro{margin-top:20px;font-size:14.5px;color:var(--foreground);line-height:1.95;
+    border:1px solid var(--border);background:var(--card);border-radius:14px;padding:18px 20px}
+  .rsec{font-family:var(--serif);font-size:20px;font-weight:700;margin:34px 0 14px}
+  .rtable{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--card)}
+  .rrow{display:grid;grid-template-columns:130px 210px 1fr;gap:14px;padding:13px 18px;border-top:1px solid var(--border);align-items:center;font-size:14px}
+  .rrow:first-child{border-top:none}
+  .rrow .rt{font-weight:700}
+  .rrow .rp{color:var(--cat-realty);font-weight:700}
+  .rrow .rn{color:var(--muted-foreground);font-size:13px}
+  @media(max-width:600px){.rrow{grid-template-columns:1fr;gap:3px;padding:12px 16px}}
+  .rentcard .body{padding:16px 18px}
+  .rentcard .rent{color:var(--cat-realty);font-weight:700;font-size:16px;margin-top:8px}
+  .rsearches{display:flex;flex-wrap:wrap;gap:10px}
+  .rsearch{border:1px solid var(--border);background:var(--card);border-radius:999px;padding:10px 17px;font-size:14px;font-weight:600;color:var(--foreground)}
+  .rsearch:hover{background:var(--secondary);border-color:var(--cat-realty)}
+  .rnote{margin-top:18px;font-size:12px;color:var(--muted-foreground);line-height:1.8}
+  .rfocus{border:1px solid var(--cat-realty);border-radius:16px;padding:18px 20px;background:oklch(0.5 0.13 145 / .06)}
+  .rfnote{margin:0 0 14px;font-size:14px;color:var(--foreground);line-height:1.85}
+  .rfbtn{display:inline-block;background:var(--cat-realty);color:#fff;border-color:var(--cat-realty)}
+  .rfbtn:hover{background:var(--cat-realty);opacity:.9}
+  .ttips{margin:16px 0 4px;padding:14px 22px 14px 40px;border:1px dashed var(--border);border-radius:14px;background:var(--card);font-size:13.5px;color:var(--muted-foreground);line-height:1.95}
+  .ttips li{margin:3px 0}
+  .hidden{display:none !important}
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="row">
+      <div class="brand" onclick="go('board')">
+        <b class="serif">每日誌</b><span>Daily Digest</span>
+      </div>
+      <nav class="tabs">
+        <button id="tab-board" class="active" onclick="go('board')">每日看板</button>
+        <button id="tab-archive" onclick="go('archive')">分類彙整</button>
+        <button id="tab-rent" onclick="go('rent')">租屋</button>
+        <button id="tab-travel" onclick="go('travel')">旅遊</button>
+        <button id="tab-wish" onclick="location.href='wishlist.html'">♡ 願望清單</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 每日看板 -->
+  <main id="view-board">
+    <section class="hero">
+      <div class="nav">
+        <button class="daybtn" id="prevBtn">‹ 前一天</button>
+        <button class="daybtn" id="nextBtn">後一天 ›</button>
+        <span class="datepick">📅 <input type="date" id="datePick"></span>
+      </div>
+      <div class="kicker" id="kicker">—</div>
+      <h1 id="headline">載入中…</h1>
+      <p class="lead">每個類別只留當日最熱門的 5 則，點卡片可前往原始來源。</p>
+      <span class="todaypill" id="todaypill">今天</span>
+    </section>
+    <div class="filters" id="filters"></div>
+    <div id="board"></div>
+  </main>
+
+  <!-- 分類彙整 -->
+  <main id="view-archive" class="hidden">
+    <div class="arc-head">
+      <h1 class="serif">分類彙整</h1>
+      <p>跨越所有日期，把同一類別的內容集中在一起回顧。</p>
+    </div>
+    <div class="arc-controls" id="arcTabs"></div>
+    <div class="arc-count" id="arcCount"></div>
+    <div class="grid" id="arcGrid" style="margin-top:16px"></div>
+    <p class="empty hidden" id="arcEmpty">找不到符合的內容。</p>
+  </main>
+
+  <!-- 租屋專欄 -->
+  <main id="view-rent" class="hidden">
+    <div class="arc-head">
+      <h1 class="serif">租屋 · 關新路／新莊街</h1>
+      <p>竹科生活圈的租金行情、精選物件與即時查詢入口。</p>
+    </div>
+    <div id="rentBody"></div>
+  </main>
+
+  <!-- 旅遊專欄 -->
+  <main id="view-travel" class="hidden">
+    <div class="arc-head">
+      <h1 class="serif">旅遊 · 幼兒家庭</h1>
+      <p>適合 1–6 歲幼兒的推薦組合，依最適合季節分組，含天數、CP 值與幼兒友善重點。</p>
+    </div>
+    <div id="travelBody"></div>
+  </main>
+
+  <footer>每日誌 · 生活公司 Life Company　由 AI 團隊自動彙整　·　日誌保留最近 30 天</footer>
+
+<script>
+const CATEGORIES=[
+  {id:"invest",label:"投資分析",desc:"盤勢、產業與個股觀察筆記",color:"var(--cat-invest)",glyph:"📈"},
+  {id:"news",label:"每日新聞",desc:"當日最熱門的必讀重點",color:"var(--cat-news)",glyph:"📰"},
+  {id:"social",label:"社群精選",desc:"公開網搜 · 日韓旅遊／台灣美食／AI新技術",color:"var(--cat-social)",glyph:"💬"},
+  {id:"realty",label:"新竹房地產",desc:"竹科周邊行情、建案與政策",color:"var(--cat-realty)",glyph:"🏠"},
+  {id:"family",label:"育兒 · 景點 · 美食",desc:"新竹＋雙北桃園的親子好去處",color:"var(--cat-family)",glyph:"🧸"},
+  {id:"hobby",label:"小說 · 漫畫 · 動畫",desc:"本日推坑與追番進度",color:"var(--cat-hobby)",glyph:"🎬"},
+];
+const CATMAP=Object.fromEntries(CATEGORIES.map(c=>[c.id,c]));
+const MAX=5;
+const EXT='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>';
+const esc=t=>(t==null?"":String(t)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+let DAYS=[], TODAY="", curDate="", filter="all", arcActive="invest", arcQ="", RENT=null, TRAVEL=null;
+const $=s=>document.querySelector(s);
+
+function dayEntriesByCat(day,cat){
+  return (day.entries||[]).filter(e=>e.category===cat).slice().sort((a,b)=>(b.hot||0)-(a.hot||0)).slice(0,MAX);
+}
+function fmtDate(d){
+  const [y,m,dd]=d.split("-").map(Number);
+  const w=["日","一","二","三","四","五","六"][new Date(y,m-1,dd).getDay()];
+  return `${y} 年 ${m} 月 ${dd} 日 · 週${w}`;
+}
+function mediaHTML(e,rank){
+  const cat=CATMAP[e.category]||{};
+  const badge=rank?`<span class="rank">#${rank}</span>`:"";
+  if(e.image){
+    return `<div class="media">${badge}<img src="${esc(e.image)}" alt="" loading="lazy" referrerpolicy="no-referrer"
+      onerror="this.closest('.media').classList.add('ph');this.closest('.media').style.background=this.dataset.c;this.outerHTML='<div class=g>'+this.dataset.g+'</div>'"
+      data-c="${cat.color}" data-g="${cat.glyph}"></div>`;
+  }
+  return `<div class="media ph" style="background:${cat.color}">${badge}<div class="g">${cat.glyph}</div></div>`;
+}
+function cardHTML(e,{rank,date}={}){
+  const cat=CATMAP[e.category]||{};
+  const tags=(e.tags||[]).map(t=>`<span class="tag">#${esc(t)}</span>`).join("");
+  return `<a class="card" href="${esc(e.url||'#')}" ${e.url?'target="_blank" rel="noopener"':''}>
+    ${mediaHTML(e,rank)}
+    <div class="body">
+      <div class="srcrow"><span class="dot" style="background:${cat.color}"></span>
+        ${date?`<span class="date">${esc(date)}</span>`:""}
+        <span class="src">${esc(e.source||"")}</span>
+        ${e.meta?`<span class="meta" style="color:${cat.color}">${esc(e.meta)}</span>`:""}</div>
+      <h3><span class="t">${esc(e.title)}</span>${EXT}</h3>
+      <p>${esc(e.summary)}</p>
+      ${tags?`<div class="tags">${tags}</div>`:""}
+    </div></a>`;
+}
+
+/* ---- 每日看板 ---- */
+function renderFilters(){
+  const list=[{id:"all",label:"全部"},...CATEGORIES];
+  $("#filters").innerHTML=list.map(c=>`<button class="pill${filter===c.id?' active':''}" data-f="${c.id}">${c.label}</button>`).join("");
+  $("#filters").querySelectorAll(".pill").forEach(b=>b.onclick=()=>{filter=b.dataset.f;renderFilters();renderBoard();});
+}
+function renderBoard(){
+  const day=DAYS.find(d=>d.date===curDate);
+  const idx=DAYS.findIndex(d=>d.date===curDate);
+  $("#datePick").value=curDate;
+  $("#kicker").textContent=fmtDate(curDate);
+  $("#headline").textContent=day?day.headline:"這天還沒有紀錄";
+  $("#todaypill").style.display=curDate===TODAY?"inline-block":"none";
+  $("#prevBtn").disabled=idx<0||idx>=DAYS.length-1;
+  $("#nextBtn").disabled=curDate>=TODAY;
+  if(!day){$("#board").innerHTML=`<p class="empty">這一天沒有內容，試試往前翻一天。</p>`;return;}
+  let html="";
+  CATEGORIES.forEach(c=>{
+    if(filter!=="all"&&filter!==c.id)return;
+    const items=dayEntriesByCat(day,c.id);
+    if(!items.length)return;
+    html+=`<section class="cat"><div class="cathead"><h2>${c.label}</h2><span class="desc">${c.desc}</span>
+      <span class="count">最熱門 ${items.length} 則</span></div>
+      <div class="grid">${items.map((e,i)=>cardHTML(e,{rank:i+1})).join("")}</div></section>`;
+  });
+  $("#board").innerHTML=html||`<p class="empty">這天這個分類沒有資料。</p>`;
+}
+function stepDay(delta){
+  const [y,m,d]=curDate.split("-").map(Number);
+  const nd=new Date(y,m-1,d+delta);
+  const s=`${nd.getFullYear()}-${String(nd.getMonth()+1).padStart(2,"0")}-${String(nd.getDate()).padStart(2,"0")}`;
+  if(s>TODAY)return; const oldest=DAYS[DAYS.length-1]?.date; if(oldest&&s<oldest)return;
+  curDate=s;renderBoard();window.scrollTo({top:0,behavior:"smooth"});
+}
+
+/* ---- 分類彙整 ---- */
+function renderArcTabs(){
+  $("#arcTabs").innerHTML=CATEGORIES.map(c=>`<button class="pill${arcActive===c.id?' active':''}" data-a="${c.id}">${c.label}</button>`).join("")
+    +`<input id="arcSearch" placeholder="搜尋關鍵字或標籤…" value="${esc(arcQ)}">`;
+  $("#arcTabs").querySelectorAll(".pill").forEach(b=>b.onclick=()=>{arcActive=b.dataset.a;renderArcTabs();renderArc();});
+  const si=$("#arcSearch");
+  si.oninput=()=>{arcQ=si.value;renderArc();};
+}
+function renderArc(){
+  const kw=arcQ.trim().toLowerCase();
+  const items=[];
+  DAYS.forEach(d=>{(d.entries||[]).filter(e=>e.category===arcActive).forEach(e=>{
+    if(!kw||e.title.toLowerCase().includes(kw)||(e.summary||"").toLowerCase().includes(kw)||(e.tags||[]).some(t=>t.toLowerCase().includes(kw)))
+      items.push({e,date:d.date});
+  });});
+  const c=CATMAP[arcActive];
+  $("#arcCount").textContent=`${c.desc} · 共 ${items.length} 則`;
+  $("#arcGrid").innerHTML=items.map(({e,date})=>cardHTML(e,{date})).join("");
+  $("#arcEmpty").classList.toggle("hidden",items.length>0);
+}
+
+function rcard(L){
+  return `<a class="card rentcard" href="${esc(L.url||'#')}" ${L.url?'target="_blank" rel="noopener"':''}>
+    <div class="body">
+      <div class="srcrow"><span class="dot" style="background:var(--cat-realty)"></span>
+        <span class="src">${esc(L.spec||"")}</span>
+        ${L.tag?`<span class="meta" style="color:var(--cat-realty)">${esc(L.tag)}</span>`:""}</div>
+      <h3><span class="t">${esc(L.title)}</span></h3>
+      <div class="rent">${esc(L.rent)}</div>
+    </div></a>`;
+}
+function renderRent(){
+  const r=RENT;
+  if(!r){$("#rentBody").innerHTML='<p class="empty">尚無租屋資料。</p>';return;}
+  const ranges=(r.ranges||[]).map(x=>`<div class="rrow"><div class="rt">${esc(x.type)}</div><div class="rp">${esc(x.price)}</div><div class="rn">${esc(x.note||"")}</div></div>`).join("");
+  const f=r.focus;
+  const focusHTML=f?`
+    <h2 class="rsec">${esc(f.title)}</h2>
+    <div class="rfocus">
+      <p class="rfnote">${esc(f.note||"")}</p>
+      ${f.searchUrl?`<a class="rsearch rfbtn" href="${esc(f.searchUrl)}" target="_blank" rel="noopener">${esc(f.searchLabel||"看全部")} ↗</a>`:""}
+      <div class="grid" style="margin-top:16px">${(f.listings||[]).map(rcard).join("")}</div>
+    </div>`:"";
+  const listings=(r.listings||[]).map(rcard).join("");
+  const search=(r.search||[]).map(s=>`<a class="rsearch" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)} ↗</a>`).join("");
+  $("#rentBody").innerHTML=`
+    <p class="rintro">${esc(r.intro)}</p>
+    <h2 class="rsec">租金行情概覽</h2>
+    <div class="rtable">${ranges}</div>
+    ${focusHTML}
+    <h2 class="rsec">精選物件${r.updated?`（${esc(r.updated)} 快照）`:""}</h2>
+    <div class="grid">${listings}</div>
+    <h2 class="rsec">即時查詢入口</h2>
+    <div class="rsearches">${search}</div>
+    <p class="rnote">物件每天變動，精選為擷取當下的快照；要看最新請點上方「即時查詢入口」。租金區間為概估，實際以房東／仲介公告為準。</p>`;
+}
+function tcard(c){
+  return `<a class="card rentcard" href="${esc(c.url||'#')}" ${c.url?'target="_blank" rel="noopener"':''}>
+    <div class="body">
+      <div class="srcrow"><span class="dot" style="background:var(--cat-family)"></span>
+        <span class="src">${esc(c.area||"")}${c.days?` · ${esc(c.days)}`:""}</span>
+        ${c.tag?`<span class="meta" style="color:var(--cat-family)">${esc(c.tag)}</span>`:""}</div>
+      <h3><span class="t">${esc(c.title)}</span></h3>
+      <p>${esc(c.why||"")}</p>
+    </div></a>`;
+}
+function renderTravel(){
+  const t=TRAVEL;
+  if(!t){$("#travelBody").innerHTML='<p class="empty">尚無旅遊資料。</p>';return;}
+  const tips=(t.tips||[]).map(x=>`<li>${esc(x)}</li>`).join("");
+  const seasons=(t.seasons||[]).map(s=>`
+    <h2 class="rsec">${esc(s.emoji||"")} ${esc(s.name)}</h2>
+    <div class="grid">${(s.combos||[]).map(tcard).join("")}</div>`).join("");
+  $("#travelBody").innerHTML=`
+    <p class="rintro">${esc(t.intro)}</p>
+    ${tips?`<ul class="ttips">${tips}</ul>`:""}
+    ${seasons}
+    <p class="rnote">組合為幼兒家庭取向的策展建議，實際開放時間、票價與花季／溫泉水溫請以各景點官方公告為準。</p>`;
+}
+function go(view){
+  ["board","archive","rent","travel"].forEach(v=>{
+    $("#view-"+v).classList.toggle("hidden",v!==view);
+    $("#tab-"+v).classList.toggle("active",v===view);
+  });
+  if(view==="archive"){renderArcTabs();renderArc();}
+  if(view==="rent"){renderRent();}
+  if(view==="travel"){renderTravel();}
+  window.scrollTo({top:0});
+  location.hash=view==="board"?"":view;
+}
+
+$("#prevBtn").onclick=()=>stepDay(-1);
+$("#nextBtn").onclick=()=>stepDay(1);
+$("#datePick").onchange=e=>{if(e.target.value){curDate=e.target.value;renderBoard();}};
+
+fetch("./data.json?ts="+Date.now()).then(r=>r.json()).then(d=>{
+  RENT=d.rent||null; TRAVEL=d.travel||null;
+  DAYS=(d.days||[]).slice().sort((a,b)=>a.date<b.date?1:-1).slice(0,7);
+  if(!DAYS.length){$("#headline").textContent="尚無資料";return;}
+  TODAY=DAYS[0].date;curDate=TODAY;
+  $("#datePick").max=TODAY;$("#datePick").min=DAYS[DAYS.length-1].date;
+  renderFilters();renderBoard();
+  if(location.hash==="#archive")go("archive");
+  else if(location.hash==="#rent")go("rent");
+  else if(location.hash==="#travel")go("travel");
+}).catch(e=>{$("#headline").textContent="資料載入失敗";$("#board").innerHTML=`<p class="empty">${esc(e.message)}</p>`;});
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+{
+  "updated": "2026-08-06",
+  "items": [
+    {
+      "id": "seed-001",
+      "name": "櫻桃小丸子原作 40 週年特展",
+      "type": "place",
+      "area": "台北·松山文創",
+      "note": "懷舊又適合親子,展至 9/28",
+      "status": "want",
+      "source": "日誌 08-02 親子",
+      "url": "https://www.parenting.com.tw/article/6002432",
+      "addedAt": "2026-08-06"
+    },
+    {
+      "id": "seed-002",
+      "name": "愛麗絲夢遊仙境沈浸式互動特展",
+      "type": "place",
+      "area": "台北·松山文創",
+      "note": "互動性高,展至 9/13",
+      "status": "want",
+      "source": "日誌 08-02 親子",
+      "url": "https://www.parenting.com.tw/article/6002432",
+      "addedAt": "2026-08-06"
+    },
+    {
+      "id": "seed-003",
+      "name": "華山親子表藝節",
+      "type": "place",
+      "area": "台北·華山1914",
+      "note": "表演與體驗多,至 8/30",
+      "status": "want",
+      "source": "日誌 08-02 親子",
+      "url": "https://www.parenting.com.tw/article/6002432",
+      "addedAt": "2026-08-06"
+    },
+    {
+      "id": "seed-004",
+      "name": "兒童劇《仙界小霹靂-圖書館特工》",
+      "type": "place",
+      "area": "桃園市立圖書館",
+      "note": "8/22 一場,兒童劇",
+      "status": "want",
+      "source": "日誌 08-02 親子",
+      "url": "https://www.parenting.com.tw/article/6002432",
+      "addedAt": "2026-08-06"
+    },
+    {
+      "id": "seed-005",
+      "name": "新竹親子一日遊(觀光工廠/特色公園/休閒農場)",
+      "type": "place",
+      "area": "新竹",
+      "note": "週末放電首選懶人包",
+      "status": "want",
+      "source": "日誌 08-02 親子",
+      "url": "https://fullfenblog.tw/hsinchu-parent-child/",
+      "addedAt": "2026-08-06"
+    },
+    {
+      "id": "seed-006",
+      "name": "宜蘭親水公園＋冬山河",
+      "type": "place",
+      "area": "宜蘭",
+      "note": "夏季限定玩水,一泊二日",
+      "status": "want",
+      "source": "親子旅遊·夏",
+      "url": "",
+      "addedAt": "2026-08-06"
+    },
+    {
+      "id": "seed-007",
+      "name": "免費玩水公園串連(大台北)",
+      "type": "place",
+      "area": "台北",
+      "note": "CP 值高·免費,當天來回",
+      "status": "want",
+      "source": "親子旅遊·夏",
+      "url": "",
+      "addedAt": "2026-08-06"
+    },
+    {
+      "id": "seed-008",
+      "name": "屏東海生館＋墾丁",
+      "type": "place",
+      "area": "屏東",
+      "note": "室內涼爽,二泊,避暑首選",
+      "status": "want",
+      "source": "親子旅遊·夏",
+      "url": "",
+      "addedAt": "2026-08-06"
+    },
+    {
+      "id": "seed-009",
+      "name": "2026 台灣美食展 6 大必吃神店",
+      "type": "food",
+      "area": "台北世貿",
+      "note": "美食展精選,找具體店家去朝聖",
+      "status": "want",
+      "source": "日誌 08-06 社群",
+      "url": "",
+      "addedAt": "2026-08-06"
+    }
+  ]
+}
