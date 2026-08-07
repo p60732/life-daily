@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>願望清單 — 想吃想玩的地方 · 每日誌</title>
+<meta name="description" content="從每日誌收集的美食與景點願望清單，可勾選類別、標記想去／已去／已吃、刪除項目，跨裝置同步。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --radius:0.625rem;
+    --background:oklch(0.985 0.008 85);
+    --foreground:oklch(0.24 0.02 60);
+    --card:oklch(0.998 0.004 90);
+    --primary:oklch(0.42 0.1 175);
+    --primary-foreground:oklch(0.99 0.005 90);
+    --secondary:oklch(0.94 0.015 85);
+    --secondary-foreground:oklch(0.3 0.03 70);
+    --muted-foreground:oklch(0.52 0.02 70);
+    --accent:oklch(0.72 0.15 65);
+    --border:oklch(0.9 0.015 80);
+    --cat-place:oklch(0.5 0.13 145);
+    --cat-food:oklch(0.62 0.15 45);
+    --danger:oklch(0.55 0.2 25);
+    --serif:"Noto Serif TC",Georgia,serif;
+    --sans:"Noto Sans TC",ui-sans-serif,system-ui,-apple-system,"PingFang TC",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--background);color:var(--foreground);font-family:var(--sans);
+    line-height:1.65;-webkit-font-smoothing:antialiased;
+    background-image:
+      radial-gradient(1100px 400px at 82% -80px, oklch(0.9 0.05 55 / .5), transparent 60%),
+      radial-gradient(900px 380px at 8% -60px, oklch(0.93 0.04 150 / .45), transparent 58%);}
+  a{color:inherit;text-decoration:none}
+  .serif{font-family:var(--serif)}
+
+  header.top{position:sticky;top:0;z-index:40;border-bottom:1px solid var(--border);
+    background:oklch(0.985 0.008 85 / .85);backdrop-filter:blur(8px)}
+  header .row{max-width:1024px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:baseline;gap:8px;cursor:pointer}
+  .brand b{font-family:var(--serif);font-size:20px;font-weight:900;letter-spacing:.5px}
+  .brand span{font-size:12px;color:var(--muted-foreground)}
+  nav.tabs{display:flex;gap:4px;font-size:14px}
+  nav.tabs button{border:none;background:none;cursor:pointer;border-radius:999px;padding:6px 14px;color:var(--muted-foreground);font-family:var(--sans)}
+  nav.tabs button:hover{background:var(--secondary)}
+  nav.tabs button.active{background:var(--primary);color:var(--primary-foreground);font-weight:500}
+
+  main{max-width:1024px;margin:0 auto;padding:36px 20px 80px}
+
+  .hero{border:1px solid var(--border);background:oklch(0.998 0.004 90 / .7);border-radius:16px;padding:26px 28px}
+  .kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-foreground)}
+  .hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(26px,4.2vw,38px);line-height:1.25;margin:8px 0 0}
+  .hero .lead{margin-top:12px;font-size:14px;color:var(--muted-foreground);max-width:60ch}
+  .hero .hint{display:inline-flex;align-items:center;gap:6px;margin-top:16px;border-radius:999px;
+    background:oklch(0.72 0.15 65 / .22);padding:5px 14px;font-size:12.5px;font-weight:500}
+
+  .filters{margin-top:28px;display:flex;flex-wrap:wrap;gap:8px}
+  .pill{border-radius:999px;padding:6px 15px;font-size:14px;cursor:pointer;border:1px solid var(--border);
+    background:transparent;color:var(--muted-foreground);font-family:var(--sans);transition:.15s}
+  .pill:hover{background:var(--secondary)}
+  .pill.active{background:var(--foreground);color:var(--background);border-color:var(--foreground)}
+
+  .status{margin-top:16px;font-size:13px;color:var(--muted-foreground);min-height:20px}
+
+  section.group{margin-top:34px}
+  .grouphead{display:flex;align-items:baseline;gap:12px;margin-bottom:14px}
+  .grouphead h2{font-family:var(--serif);font-size:22px;font-weight:700;margin:0}
+  .grouphead .count{margin-left:auto;font-size:12px;color:var(--muted-foreground)}
+
+  .grid{display:grid;gap:14px}
+  @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+
+  .item{position:relative;display:flex;flex-direction:column;gap:8px;border:1px solid var(--border);
+    border-left:4px solid var(--bar,var(--border));border-radius:12px;background:var(--card);
+    padding:16px 18px;transition:box-shadow .2s,transform .2s,opacity .2s}
+  .item.done{opacity:.6}
+  .item .toprow{display:flex;align-items:flex-start;gap:8px}
+  .item .glyph{font-size:18px;line-height:1.4}
+  .item h3{font-size:15.5px;font-weight:700;margin:0;line-height:1.4;flex:1}
+  .item.done h3{text-decoration:line-through;text-decoration-color:var(--muted-foreground)}
+  .item .meta{display:flex;flex-wrap:wrap;gap:6px 10px;font-size:12px;color:var(--muted-foreground);align-items:center}
+  .item .note{font-size:13px;color:var(--secondary-foreground)}
+  .badge{display:inline-block;border-radius:999px;padding:2px 9px;font-size:11px;font-weight:600}
+  .badge.want{background:oklch(0.72 0.15 65 / .2);color:oklch(0.4 0.1 60)}
+  .badge.done{background:oklch(0.9 0.01 80);color:var(--muted-foreground)}
+  .item .src{font-size:11.5px;color:var(--muted-foreground)}
+  .actions{display:flex;gap:8px;margin-top:2px;flex-wrap:wrap}
+  .btn{border:1px solid var(--border);background:var(--card);border-radius:999px;padding:5px 12px;
+    font-size:12.5px;cursor:pointer;color:var(--foreground);font-family:var(--sans);transition:.15s}
+  .btn:hover{background:var(--secondary)}
+  .btn.go{color:var(--primary)}
+  .btn.mark{border-color:var(--cat-place)}
+  .btn.del{color:var(--danger);border-color:oklch(0.55 0.2 25 / .4)}
+  .btn.del.confirm{background:var(--danger);color:#fff;border-color:var(--danger)}
+
+  .empty{margin-top:40px;text-align:center;color:var(--muted-foreground);font-size:14px}
+  footer{border-top:1px solid var(--border);margin-top:60px;padding:24px 20px;text-align:center;
+    font-size:12px;color:var(--muted-foreground)}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="row">
+      <div class="brand" onclick="location.href='index.html'">
+        <b class="serif">每日誌</b><span>Daily Digest</span>
+      </div>
+      <nav class="tabs">
+        <button onclick="location.href='index.html'">每日看板</button>
+        <button onclick="location.href='index.html'">分類彙整</button>
+        <button class="active">♡ 願望清單</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="kicker">Wishlist</div>
+      <h1 class="serif">想吃想玩的地方</h1>
+      <p class="lead">從每日誌收集的美食與景點，加上你在看板上勾選的點。手機、電腦即時同步，去過吃過就標記起來。</p>
+      <span class="hint">💡 在「每日看板」看到喜歡的社群精選或親子景點，點卡片右上角的 ♡ 就會加進這裡。</span>
+    </section>
+
+    <div class="filters" id="filters"></div>
+    <div class="status" id="status">載入中…</div>
+
+    <div id="content"></div>
+    <p class="empty hidden" id="empty">這個篩選下還沒有項目。</p>
+  </main>
+
+  <footer id="foot">願望清單 · 每日誌 · 生活公司 Life Company</footer>
+
+<script>
+/* ===== 後端(Google Apps Script Web App /exec 網址) ===== */
+const WISHLIST_API = "https://script.google.com/macros/s/AKfycbzvLGHu_HBXYJjRB6Mun6gEzd1upjBhwA-QBeB9RqyrRkiboarFkFBwE_guhEMdfpmr/exec";
+
+const TYPES={
+  place:{label:"景點 · 想玩",glyph:"📍",bar:"var(--cat-place)",wantLabel:"想去",doneLabel:"已去",markGo:"標記已去",markBack:"改回想去"},
+  food:{label:"美食 · 想吃",glyph:"🍜",bar:"var(--cat-food)",wantLabel:"想吃",doneLabel:"已吃",markGo:"標記已吃",markBack:"改回想吃"}
+};
+let ITEMS=[];
+let filter="all"; // all | place | food | want | done
+const FILTERS=[
+  {k:"all",label:"全部"},
+  {k:"place",label:"📍 景點"},
+  {k:"food",label:"🍜 美食"},
+  {k:"want",label:"想去 / 想吃"},
+  {k:"done",label:"去過 / 吃過"}
+];
+const esc=s=>(s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const norm=s=>String(s==null?"":s).replace(/\s+/g,"");
+
+function setStatus(msg){document.getElementById("status").textContent=msg||"";}
+
+/* ---- 讀取:JSONP(避開跨網域限制) ---- */
+function load(cbDone){
+  if(WISHLIST_API.indexOf("__WISHLIST")===0){setStatus("尚未接上後端網址。");return;}
+  const cbName="__wl_"+Date.now();
+  const s=document.createElement("script");
+  const timer=setTimeout(()=>{cleanup();setStatus("讀取逾時，請重新整理。");},12000);
+  function cleanup(){clearTimeout(timer);delete window[cbName];if(s.parentNode)s.parentNode.removeChild(s);}
+  window[cbName]=function(res){
+    cleanup();
+    ITEMS=(res&&res.items)||[];
+    if(res&&res.updated){document.getElementById("foot").textContent=
+      `願望清單 · 每日誌 · 生活公司 Life Company　·　更新於 ${res.updated}　·　共 ${ITEMS.length} 個地方`;}
+    render();
+    setStatus("");
+    if(cbDone)cbDone();
+  };
+  s.src=WISHLIST_API+(WISHLIST_API.indexOf("?")>=0?"&":"?")+"callback="+cbName+"&_="+Date.now();
+  s.onerror=function(){cleanup();setStatus("讀取失敗，請確認後端網址或重新整理。");};
+  document.body.appendChild(s);
+}
+
+/* ---- 寫入:fire-and-forget(no-cors),之後重新讀取 ---- */
+function send(payload,after){
+  fetch(WISHLIST_API,{method:"POST",mode:"no-cors",
+    headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)})
+    .then(()=>{setTimeout(()=>load(after),700);})
+    .catch(()=>{setStatus("同步失敗，請重試。");});
+}
+
+function matches(it){
+  if(filter==="all")return true;
+  if(filter==="place"||filter==="food")return it.type===filter;
+  if(filter==="want")return it.status!=="done";
+  if(filter==="done")return it.status==="done";
+  return true;
+}
+
+function itemCard(it){
+  const t=TYPES[it.type]||TYPES.place;
+  const done=it.status==="done";
+  const badge=done?`<span class="badge done">✓ ${t.doneLabel}</span>`:`<span class="badge want">${t.wantLabel}</span>`;
+  const area=it.area?`<span>${esc(it.area)}</span>`:"";
+  const src=it.source?`<span class="src">來源:${esc(it.source)}</span>`:"";
+  const go=it.url?`<a class="btn go" href="${esc(it.url)}" target="_blank" rel="noopener">看介紹 ↗</a>`:"";
+  const markLabel=done?t.markBack:t.markGo;
+  const nextStatus=done?"want":"done";
+  return `<article class="item ${done?"done":""}" style="--bar:${t.bar}" data-id="${esc(it.id)}">
+    <div class="toprow"><span class="glyph">${t.glyph}</span><h3>${esc(it.name)}</h3></div>
+    <div class="meta">${badge}${area}</div>
+    ${it.note?`<p class="note">${esc(it.note)}</p>`:""}
+    <div class="meta">${src}</div>
+    <div class="actions">
+      <button class="btn mark" onclick="onMark('${esc(it.id)}','${nextStatus}')">${markLabel}</button>
+      ${go}
+      <button class="btn del" data-armed="0" onclick="onDelete(this,'${esc(it.id)}')">🗑 刪除</button>
+    </div>
+  </article>`;
+}
+
+function render(){
+  document.getElementById("filters").innerHTML=FILTERS.map(f=>
+    `<button class="pill ${filter===f.k?"active":""}" onclick="setFilter('${f.k}')">${f.label}</button>`
+  ).join("");
+  const shown=ITEMS.filter(matches);
+  const box=document.getElementById("content");
+  const empty=document.getElementById("empty");
+  if(!shown.length){box.innerHTML="";empty.classList.remove("hidden");return;}
+  empty.classList.add("hidden");
+  const order=["place","food"];
+  let html="";
+  for(const ty of order){
+    const list=shown.filter(x=>x.type===ty);
+    if(!list.length)continue;
+    list.sort((a,b)=>(a.status==="done")-(b.status==="done"));
+    const t=TYPES[ty];
+    html+=`<section class="group">
+      <div class="grouphead"><h2 class="serif">${t.glyph} ${t.label}</h2><span class="count">${list.length} 個</span></div>
+      <div class="grid">${list.map(itemCard).join("")}</div></section>`;
+  }
+  box.innerHTML=html;
+}
+
+function setFilter(k){filter=k;render();}
+
+function onMark(id,status){
+  const it=ITEMS.find(x=>x.id===id); if(it)it.status=status; render();
+  setStatus("同步中…");
+  send({action:"status",id:id,status:status});
+}
+
+function onDelete(btn,id){
+  if(btn.dataset.armed!=="1"){
+    btn.dataset.armed="1";btn.classList.add("confirm");btn.textContent="確定刪除?";
+    setTimeout(()=>{if(btn){btn.dataset.armed="0";btn.classList.remove("confirm");btn.textContent="🗑 刪除";}},3000);
+    return;
+  }
+  ITEMS=ITEMS.filter(x=>x.id!==id); render();
+  setStatus("刪除中…");
+  send({action:"delete",id:id});
+}
+
+load();
+</script>
+</body>
+</html>
