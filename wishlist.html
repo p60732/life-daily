@@ -155,34 +155,27 @@ const norm=s=>String(s==null?"":s).replace(/\s+/g,"");
 
 function setStatus(msg){document.getElementById("status").textContent=msg||"";}
 
-/* ---- 讀取:JSONP(避開跨網域限制) ---- */
-function load(cbDone){
+/* ---- 讀寫都走 JSONP GET(同一條可用通道) ---- */
+function api(params,done){
   if(WISHLIST_API.indexOf("__WISHLIST")===0){setStatus("尚未接上後端網址。");return;}
-  const cbName="__wl_"+Date.now();
+  const cbName="__wl_"+Date.now()+"_"+Math.floor(Math.random()*1e6);
   const s=document.createElement("script");
-  const timer=setTimeout(()=>{cleanup();setStatus("讀取逾時，請重新整理。");},12000);
-  function cleanup(){clearTimeout(timer);delete window[cbName];if(s.parentNode)s.parentNode.removeChild(s);}
+  const timer=setTimeout(()=>{cleanup();setStatus("連線逾時，請重新整理。");},15000);
+  function cleanup(){clearTimeout(timer);try{delete window[cbName];}catch(_){}if(s.parentNode)s.parentNode.removeChild(s);}
   window[cbName]=function(res){
     cleanup();
-    ITEMS=(res&&res.items)||[];
+    if(res&&res.items){ITEMS=res.items;}
     if(res&&res.updated){document.getElementById("foot").textContent=
       `願望清單 · 每日誌 · 生活公司 Life Company　·　更新於 ${res.updated}　·　共 ${ITEMS.length} 個地方`;}
-    render();
-    setStatus("");
-    if(cbDone)cbDone();
+    render();setStatus("");
+    if(done)done(res);
   };
-  s.src=WISHLIST_API+(WISHLIST_API.indexOf("?")>=0?"&":"?")+"callback="+cbName+"&_="+Date.now();
-  s.onerror=function(){cleanup();setStatus("讀取失敗，請確認後端網址或重新整理。");};
+  s.onerror=function(){cleanup();setStatus("連線失敗，請重新整理。");};
+  const qs=Object.keys(params).map(k=>encodeURIComponent(k)+"="+encodeURIComponent(params[k])).join("&");
+  s.src=WISHLIST_API+"?callback="+cbName+"&_="+Date.now()+(qs?"&"+qs:"");
   document.body.appendChild(s);
 }
-
-/* ---- 寫入:fire-and-forget(no-cors),之後重新讀取 ---- */
-function send(payload,after){
-  fetch(WISHLIST_API,{method:"POST",mode:"no-cors",
-    headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)})
-    .then(()=>{setTimeout(()=>load(after),700);})
-    .catch(()=>{setStatus("同步失敗，請重試。");});
-}
+function load(){api({});}
 
 function matches(it){
   if(filter==="all")return true;
@@ -242,7 +235,7 @@ function setFilter(k){filter=k;render();}
 function onMark(id,status){
   const it=ITEMS.find(x=>x.id===id); if(it)it.status=status; render();
   setStatus("同步中…");
-  send({action:"status",id:id,status:status});
+  api({action:"status",id:id,status:status});
 }
 
 function onDelete(btn,id){
@@ -253,7 +246,7 @@ function onDelete(btn,id){
   }
   ITEMS=ITEMS.filter(x=>x.id!==id); render();
   setStatus("刪除中…");
-  send({action:"delete",id:id});
+  api({action:"del",id:id});
 }
 
 load();
