@@ -227,6 +227,47 @@ const esc=t=>(t==null?"":String(t)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;
 
 let DAYS=[], TODAY="", curDate="", filter="all", arcActive="invest", arcQ="", RENT=null, TRAVEL=null;
 const $=s=>document.querySelector(s);
+const norm=s=>String(s==null?"":s).replace(/\s+/g,"");
+
+/* ===== 願望清單(接 Google Apps Script 後端) ===== */
+const WISHLIST_API="https://script.google.com/macros/s/AKfycbzvLGHu_HBXYJjRB6Mun6gEzd1upjBhwA-QBeB9RqyrRkiboarFkFBwE_guhEMdfpmr/exec";
+const WL_CATS=new Set(["social","family"]);
+let WL_NAMES=new Set();
+function wlType(e){
+  const s=(e.title||"")+" "+((e.tags||[]).join(" "))+" "+(e.summary||"");
+  return /美食|吃|餐廳|小吃|夜市|咖啡|甜點|烘焙|拉麵|火鍋|燒肉|早午餐|飲料|冰品|麵包|食堂|市場|小館/.test(s)?"food":"place";
+}
+function wlBtnHTML(e){
+  const added=WL_NAMES.has(norm(e.title));
+  const p=encodeURIComponent(JSON.stringify({name:e.title,type:wlType(e),area:"",note:e.summary||"",source:"日誌 "+(curDate||TODAY)+" "+((CATMAP[e.category]||{}).label||""),url:e.url||""}));
+  return `<button class="wlbtn" title="加入願望清單" data-p="${p}" onclick="wlAdd(event,this)" style="position:absolute;top:8px;right:8px;z-index:3;width:34px;height:34px;border-radius:999px;border:none;background:rgba(255,255,255,.92);box-shadow:0 2px 8px rgba(0,0,0,.18);font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#e0245e">${added?"♥":"♡"}</button>`;
+}
+function wlAdd(ev,btn){
+  ev.preventDefault();ev.stopPropagation();
+  if(WISHLIST_API.indexOf("__WISHLIST")===0){toast("尚未接上願望清單後端");return;}
+  let p;try{p=JSON.parse(decodeURIComponent(btn.dataset.p));}catch(_){return;}
+  if(WL_NAMES.has(norm(p.name))){toast("已經在願望清單裡了");return;}
+  WL_NAMES.add(norm(p.name));btn.textContent="♥";
+  fetch(WISHLIST_API,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},
+    body:JSON.stringify({action:"add",name:p.name,type:p.type,area:p.area,note:p.note,source:p.source,url:p.url})}).catch(()=>{});
+  toast("已加入願望清單 ♥");
+}
+function loadWL(){
+  if(WISHLIST_API.indexOf("__WISHLIST")===0)return;
+  const cb="__wln_"+Date.now();const s=document.createElement("script");
+  window[cb]=function(res){((res&&res.items)||[]).forEach(it=>WL_NAMES.add(norm(it.name)));delete window[cb];if(s.parentNode)s.parentNode.removeChild(s);if($("#view-board")&&!$("#view-board").classList.contains("hidden"))renderBoard();};
+  s.onerror=function(){delete window[cb];if(s.parentNode)s.parentNode.removeChild(s);};
+  s.src=WISHLIST_API+(WISHLIST_API.indexOf("?")>=0?"&":"?")+"callback="+cb+"&_="+Date.now();
+  document.body.appendChild(s);
+}
+let _toastT;
+function toast(msg){
+  let el=$("#wltoast");
+  if(!el){el=document.createElement("div");el.id="wltoast";
+    el.style.cssText="position:fixed;left:50%;bottom:28px;transform:translateX(-50%);z-index:99;background:rgba(30,30,30,.92);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;box-shadow:0 4px 16px rgba(0,0,0,.25);opacity:0;transition:opacity .2s;pointer-events:none";
+    document.body.appendChild(el);}
+  el.textContent=msg;el.style.opacity="1";clearTimeout(_toastT);_toastT=setTimeout(()=>{el.style.opacity="0";},1800);
+}
 
 function dayEntriesByCat(day,cat){
   return (day.entries||[]).filter(e=>e.category===cat).slice().sort((a,b)=>(b.hot||0)-(a.hot||0)).slice(0,MAX);
@@ -249,8 +290,9 @@ function mediaHTML(e,rank){
 function cardHTML(e,{rank,date}={}){
   const cat=CATMAP[e.category]||{};
   const tags=(e.tags||[]).map(t=>`<span class="tag">#${esc(t)}</span>`).join("");
-  return `<a class="card" href="${esc(e.url||'#')}" ${e.url?'target="_blank" rel="noopener"':''}>
-    ${mediaHTML(e,rank)}
+  const wl=WL_CATS.has(e.category)?wlBtnHTML(e):"";
+  return `<a class="card" style="position:relative" href="${esc(e.url||'#')}" ${e.url?'target="_blank" rel="noopener"':''}>
+    ${wl}${mediaHTML(e,rank)}
     <div class="body">
       <div class="srcrow"><span class="dot" style="background:${cat.color}"></span>
         ${date?`<span class="date">${esc(date)}</span>`:""}
@@ -394,11 +436,11 @@ $("#datePick").onchange=e=>{if(e.target.value){curDate=e.target.value;renderBoar
 
 fetch("./data.json?ts="+Date.now()).then(r=>r.json()).then(d=>{
   RENT=d.rent||null; TRAVEL=d.travel||null;
-  DAYS=(d.days||[]).slice().sort((a,b)=>a.date<b.date?1:-1).slice(0,7);
+  DAYS=(d.days||[]).slice().sort((a,b)=>a.date<b.date?1:-1).slice(0,30);
   if(!DAYS.length){$("#headline").textContent="尚無資料";return;}
   TODAY=DAYS[0].date;curDate=TODAY;
   $("#datePick").max=TODAY;$("#datePick").min=DAYS[DAYS.length-1].date;
-  renderFilters();renderBoard();
+  renderFilters();renderBoard();loadWL();
   if(location.hash==="#archive")go("archive");
   else if(location.hash==="#rent")go("rent");
   else if(location.hash==="#travel")go("travel");
