@@ -240,26 +240,31 @@ function wlType(e){
 function wlBtnHTML(e){
   const added=WL_NAMES.has(norm(e.title));
   const p=encodeURIComponent(JSON.stringify({name:e.title,type:wlType(e),area:"",note:e.summary||"",source:"日誌 "+(curDate||TODAY)+" "+((CATMAP[e.category]||{}).label||""),url:e.url||""}));
-  return `<button class="wlbtn" title="加入願望清單" data-p="${p}" onclick="wlAdd(event,this)" style="position:absolute;top:8px;right:8px;z-index:3;width:34px;height:34px;border-radius:999px;border:none;background:rgba(255,255,255,.92);box-shadow:0 2px 8px rgba(0,0,0,.18);font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#e0245e">${added?"♥":"♡"}</button>`;
+  return `<button class="wlbtn" title="加入/移除願望清單" data-p="${p}" onclick="wlToggle(event,this)" style="position:absolute;top:8px;right:8px;z-index:3;width:34px;height:34px;border-radius:999px;border:none;background:rgba(255,255,255,.92);box-shadow:0 2px 8px rgba(0,0,0,.18);font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#e0245e">${added?"♥":"♡"}</button>`;
 }
-function wlAdd(ev,btn){
+function wlApi(params,done){
+  if(WISHLIST_API.indexOf("__WISHLIST")===0)return;
+  const cb="__wln_"+Date.now()+"_"+Math.floor(Math.random()*1e6);const s=document.createElement("script");
+  window[cb]=function(res){if(res&&res.items){WL_NAMES=new Set(res.items.map(it=>norm(it.name)));}try{delete window[cb];}catch(_){}if(s.parentNode)s.parentNode.removeChild(s);if($("#view-board")&&!$("#view-board").classList.contains("hidden"))renderBoard();if(done)done(res);};
+  s.onerror=function(){try{delete window[cb];}catch(_){}if(s.parentNode)s.parentNode.removeChild(s);};
+  const qs=Object.keys(params).map(k=>encodeURIComponent(k)+"="+encodeURIComponent(params[k])).join("&");
+  s.src=WISHLIST_API+"?callback="+cb+"&_="+Date.now()+(qs?"&"+qs:"");
+  document.body.appendChild(s);
+}
+function wlToggle(ev,btn){
   ev.preventDefault();ev.stopPropagation();
   if(WISHLIST_API.indexOf("__WISHLIST")===0){toast("尚未接上願望清單後端");return;}
   let p;try{p=JSON.parse(decodeURIComponent(btn.dataset.p));}catch(_){return;}
-  if(WL_NAMES.has(norm(p.name))){toast("已經在願望清單裡了");return;}
-  WL_NAMES.add(norm(p.name));btn.textContent="♥";
-  fetch(WISHLIST_API,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},
-    body:JSON.stringify({action:"add",name:p.name,type:p.type,area:p.area,note:p.note,source:p.source,url:p.url})}).catch(()=>{});
-  toast("已加入願望清單 ♥");
+  const key=norm(p.name);
+  if(WL_NAMES.has(key)){
+    WL_NAMES.delete(key);btn.textContent="♡";toast("已從願望清單移除");
+    wlApi({action:"del",name:p.name});
+  }else{
+    WL_NAMES.add(key);btn.textContent="♥";toast("已加入願望清單 ♥");
+    wlApi({action:"add",name:p.name,type:p.type,area:p.area,note:p.note,source:p.source,url:p.url});
+  }
 }
-function loadWL(){
-  if(WISHLIST_API.indexOf("__WISHLIST")===0)return;
-  const cb="__wln_"+Date.now();const s=document.createElement("script");
-  window[cb]=function(res){((res&&res.items)||[]).forEach(it=>WL_NAMES.add(norm(it.name)));delete window[cb];if(s.parentNode)s.parentNode.removeChild(s);if($("#view-board")&&!$("#view-board").classList.contains("hidden"))renderBoard();};
-  s.onerror=function(){delete window[cb];if(s.parentNode)s.parentNode.removeChild(s);};
-  s.src=WISHLIST_API+(WISHLIST_API.indexOf("?")>=0?"&":"?")+"callback="+cb+"&_="+Date.now();
-  document.body.appendChild(s);
-}
+function loadWL(){wlApi({});}
 let _toastT;
 function toast(msg){
   let el=$("#wltoast");
