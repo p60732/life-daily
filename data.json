@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06",
+  "generatedAt": "2026-08-08",
   "rent": {
     "updated": "2026-08-02",
     "intro": "關新路、新莊街一帶位於新竹市東區，緊鄰竹科（園區二路、新安路）與台鐵新莊車站（六家線），是竹科工程師與雙薪家庭最熱門的租屋圈。生活機能成熟——關新公園、好市多、大遠百／巨城商圈與多所明星學校都在車程內。物件以電梯套房與整層 2–4 房為主；越靠園區、越新的電梯大樓租金越高，整層附平面車位者再往上一階。",
@@ -314,6 +314,236 @@
     ]
   },
   "days": [
+    {
+      "date": "2026-08-08",
+      "headline": "竹北房價逼近百萬、竹東逆勢奪冠；AI 續當台股主戰場，花旗喊買六大半導體；漢光演習淡江大橋首度封橋。",
+      "entries": [
+        {
+          "category": "realty",
+          "title": "竹北房價快破百萬 時華單坪衝95.35萬",
+          "summary": "AI 帶動科技族購屋回流，大陸建設「時華」成交單價達95.35萬，新竹首座百萬宅倒數。",
+          "tags": [
+            "竹北",
+            "百萬宅",
+            "科技新貴"
+          ],
+          "meta": "逼近百萬",
+          "image": "https://img.ltn.com.tw/Upload/house/page/2026/07/13/260713-28417-1-tL4ty.jpg",
+          "url": "https://estate.ltn.com.tw/article/28417",
+          "hot": 95
+        },
+        {
+          "category": "realty",
+          "title": "新竹房市分化 竹東逆勢漲7.3%奪冠",
+          "summary": "竹東鎮逆勢上漲7.3%居冠，竹北市與湖口鄉則呈現下跌，房市明顯洗牌。",
+          "tags": [
+            "竹東",
+            "竹北",
+            "湖口"
+          ],
+          "meta": "洗牌",
+          "image": "https://img.ltn.com.tw/Upload/house/page/2026/07/07/260707-28372-1-9w27D.jpeg",
+          "url": "https://estate.ltn.com.tw/article/28372",
+          "hot": 88
+        },
+        {
+          "category": "realty",
+          "title": "竹科新貴外溢 竹東新豐漲、湖口跌",
+          "summary": "竹科新貴因房價過高外移，竹東、新豐逆勢上漲，湖口因通勤遠、建案過多反而下跌。",
+          "tags": [
+            "竹科",
+            "新豐",
+            "湖口"
+          ],
+          "meta": "外溢效應",
+          "image": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/07/06/35107922.jpg&M=1&s=Y&x=0&y=107&sw=1280&sh=853&exp=3600",
+          "url": "https://udn.com/news/story/7241/9609156",
+          "hot": 82
+        },
+        {
+          "category": "realty",
+          "title": "新豐萬坪造鎮案登場 房市新熱點",
+          "summary": "竹科擴張帶動園區北端新豐鄉崛起，富宇建設推萬坪造鎮案，兼具交通與產業機能。",
+          "tags": [
+            "新豐",
+            "造鎮",
+            "建案"
+          ],
+          "meta": "新熱點",
+          "image": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/05/14/34948760.jpg&M=1&s=Y&x=0&y=0&sw=1158&sh=772&exp=3600",
+          "url": "https://udn.com/news/story/7241/9503700",
+          "hot": 75
+        },
+        {
+          "category": "realty",
+          "title": "竹北縣治二期「時華」預售首破9字頭",
+          "summary": "大陸建設「時華」85筆預售逾87%站上每坪9字頭，反映科技新貴購屋力強勁。",
+          "tags": [
+            "竹北",
+            "縣治二期",
+            "預售"
+          ],
+          "meta": "破9字頭",
+          "image": "https://annewsmedia.com/wp-content/uploads/2026/06/2026-06-16-132700.jpg",
+          "url": "https://annewsmedia.com/2026/06/16/market-news/19371/",
+          "hot": 70
+        },
+        {
+          "category": "invest",
+          "title": "AI 成台股唯一主戰場 外資政策資金同進場",
+          "summary": "2026台股行情從全面上漲轉為少數「對的公司」大漲的差異化格局，AI 半導體領軍。（非投資建議）",
+          "tags": [
+            "台股",
+            "AI",
+            "外資"
+          ],
+          "meta": "差異化行情",
+          "image": "https://cimg.cnyes.cool/prod/news/6442593/m/b23baa07cc588d0b2783da4530456649.jpg",
+          "url": "https://news.cnyes.com/news/id/6442593",
+          "hot": 92
+        },
+        {
+          "category": "invest",
+          "title": "花旗喊買六大半導體廠",
+          "summary": "花旗認為 AI 基建投資仍屬早期，建議買進台積電、聯電、日月光投控、台達電、聯發科、創意。（非投資建議）",
+          "tags": [
+            "半導體",
+            "台積電",
+            "選股"
+          ],
+          "meta": "選股",
+          "image": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/08/04/35199257.jpg&M=1&s=Y&x=0&y=0&sw=1280&sh=853&exp=3600",
+          "url": "https://udn.com/news/story/7251/9670358",
+          "hot": 88
+        },
+        {
+          "category": "invest",
+          "title": "輝達 GB300 出貨帶動 AI 伺服器供應鏈",
+          "summary": "GB300 伺服器出貨拉升台廠需求，從晶片封裝、散熱電源到組裝各環節皆有題材。（非投資建議）",
+          "tags": [
+            "AI伺服器",
+            "GB300",
+            "供應鏈"
+          ],
+          "meta": "供應鏈",
+          "image": "https://blog.growin.tv/wp-content/uploads/2026/04/38e1755ff5e51fff22a12dc6d915f888.jpeg",
+          "url": "https://blog.growin.tv/ai-server-stocks-2026/",
+          "hot": 80
+        },
+        {
+          "category": "invest",
+          "title": "台積電 AI 訂單噴發 半導體 ETF 成布局選項",
+          "summary": "台積電受惠 AI 需求，投資人可透過半導體 ETF 分散參與，但須留意高估值與循環風險。（非投資建議）",
+          "tags": [
+            "台積電",
+            "ETF",
+            "布局"
+          ],
+          "meta": "ETF",
+          "image": "https://images.top1market.com/images/cms/uploads/20260727/f40da0e478ddc38598c20fc2e7dca639.jpg",
+          "url": "https://www.top1markets.com/tw/insights/stocks/temc-ai-etf-chance-2026",
+          "hot": 72
+        },
+        {
+          "category": "invest",
+          "title": "AI 記憶體新戰局：SRAM 崛起、HBM 雙雄並立",
+          "summary": "AI 記憶體需求升溫，SRAM 異軍突起、HBM 雙雄格局成形，帶動台廠供應鏈受惠。（非投資建議）",
+          "tags": [
+            "記憶體",
+            "HBM",
+            "SRAM"
+          ],
+          "meta": "轉折訊號",
+          "image": "",
+          "url": "https://www.sinotrade.com.tw/richclub/industry",
+          "hot": 65
+        },
+        {
+          "category": "news",
+          "title": "漢光演習 淡江大橋首度封橋設3防線",
+          "summary": "漢光42號實兵第2天，國軍在淡江大橋首度封橋、設200公尺阻絕，延伸淡水河防線阻敵直衝台北。",
+          "tags": [
+            "漢光演習",
+            "國防",
+            "淡江大橋"
+          ],
+          "meta": "國防",
+          "image": "https://imgcdn.cna.com.tw/www/webphotos/WebOg/600/20260807/1999x1049_429231151080.jpg",
+          "url": "https://www.cna.com.tw/news/aipl/202608060379.aspx",
+          "hot": 95
+        },
+        {
+          "category": "news",
+          "title": "川普簽公告 多晶矽產品課15%關稅",
+          "summary": "川普簽署公告，自12/4起對多晶矽製成產品加徵15%關稅，行政院初估對台影響有限。",
+          "tags": [
+            "川普",
+            "關稅",
+            "多晶矽"
+          ],
+          "meta": "國際",
+          "image": "https://imgcdn.cna.com.tw/www/webphotos/WebOg/600/20260807/1999x1049_749958626628.jpg",
+          "url": "https://www.cna.com.tw/news/aopl/202608070015.aspx",
+          "hot": 88
+        },
+        {
+          "category": "news",
+          "title": "7月CPI年增2.54% 進出口物價創近50年最大漲",
+          "summary": "7月消費者物價年增2.54%，連3月破警戒線；AI 熱潮推升電子零組件，進出口物價漲幅創近50年最大。",
+          "tags": [
+            "CPI",
+            "通膨",
+            "物價"
+          ],
+          "meta": "經濟",
+          "image": "https://imgcdn.cna.com.tw/www/webphotos/WebOg/600/20260806/986x517_92588718117.jpg",
+          "url": "https://www.cna.com.tw/news/afe/202608060275.aspx",
+          "hot": 82
+        },
+        {
+          "category": "social",
+          "title": "2026東京18大新景點 哈利波特影城開幕",
+          "summary": "日韓旅遊熱話：澀谷 SHIBUYA SKY、華納兄弟哈利波特影城、東急歌舞伎町 TOWER 等打卡新地標。",
+          "tags": [
+            "日韓旅遊",
+            "東京",
+            "新景點"
+          ],
+          "meta": "日韓旅遊",
+          "image": "https://ak-d.tripcdn.com/images/0103w12000a4on9dtB984_C_750_350_R5.png_.webp?proc=autoorient&proc=source%2ftrip",
+          "url": "https://tw.trip.com/blog/tokyo-new-attractions/",
+          "hot": 90
+        },
+        {
+          "category": "social",
+          "title": "2026台灣美食展 六大必吃神店全攻略",
+          "summary": "台灣美食熱話：牛店牛肉麵、謝掌櫃虱目魚粥、雲川水月等米其林與冠軍名店齊聚台北世貿。",
+          "tags": [
+            "台灣美食",
+            "美食展",
+            "打卡"
+          ],
+          "meta": "台灣美食",
+          "image": "https://ni.yam.com/20260720/scaled-e095008296d5de52.jpg",
+          "url": "https://n.yam.com/Article/20260720472288",
+          "hot": 85
+        },
+        {
+          "category": "social",
+          "title": "2026 AI 工具生態成形 代理型 AI 主導",
+          "summary": "AI 新技術熱話：AI 工具從單一聊天機器人走向高度專業化，能自主執行任務的代理型 AI 成主流趨勢。",
+          "tags": [
+            "AI新技術",
+            "AI工具",
+            "Agent"
+          ],
+          "meta": "AI新技術",
+          "image": "https://s.yimg.com/lo/mysterio/api/6c7af41d616c3caf0ae04fe564580fafcbcd993f6ef100a5d4eec2559a9b306e/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fko%2Fsunmedia_664%2F25f40ad05faf9f1749065d8d47a17fce",
+          "url": "https://tw.stock.yahoo.com/news/2026%E5%B9%B4ai%E5%B7%A5%E5%85%B7%E7%94%9F%E6%85%8B%E7%B3%BB%E6%88%90%E5%BD%A2-%E5%B0%88%E6%A5%AD%E5%8C%96-%E4%BB%A3%E7%90%86%E5%9E%8Bai%E4%B8%BB%E5%B0%8E%E6%9C%AA%E4%BE%86%E8%B6%A8%E5%8B%A2-124259636.html",
+          "hot": 80
+        }
+      ]
+    },
     {
       "date": "2026-08-06",
       "headline": "颱風白海豚逼近、漢光演習登場；台股高檔震盪台積電回檔；竹北房價逼近百萬。",
