@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-08",
+  "updated": "2026-08-09",
   "items": [
     {
       "id": "seed-001",
@@ -165,6 +165,26 @@
       "source": "日誌08-08 社群",
       "url": "https://n.yam.com/Article/20260720472288",
       "addedAt": "2026-08-08"
+    },
+    {
+      "id": "auto-2026-08-09-16",
+      "name": "首爾延南洞商圈",
+      "type": "place",
+      "area": "韓國首爾",
+      "note": "文青咖啡與逛街熱區",
+      "status": "want",
+      "source": "日誌08-09 社群",
+      "url": "https://www.funliday.com/posts/2026-seoul-trip/"
+    },
+    {
+      "id": "auto-2026-08-09-17",
+      "name": "首爾漢南洞",
+      "type": "place",
+      "area": "韓國首爾",
+      "note": "質感選物與美食聚集地",
+      "status": "want",
+      "source": "日誌08-09 社群",
+      "url": "https://www.funliday.com/posts/2026-seoul-trip/"
     }
   ]
 }

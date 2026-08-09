@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08",
+  "generatedAt": "2026-08-09",
   "rent": {
     "updated": "2026-08-02",
     "intro": "關新路、新莊街一帶位於新竹市東區，緊鄰竹科（園區二路、新安路）與台鐵新莊車站（六家線），是竹科工程師與雙薪家庭最熱門的租屋圈。生活機能成熟——關新公園、好市多、大遠百／巨城商圈與多所明星學校都在車程內。物件以電梯套房與整層 2–4 房為主；越靠園區、越新的電梯大樓租金越高，整層附平面車位者再往上一階。",
@@ -314,6 +314,278 @@
     ]
   },
   "days": [
+    {
+      "date": "2026-08-09",
+      "headline": "颱風白海豚逼近全台戒備、台積電AI訂單帶動半導體，竹北房價衝百萬、竹科台積20廠第3廠Q4投產。",
+      "entries": [
+        {
+          "category": "realty",
+          "title": "竹北房價快破百萬！科技新貴殺回來",
+          "summary": "竹科買氣回溫，竹北單價逼近百萬、史上首座百萬宅倒數。",
+          "tags": [
+            "竹北",
+            "房價",
+            "竹科"
+          ],
+          "meta": "竹北",
+          "image": "https://img.ltn.com.tw/Upload/house/page/2026/07/13/260713-28417-1-tL4ty.jpg",
+          "url": "https://estate.ltn.com.tw/article/28417",
+          "hot": 95
+        },
+        {
+          "category": "realty",
+          "title": "竹科台積20廠第3廠裝機 第4季投產",
+          "summary": "晶圓20廠第3廠無塵室安裝中，第4季投產，牽動周邊購屋需求。",
+          "tags": [
+            "竹科",
+            "台積電",
+            "建設"
+          ],
+          "meta": "竹科",
+          "image": "",
+          "url": "https://money.udn.com/money/story/5612/9471868",
+          "hot": 88
+        },
+        {
+          "category": "realty",
+          "title": "大新竹首購指南：竹北新成屋站上8字頭",
+          "summary": "竹北8字頭，縣三、芎林、新豐、湖口成首購族替代選項比較。",
+          "tags": [
+            "首購",
+            "湖口",
+            "竹北"
+          ],
+          "meta": "首購",
+          "image": "https://content.fundodo.com.tw/wp-content/uploads/2026/07/zac-gudakov-UPbYh3A5cdg-unsplash-1024x683.jpg",
+          "url": "https://content.fundodo.com.tw/708/",
+          "hot": 82
+        },
+        {
+          "category": "realty",
+          "title": "正齊半導體、威宏科技進駐竹科 投資1.25億",
+          "summary": "兩家業者進駐新竹科學園區，合計投資1.25億元，帶動園區動能。",
+          "tags": [
+            "竹科",
+            "投資",
+            "半導體"
+          ],
+          "meta": "竹科",
+          "image": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/05/11/34937140.jpg&M=1&s=Y&x=0&y=0&sw=1279&sh=852&exp=3600",
+          "url": "https://udn.com/news/story/7240/9496145",
+          "hot": 78
+        },
+        {
+          "category": "realty",
+          "title": "大新竹不追重劃區 竹北舊市區仍熱",
+          "summary": "房市降溫下資金回流生活機能成熟的竹北舊市區，保值抗跌。",
+          "tags": [
+            "竹北",
+            "房市",
+            "降溫"
+          ],
+          "meta": "房市",
+          "image": "",
+          "url": "https://estate.ltn.com.tw/article/26465",
+          "hot": 72
+        },
+        {
+          "category": "invest",
+          "title": "AI類股賣壓 台積電盤中重挫4.1%",
+          "summary": "半導體供應鏈同步受壓，留意週線20是否轉折、多空分界。",
+          "tags": [
+            "台積電",
+            "轉折",
+            "風險"
+          ],
+          "meta": "轉折訊號",
+          "image": "https://s.yimg.com/lo/mysterio/api/bf1ef95dd467d99486d2d27c3f928784b6d1081f0b92d9e1aacd660af7dbbdde/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fko%2Fsunmedia_664%2F8cdb950e916677d33a3a842a62737fde",
+          "url": "https://tw.stock.yahoo.com/news/ai%E9%A1%9E%E8%82%A1%E8%B3%A3%E5%A3%93%E7%B1%A0%E7%BD%A9-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E7%9B%A4%E4%B8%AD%E9%87%8D%E6%8C%AB4-1-%E5%8D%8A%E5%B0%8E%E9%AB%94%E4%BE%9B%E6%87%89%E9%8F%88%E5%8F%97%E5%89%B5-002141422.html",
+          "hot": 92
+        },
+        {
+          "category": "invest",
+          "title": "2026 AI股續漲？產業趨勢與台美股標的",
+          "summary": "AI出口動能延續，一文看懂上中下游與可留意的台美股標的。",
+          "tags": [
+            "AI",
+            "選股",
+            "台美股"
+          ],
+          "meta": "選股",
+          "image": "https://www.esunsec.com.tw/article/api/attachment/get/478-DM.jpg",
+          "url": "https://www.esunsec.com.tw/article/post/478",
+          "hot": 86
+        },
+        {
+          "category": "invest",
+          "title": "台積電AI訂單噴發 半導體ETF布局全解析",
+          "summary": "AI訂單延續，半導體ETF下一波行情與2026布局思路整理。",
+          "tags": [
+            "半導體",
+            "ETF",
+            "布局"
+          ],
+          "meta": "ETF",
+          "image": "https://images.top1market.com/images/cms/uploads/20260727/f40da0e478ddc38598c20fc2e7dca639.jpg",
+          "url": "https://www.top1markets.com/tw/insights/stocks/temc-ai-etf-chance-2026",
+          "hot": 80
+        },
+        {
+          "category": "invest",
+          "title": "2026 AI概念股：4圖看懂上中下游趨勢",
+          "summary": "從上游晶片到下游應用完整梳理，判斷還值不值得續抱。",
+          "tags": [
+            "AI",
+            "概念股",
+            "趨勢"
+          ],
+          "meta": "選股",
+          "image": "",
+          "url": "https://www.sinotrade.com.tw/richclub/hotstock/2026%E5%B9%B4AI%E6%A6%82%E5%BF%B5%E8%82%A1%E6%9C%89%E5%93%AA%E4%BA%9B%E5%85%AC%E5%8F%B8-%E9%82%84%E5%80%BC%E5%BE%97%E6%8A%95%E8%B3%87%E5%97%8E-4%E5%9C%96%E8%A1%A8%E5%B8%B6%E4%BD%A0%E7%9C%8B%E6%87%82%E4%B8%8A%E4%B8%AD%E4%B8%8B%E6%B8%B8%E7%94%A2%E6%A5%AD%E8%B6%A8%E5%8B%A2--65af4cb1880d9e29902a677f",
+          "hot": 74
+        },
+        {
+          "category": "invest",
+          "title": "缺工推動智能排班系統 導入需求升溫",
+          "summary": "餐飲、飯店、零售缺工帶動排班SaaS需求，可留意產品切入點。",
+          "tags": [
+            "排班軟體",
+            "SaaS",
+            "副業"
+          ],
+          "meta": "排班軟體",
+          "image": "https://scshome-cwehbtfkenbchqdc.z01.azurefd.net/wp-content/uploads/2026/05/workschedule.webp",
+          "url": "https://www.scshr.com/hr-space/flow/2026/05/38095/",
+          "hot": 70
+        },
+        {
+          "category": "news",
+          "title": "颱風白海豚逼近 全台防強風豪雨",
+          "summary": "暴風圈縮小但宜蘭、瑞芳已現12級陣風，各地嚴防致災風雨。",
+          "tags": [
+            "颱風",
+            "防災",
+            "天氣"
+          ],
+          "meta": "颱風",
+          "image": "",
+          "url": "https://tw.news.yahoo.com/%E9%A2%B1%E9%A2%A8%E7%99%BD%E6%B5%B7%E8%B1%9A%E6%9A%B4%E9%A2%A8%E5%9C%88%E7%B8%AE%E5%B0%8F-%E9%98%B2%E5%B1%80%E9%83%A8%E7%9A%84%E5%BC%B7%E9%A2%A8%E8%88%87%E8%B1%AA%E9%9B%A8-202452779.html",
+          "hot": 95
+        },
+        {
+          "category": "news",
+          "title": "美7月非農遜預期 美股反彈",
+          "summary": "就業數據低於預期、升息預期下調，帶動美股上揚。",
+          "tags": [
+            "美股",
+            "非農",
+            "聯準會"
+          ],
+          "meta": "美股",
+          "image": "https://s.yimg.com/lo/mysterio/api/6be2506d7f717fab106c3127d1f7e0238305423b38fe0bc524e532418e527d85/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fko%2Febc.net.tw%2F6cd74015b86ad0bf3f1a6cc75b14bf56",
+          "url": "https://tw.news.yahoo.com/%E7%BE%8E7%E6%9C%88%E9%9D%9E%E8%BE%B2%E7%88%86%E5%86%B7%E7%BE%8E%E8%82%A1%E5%8F%8D%E6%BC%B2-%E8%81%AF%E6%BA%96%E6%9C%83%E5%8D%87%E6%81%AF%E6%A9%9F%E7%8E%87%E9%99%8D-155600953.html",
+          "hot": 85
+        },
+        {
+          "category": "news",
+          "title": "台股新處置機制10日上路 縮短關禁閉",
+          "summary": "證交所新制不再完全禁止當沖，提升交易效率並維護秩序。",
+          "tags": [
+            "台股",
+            "新制",
+            "證交所"
+          ],
+          "meta": "台股新制",
+          "image": "",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E8%99%95%E7%BD%AE%E6%96%B0%E5%88%B610%E6%97%A5%E4%B8%8A%E8%B7%AF-%E4%B8%8D%E5%86%8D%E7%A6%81%E7%95%B6%E6%B2%96-%E7%B8%AE%E7%9F%AD-%E9%97%9C%E7%A6%81%E9%96%89-200033046.html",
+          "hot": 80
+        },
+        {
+          "category": "news",
+          "title": "中菲民主礁衝突升溫 美支持菲律賓",
+          "summary": "美方批評中國南海單邊舉動威脅區域穩定與菲漁業權益。",
+          "tags": [
+            "南海",
+            "中菲",
+            "國際"
+          ],
+          "meta": "南海",
+          "image": "",
+          "url": "https://tw.news.yahoo.com/%E4%B8%AD%E8%8F%B2%E6%B0%91%E4%B8%BB%E7%A4%81%E8%A1%9D%E7%AA%81%E5%8D%87%E6%BA%AB-%E7%BE%8E%E6%89%B9%E5%8C%97%E4%BA%AC%E7%A0%B4%E5%A3%9E%E7%A9%A9%E5%AE%9A-%E5%8A%9B%E6%8C%BA%E9%A6%AC%E5%B0%BC%E6%8B%89-194007052.html",
+          "hot": 76
+        },
+        {
+          "category": "news",
+          "title": "永和豆漿創始人林炳生辭世 享壽70",
+          "summary": "台灣知名餐飲集團創辦人辭世，對台灣飲食文化貢獻卓著。",
+          "tags": [
+            "餐飲",
+            "人物",
+            "產業"
+          ],
+          "meta": "產業",
+          "image": "https://s.yimg.com/lo/mysterio/api/64b03307598fbbaded978af8b7f502cce585c9d59325f8e45a7bab3d2feea199/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fko%2Fudn.com%2Fc9fe5f801e47c7a817d3b9448eca3530",
+          "url": "https://tw.news.yahoo.com/%E6%B0%B8%E5%92%8C%E8%B1%86%E6%BC%BF%E5%89%B5%E5%A7%8B%E4%BA%BA%E6%9E%97%E7%82%B3%E7%94%9F%E5%8E%BB%E4%B8%96-%E4%BA%AB%E5%B9%B470%E6%AD%B2-132036562.html",
+          "hot": 70
+        },
+        {
+          "category": "social",
+          "title": "2026東京18新景點 哈利波特影城開幕",
+          "summary": "哈利波特影城、新宿新地標登場，東京自由行必收打卡清單。",
+          "tags": [
+            "日本旅遊",
+            "東京",
+            "新景點"
+          ],
+          "meta": "東京",
+          "image": "https://ak-d.tripcdn.com/images/0103w12000a4on9dtB984_C_750_350_R5.png_.webp?proc=autoorient&proc=source%2ftrip",
+          "url": "https://tw.trip.com/blog/tokyo-new-attractions/",
+          "hot": 90
+        },
+        {
+          "category": "social",
+          "title": "資策會2026十大AI關鍵技術：AI躍入實體",
+          "summary": "AI從虛擬走向實體、驅動軟體，10大關鍵技術一次看。",
+          "tags": [
+            "AI新技術",
+            "趨勢",
+            "資策會"
+          ],
+          "meta": "AI新技術",
+          "image": "https://www.ithome.com.tw/sites/default/files/field/image/1267-jiao_dian_-2p-yan_fen_-zi_ce_hui_ai_tu_biao_1_0.jpg",
+          "url": "https://www.ithome.com.tw/news/172987",
+          "hot": 88
+        },
+        {
+          "category": "social",
+          "title": "2026首爾逛街地圖：延南洞、漢南洞、弘大",
+          "summary": "延南洞、漢南洞、弘大必吃必逛，首爾自由行熱門商圈攻略。",
+          "tags": [
+            "韓國旅遊",
+            "首爾",
+            "打卡"
+          ],
+          "meta": "首爾",
+          "image": "https://assets.funliday.com/posts/wp-content/uploads/2026/04/16164532/seoul-0716-tw-7d6d25fe8a3ddebe.png.webp",
+          "url": "https://www.funliday.com/posts/2026-seoul-trip/",
+          "hot": 84
+        },
+        {
+          "category": "social",
+          "title": "2026台灣美食展 6大必吃神店全攻略",
+          "summary": "美食展話題神店整理，台灣在地打卡美食一次盤點。",
+          "tags": [
+            "台灣美食",
+            "美食展",
+            "打卡"
+          ],
+          "meta": "台灣美食",
+          "image": "https://ni.yam.com/20260720/scaled-e095008296d5de52.jpg",
+          "url": "https://n.yam.com/Article/20260720472288",
+          "hot": 80
+        }
+      ]
+    },
     {
       "date": "2026-08-08",
       "headline": "竹北房價逼近百萬、竹東逆勢奪冠；AI 續當台股主戰場，花旗喊買六大半導體；漢光演習淡江大橋首度封橋。",
