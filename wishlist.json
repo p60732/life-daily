@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10",
+  "updated": "2026-08-11",
   "items": [
     {
       "id": "seed-001",
@@ -185,6 +185,17 @@
       "status": "want",
       "source": "日誌08-09 社群",
       "url": "https://www.funliday.com/posts/2026-seoul-trip/"
+    },
+    {
+      "id": "auto-2026-08-11-18",
+      "name": "東京哈利波特影城",
+      "type": "place",
+      "area": "東京",
+      "note": "新宿新地標，2026熱門打卡景點",
+      "status": "want",
+      "source": "日誌08-11 社群",
+      "url": "https://tw.trip.com/blog/tokyo-new-attractions/",
+      "addedAt": "2026-08-11"
     }
   ]
 }

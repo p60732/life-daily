@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10",
+  "generatedAt": "2026-08-11",
   "rent": {
     "updated": "2026-08-02",
     "intro": "關新路、新莊街一帶位於新竹市東區，緊鄰竹科（園區二路、新安路）與台鐵新莊車站（六家線），是竹科工程師與雙薪家庭最熱門的租屋圈。生活機能成熟——關新公園、好市多、大遠百／巨城商圈與多所明星學校都在車程內。物件以電梯套房與整層 2–4 房為主；越靠園區、越新的電梯大樓租金越高，整層附平面車位者再往上一階。",
@@ -314,6 +314,222 @@
     ]
   },
   "days": [
+    {
+      "date": "2026-08-11",
+      "headline": "AI 需求續旺帶動台股電子與竹北房市；日韓新景點、台灣美食展成社群熱話。",
+      "entries": [
+        {
+          "category": "news",
+          "title": "外資揭密輝達、谷歌記憶體備貨總量 喊買二檔台廠",
+          "summary": "外資估算輝達與谷歌記憶體備貨規模龐大，點名二檔台廠供應鏈受惠。",
+          "tags": [
+            "外資",
+            "記憶體",
+            "AI供應鏈"
+          ],
+          "meta": "焦點",
+          "image": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/08/10/35217258.jpg&M=1&s=Y&x=0&y=0&sw=1280&sh=853&exp=3600",
+          "url": "https://udn.com/news/story/7251/9682390",
+          "hot": 95
+        },
+        {
+          "category": "news",
+          "title": "低於平均薪資勞工比例首破七成 統計以來最高",
+          "summary": "主計總處資料顯示低於平均薪資的勞工占比創新高，並提出新的解讀角度。",
+          "tags": [
+            "薪資",
+            "主計總處",
+            "民生"
+          ],
+          "meta": "民生",
+          "image": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/08/10/35217319.jpg&M=1&s=Y&x=0&y=0&sw=1280&sh=853&exp=3600",
+          "url": "https://udn.com/news/story/7269/9682466",
+          "hot": 88
+        },
+        {
+          "category": "news",
+          "title": "AI 需求旺 電子零組件前六月工時寫47年同期新高",
+          "summary": "AI 帶動接單，電子零組件業上半年平均工時創47年同期新高，產能滿載。",
+          "tags": [
+            "AI",
+            "電子零組件",
+            "產能"
+          ],
+          "meta": "產業",
+          "image": "",
+          "url": "https://udn.com/news/story/7240/9682571",
+          "hot": 82
+        },
+        {
+          "category": "news",
+          "title": "選前倒數3個月 蔣萬安小內閣發言團隊異動",
+          "summary": "北市府發言團隊調整，魏汶萱出任發言人，選前布局受關注。",
+          "tags": [
+            "台北市",
+            "人事",
+            "選舉"
+          ],
+          "meta": "政治",
+          "image": "https://pgw.udn.com.tw/gw/photo.php?u=/t3/2026/08/10/35217043.png&M=1&s=Y&x=0&y=42&sw=324&sh=216",
+          "url": "https://udn.com/vote2026/story/124652/9682234",
+          "hot": 70
+        },
+        {
+          "category": "realty",
+          "title": "竹北房價快破百萬 新竹史上首座百萬宅倒數",
+          "summary": "科技新貴買氣回籠，竹北單價逼近百萬，恐誕生新竹史上首座百萬宅。",
+          "tags": [
+            "竹北",
+            "房價",
+            "百萬宅"
+          ],
+          "meta": "竹北",
+          "image": "https://img.ltn.com.tw/Upload/house/page/2026/07/13/260713-28417-1-tL4ty.jpg",
+          "url": "https://estate.ltn.com.tw/article/28417",
+          "hot": 92
+        },
+        {
+          "category": "realty",
+          "title": "竹北新里程碑 大陸建設「時華」預售實登首破9字頭",
+          "summary": "竹北預售屋實價登錄突破9字頭，寫下區域新高，指標建案帶動行情。",
+          "tags": [
+            "竹北",
+            "預售屋",
+            "實價登錄"
+          ],
+          "meta": "竹北",
+          "image": "https://annewsmedia.com/wp-content/uploads/2026/06/2026-06-16-132700.jpg",
+          "url": "https://annewsmedia.com/2026/06/16/market-news/19371/",
+          "hot": 80
+        },
+        {
+          "category": "realty",
+          "title": "新竹縣市房價季度趨勢 竹北領漲、東區續強",
+          "summary": "以季度資料觀察新竹縣市房價走勢，竹北領漲、新竹市東區買氣延續。",
+          "tags": [
+            "新竹縣",
+            "東區",
+            "房價趨勢"
+          ],
+          "meta": "新竹",
+          "image": "",
+          "url": "https://www.housefeel.com.tw/price-all/hsinchu-county/",
+          "hot": 62
+        },
+        {
+          "category": "invest",
+          "title": "台積電上調2026展望 AI需求加速、3奈米提前擴產",
+          "summary": "受惠 AI 需求，台積電上調2026展望，3奈米產能擴張提前完成（非投資建議）。",
+          "tags": [
+            "台積電",
+            "3奈米",
+            "非投資建議"
+          ],
+          "meta": "創新高",
+          "image": "",
+          "url": "https://www.moomoo.com/hant/community/feed/taiwan-semiconductor-tsm-us-tsm-bullish-friday-august-7-2026-117052319072262",
+          "hot": 90
+        },
+        {
+          "category": "invest",
+          "title": "2026 AI股仍可續漲？產業趨勢與台美股標的整理",
+          "summary": "整理2026 AI 產業趨勢與可留意的台美股標的，適合搭配週線20轉折觀察多空（非投資建議）。",
+          "tags": [
+            "AI股",
+            "週線20轉折",
+            "非投資建議"
+          ],
+          "meta": "選股",
+          "image": "https://www.esunsec.com.tw/article/api/attachment/get/478-DM.jpg",
+          "url": "https://www.esunsec.com.tw/article/post/478",
+          "hot": 84
+        },
+        {
+          "category": "invest",
+          "title": "2026 AI概念股清單：散熱、ASIC、ABF、HBM龍頭",
+          "summary": "彙整散熱、ASIC、ABF、HBM 等 AI 供應鏈龍頭清單，供追蹤轉折訊號參考（非投資建議）。",
+          "tags": [
+            "散熱",
+            "ASIC",
+            "非投資建議"
+          ],
+          "meta": "供應鏈",
+          "image": "https://grenade.tw/wp-content/uploads/2026/05/scimgBtOeCv.webp",
+          "url": "https://grenade.tw/blog/ai-concept-stocks-2026/",
+          "hot": 76
+        },
+        {
+          "category": "invest",
+          "title": "台積電帶頭 半導體供應鏈迎商機",
+          "summary": "台積電擴產帶動上下游供應鏈同步受惠，留意產品與副業延伸機會（非投資建議）。",
+          "tags": [
+            "半導體",
+            "供應鏈",
+            "非投資建議"
+          ],
+          "meta": "轉折",
+          "image": "",
+          "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%B8%B6%E9%A0%AD-%E4%BE%9B%E6%87%89%E9%8F%88%E8%BF%8E%E5%95%86%E6%A9%9F-201000617.html",
+          "hot": 68
+        },
+        {
+          "category": "social",
+          "title": "2026東京18個新景點 哈利波特影城、新宿新地標開幕",
+          "summary": "東京2026新開幕景點懶人包，哈利波特影城與新宿最強新地標成打卡熱點。",
+          "tags": [
+            "日本旅遊",
+            "東京",
+            "打卡"
+          ],
+          "meta": "日韓旅遊",
+          "image": "https://ak-d.tripcdn.com/images/0103w12000a4on9dtB984_C_750_350_R5.png_.webp?proc=autoorient&proc=source%2ftrip",
+          "url": "https://tw.trip.com/blog/tokyo-new-attractions/",
+          "hot": 90
+        },
+        {
+          "category": "social",
+          "title": "2026首爾40+景點推薦 市區近郊私房打卡全攻略",
+          "summary": "首爾必去與近郊私房景點整理，緊貼潮流的旅遊打卡清單一次收藏。",
+          "tags": [
+            "韓國旅遊",
+            "首爾",
+            "打卡"
+          ],
+          "meta": "日韓旅遊",
+          "image": "https://blog-static.kkday.com/zh-tw/blog/wp-content/uploads/2023/02/%E9%A6%96%E7%88%BE%E6%99%AF%E9%BB%9E.jpg",
+          "url": "https://www.kkday.com/zh-tw/blog/4044/asia-korea-seoul-first-visit-spot",
+          "hot": 82
+        },
+        {
+          "category": "social",
+          "title": "2026台灣美食展 13家必比登、米其林餐廳必吃",
+          "summary": "台灣美食展登場，吳寶春、阿基師與多家必比登、米其林餐廳齊聚必吃名單。",
+          "tags": [
+            "台灣美食",
+            "美食展",
+            "米其林"
+          ],
+          "meta": "台灣美食",
+          "image": "https://cc.tvbs.com.tw/img/program/upload/2026/07/21/20260721110033-8ca5d96d.jpg",
+          "url": "https://supertaste.tvbs.com.tw/food/360619",
+          "hot": 78
+        },
+        {
+          "category": "social",
+          "title": "2026最強AI工具Top100榜 16款必試神器整理",
+          "summary": "彙整2026熱門 AI 工具與 Top100 榜單，涵蓋生產力、繪圖與開發等新神器。",
+          "tags": [
+            "AI新技術",
+            "AI工具",
+            "生產力"
+          ],
+          "meta": "AI新技術",
+          "image": "https://www.ibest.com.tw/upload/base_fb_img/tw_web_base_20d01_ak453s3gwj.jpg",
+          "url": "https://www.ibest.com.tw/news-detail/2025-ai-tools/",
+          "hot": 72
+        }
+      ]
+    },
     {
       "date": "2026-08-10",
       "headline": "台股週線飆2677點逼近前高後震盪整理；新竹房市洗牌，湖口傳降價、竹北仍拚百萬宅",
