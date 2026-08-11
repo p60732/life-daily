@@ -229,10 +229,28 @@ let DAYS=[], TODAY="", curDate="", filter="all", arcActive="invest", arcQ="", RE
 const $=s=>document.querySelector(s);
 const norm=s=>String(s==null?"":s).replace(/\s+/g,"");
 
-/* ===== 願望清單(接 Google Apps Script 後端) ===== */
-const WISHLIST_API="https://script.google.com/macros/s/AKfycbzvLGHu_HBXYJjRB6Mun6gEzd1upjBhwA-QBeB9RqyrRkiboarFkFBwE_guhEMdfpmr/exec";
+/* ===== 願望清單(localStorage 本機儲存，與願望清單頁共用;每次載入從同源 wishlist.json 併入每日新增) ===== */
+const WL_KEY="lifedaily_wl_v1";
+const WL_SRC="./wishlist.json";
 const WL_CATS=new Set(["social","family"]);
 let WL_NAMES=new Set();
+function wlState(){try{const s=JSON.parse(localStorage.getItem(WL_KEY));if(s&&Array.isArray(s.items)&&Array.isArray(s.deleted))return s;}catch(_){}return {items:[],deleted:[]};}
+function wlSave(st){try{localStorage.setItem(WL_KEY,JSON.stringify(st));}catch(_){}}
+function wlMerge(server){
+  const st=wlState();
+  const byId=new Set(st.items.map(i=>i.id));
+  const byName=new Set(st.items.map(i=>norm(i.name)));
+  const del=new Set(st.deleted);
+  for(const s of (server||[])){
+    if(!s||!s.name)continue;
+    if(del.has(s.id))continue;
+    if(byId.has(s.id)||byName.has(norm(s.name)))continue;
+    st.items.push({id:s.id||("srv-"+norm(s.name)),name:s.name,type:(s.type==="food"?"food":"place"),area:s.area||"",note:s.note||"",status:s.status||"want",source:s.source||"",url:s.url||"",addedAt:s.addedAt||""});
+    byId.add(s.id);byName.add(norm(s.name));
+  }
+  wlSave(st);return st;
+}
+function wlRefreshNames(){WL_NAMES=new Set(wlState().items.map(i=>norm(i.name)));}
 function wlType(e){
   const s=(e.title||"")+" "+((e.tags||[]).join(" "))+" "+(e.summary||"");
   return /美食|吃|餐廳|小吃|夜市|咖啡|甜點|烘焙|拉麵|火鍋|燒肉|早午餐|飲料|冰品|麵包|食堂|市場|小館/.test(s)?"food":"place";
@@ -242,29 +260,26 @@ function wlBtnHTML(e){
   const p=encodeURIComponent(JSON.stringify({name:e.title,type:wlType(e),area:"",note:e.summary||"",source:"日誌 "+(curDate||TODAY)+" "+((CATMAP[e.category]||{}).label||""),url:e.url||""}));
   return `<button class="wlbtn" title="加入/移除願望清單" data-p="${p}" onclick="wlToggle(event,this)" style="position:absolute;top:8px;right:8px;z-index:3;width:34px;height:34px;border-radius:999px;border:none;background:rgba(255,255,255,.92);box-shadow:0 2px 8px rgba(0,0,0,.18);font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#e0245e">${added?"♥":"♡"}</button>`;
 }
-function wlApi(params,done){
-  if(WISHLIST_API.indexOf("__WISHLIST")===0)return;
-  const cb="__wln_"+Date.now()+"_"+Math.floor(Math.random()*1e6);const s=document.createElement("script");
-  window[cb]=function(res){if(res&&res.items){WL_NAMES=new Set(res.items.map(it=>norm(it.name)));}try{delete window[cb];}catch(_){}if(s.parentNode)s.parentNode.removeChild(s);if($("#view-board")&&!$("#view-board").classList.contains("hidden"))renderBoard();if(done)done(res);};
-  s.onerror=function(){try{delete window[cb];}catch(_){}if(s.parentNode)s.parentNode.removeChild(s);};
-  const qs=Object.keys(params).map(k=>encodeURIComponent(k)+"="+encodeURIComponent(params[k])).join("&");
-  s.src=WISHLIST_API+"?callback="+cb+"&_="+Date.now()+(qs?"&"+qs:"");
-  document.body.appendChild(s);
-}
 function wlToggle(ev,btn){
   ev.preventDefault();ev.stopPropagation();
-  if(WISHLIST_API.indexOf("__WISHLIST")===0){toast("尚未接上願望清單後端");return;}
   let p;try{p=JSON.parse(decodeURIComponent(btn.dataset.p));}catch(_){return;}
   const key=norm(p.name);
-  if(WL_NAMES.has(key)){
-    WL_NAMES.delete(key);btn.textContent="♡";toast("已從願望清單移除");
-    wlApi({action:"del",name:p.name});
+  const st=wlState();
+  const idx=st.items.findIndex(it=>norm(it.name)===key);
+  if(idx>=0){
+    const removed=st.items[idx];st.items.splice(idx,1);
+    if(removed.id&&st.deleted.indexOf(removed.id)<0)st.deleted.push(removed.id);
+    wlSave(st);WL_NAMES.delete(key);btn.textContent="♡";toast("已從願望清單移除");
   }else{
-    WL_NAMES.add(key);btn.textContent="♥";toast("已加入願望清單 ♥");
-    wlApi({action:"add",name:p.name,type:p.type,area:p.area,note:p.note,source:p.source,url:p.url});
+    st.items.push({id:"loc-"+Date.now()+"-"+Math.floor(Math.random()*1e6),name:p.name,type:p.type,area:p.area||"",note:p.note||"",status:"want",source:p.source||"",url:p.url||"",addedAt:new Date().toISOString()});
+    wlSave(st);WL_NAMES.add(key);btn.textContent="♥";toast("已加入願望清單 ♥");
   }
 }
-function loadWL(){wlApi({});}
+/* 每次載入:從同源 wishlist.json 併入(每日排程新增的地點會進來);使用者的新增/刪除都保存在本機 */
+function loadWL(){
+  const after=()=>{wlRefreshNames();if($("#view-board")&&!$("#view-board").classList.contains("hidden"))renderBoard();};
+  fetch(WL_SRC+"?_="+Date.now()).then(r=>r.json()).then(j=>wlMerge(Array.isArray(j.items)?j.items:[])).catch(()=>wlMerge([])).then(after);
+}
 let _toastT;
 function toast(msg){
   let el=$("#wltoast");

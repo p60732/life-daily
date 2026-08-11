@@ -134,8 +134,25 @@
   <footer id="foot">願望清單 · 每日誌 · 生活公司 Life Company</footer>
 
 <script>
-/* ===== 後端(Google Apps Script Web App /exec 網址) ===== */
-const WISHLIST_API = "https://script.google.com/macros/s/AKfycbzvLGHu_HBXYJjRB6Mun6gEzd1upjBhwA-QBeB9RqyrRkiboarFkFBwE_guhEMdfpmr/exec";
+/* ===== 本機儲存(localStorage,與每日看板頁共用;每次載入從同源 wishlist.json 併入每日新增) ===== */
+const WL_KEY="lifedaily_wl_v1";
+const WL_SRC="./wishlist.json";
+function wlState(){try{const s=JSON.parse(localStorage.getItem(WL_KEY));if(s&&Array.isArray(s.items)&&Array.isArray(s.deleted))return s;}catch(_){}return {items:[],deleted:[]};}
+function wlSave(st){try{localStorage.setItem(WL_KEY,JSON.stringify(st));}catch(_){}}
+function wlMerge(server){
+  const st=wlState();
+  const byId=new Set(st.items.map(i=>i.id));
+  const byName=new Set(st.items.map(i=>norm(i.name)));
+  const del=new Set(st.deleted);
+  for(const s of (server||[])){
+    if(!s||!s.name)continue;
+    if(del.has(s.id))continue;
+    if(byId.has(s.id)||byName.has(norm(s.name)))continue;
+    st.items.push({id:s.id||("srv-"+norm(s.name)),name:s.name,type:(s.type==="food"?"food":"place"),area:s.area||"",note:s.note||"",status:s.status||"want",source:s.source||"",url:s.url||"",addedAt:s.addedAt||""});
+    byId.add(s.id);byName.add(norm(s.name));
+  }
+  wlSave(st);return st;
+}
 
 const TYPES={
   place:{label:"景點 · 想玩",glyph:"📍",bar:"var(--cat-place)",wantLabel:"想去",doneLabel:"已去",markGo:"標記已去",markBack:"改回想去"},
@@ -155,27 +172,19 @@ const norm=s=>String(s==null?"":s).replace(/\s+/g,"");
 
 function setStatus(msg){document.getElementById("status").textContent=msg||"";}
 
-/* ---- 讀寫都走 JSONP GET(同一條可用通道) ---- */
-function api(params,done){
-  if(WISHLIST_API.indexOf("__WISHLIST")===0){setStatus("尚未接上後端網址。");return;}
-  const cbName="__wl_"+Date.now()+"_"+Math.floor(Math.random()*1e6);
-  const s=document.createElement("script");
-  const timer=setTimeout(()=>{cleanup();setStatus("連線逾時，請重新整理。");},15000);
-  function cleanup(){clearTimeout(timer);try{delete window[cbName];}catch(_){}if(s.parentNode)s.parentNode.removeChild(s);}
-  window[cbName]=function(res){
-    cleanup();
-    if(res&&res.items){ITEMS=res.items;}
-    if(res&&res.updated){document.getElementById("foot").textContent=
-      `願望清單 · 每日誌 · 生活公司 Life Company　·　更新於 ${res.updated}　·　共 ${ITEMS.length} 個地方`;}
-    render();setStatus("");
-    if(done)done(res);
-  };
-  s.onerror=function(){cleanup();setStatus("連線失敗，請重新整理。");};
-  const qs=Object.keys(params).map(k=>encodeURIComponent(k)+"="+encodeURIComponent(params[k])).join("&");
-  s.src=WISHLIST_API+"?callback="+cbName+"&_="+Date.now()+(qs?"&"+qs:"");
-  document.body.appendChild(s);
+let WL_STATE={items:[],deleted:[]};
+function refreshFoot(){document.getElementById("foot").textContent=
+  `願望清單 · 每日誌 · 生活公司 Life Company　·　共 ${ITEMS.length} 個地方(本機儲存)`;}
+function commit(){wlSave(WL_STATE);ITEMS=WL_STATE.items;render();refreshFoot();}
+/* 每次載入:先顯示本機既有,再從同源 wishlist.json 併入每日新增(去重、尊重本機刪除);之後新增/刪除/標記都寫本機 */
+function load(){
+  WL_STATE=wlState();ITEMS=WL_STATE.items;render();refreshFoot();setStatus("載入中…");
+  fetch(WL_SRC+"?_="+Date.now()).then(r=>r.json()).then(j=>{
+    WL_STATE=wlMerge(Array.isArray(j.items)?j.items:[]);
+  }).catch(()=>{WL_STATE=wlMerge([]);}).then(()=>{
+    ITEMS=WL_STATE.items;render();refreshFoot();setStatus("");
+  });
 }
-function load(){api({});}
 
 function matches(it){
   if(filter==="all")return true;
@@ -233,9 +242,8 @@ function render(){
 function setFilter(k){filter=k;render();}
 
 function onMark(id,status){
-  const it=ITEMS.find(x=>x.id===id); if(it)it.status=status; render();
-  setStatus("同步中…");
-  api({action:"status",id:id,status:status});
+  const it=WL_STATE.items.find(x=>x.id===id); if(it)it.status=status;
+  commit();
 }
 
 function onDelete(btn,id){
@@ -244,9 +252,9 @@ function onDelete(btn,id){
     setTimeout(()=>{if(btn){btn.dataset.armed="0";btn.classList.remove("confirm");btn.textContent="🗑 刪除";}},3000);
     return;
   }
-  ITEMS=ITEMS.filter(x=>x.id!==id); render();
-  setStatus("刪除中…");
-  api({action:"del",id:id});
+  WL_STATE.items=WL_STATE.items.filter(x=>x.id!==id);
+  if(id&&WL_STATE.deleted.indexOf(id)<0)WL_STATE.deleted.push(id);
+  commit();
 }
 
 load();
