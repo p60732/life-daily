@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-11",
+  "updated": "2026-08-12",
   "items": [
     {
       "id": "seed-001",
@@ -196,6 +196,28 @@
       "source": "日誌08-11 社群",
       "url": "https://tw.trip.com/blog/tokyo-new-attractions/",
       "addedAt": "2026-08-11"
+    },
+    {
+      "id": "auto-2026-08-12-19",
+      "name": "SHIBUYA SKY 澀谷天空展望台",
+      "type": "place",
+      "area": "東京",
+      "note": "澀谷地標360度觀景",
+      "status": "want",
+      "source": "日誌08-12 社群",
+      "url": "https://tw.trip.com/blog/tokyo-new-attractions/",
+      "addedAt": "2026-08-12"
+    },
+    {
+      "id": "auto-2026-08-12-20",
+      "name": "牛店 精燉牛肉麵",
+      "type": "food",
+      "area": "台北",
+      "note": "美食展必比登人氣名店",
+      "status": "want",
+      "source": "日誌08-12 社群",
+      "url": "https://n.yam.com/Article/20260720472288",
+      "addedAt": "2026-08-12"
     }
   ]
 }

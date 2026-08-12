@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11",
+  "generatedAt": "2026-08-12",
   "rent": {
     "updated": "2026-08-02",
     "intro": "關新路、新莊街一帶位於新竹市東區，緊鄰竹科（園區二路、新安路）與台鐵新莊車站（六家線），是竹科工程師與雙薪家庭最熱門的租屋圈。生活機能成熟——關新公園、好市多、大遠百／巨城商圈與多所明星學校都在車程內。物件以電梯套房與整層 2–4 房為主；越靠園區、越新的電梯大樓租金越高，整層附平面車位者再往上一階。",
@@ -314,6 +314,194 @@
     ]
   },
   "days": [
+    {
+      "date": "2026-08-12",
+      "headline": "台積電Q2法說毛利率67.7%、EPS 27.25元創高，AI選股續熱；新竹房市受竹科帶動量價齊揚；白海豚颱風外圍影響北台灣天氣。",
+      "entries": [
+        {
+          "category": "realty",
+          "title": "新竹房價量齊揚 全與竹科有關",
+          "summary": "新竹房價與成交量雙漲，明湖路、武陵路成最熱銷路段，約9成購屋者為竹科員工。",
+          "tags": [
+            "竹科",
+            "東區",
+            "成交量"
+          ],
+          "meta": "量價齊揚",
+          "image": "https://img.ltn.com.tw/Upload/house/page/2024/03/21/240321-20052-1-slkFo.jpeg",
+          "url": "https://estate.ltn.com.tw/article/20052",
+          "hot": 95
+        },
+        {
+          "category": "realty",
+          "title": "新竹、竹北房市長期趨勢解析",
+          "summary": "科技聚落、高收入人口移入與交通建設完善，構成竹北房市長期成長的產業支撐。",
+          "tags": [
+            "竹北",
+            "科技聚落",
+            "置產"
+          ],
+          "meta": "長線支撐",
+          "image": "https://cdn.rtube.com.tw/user/3536/article/1_7b86edf6-a7b7-4285-ac4a-89ffc8bbdc88.jpg",
+          "url": "https://www.rtube.com.tw/articles/4436",
+          "hot": 88
+        },
+        {
+          "category": "realty",
+          "title": "2026 竹北實價登錄行情排行榜",
+          "summary": "竹北熱銷建案與社區實價登錄排行一覽，可對照各區成交與新案動態。",
+          "tags": [
+            "竹北",
+            "實價登錄",
+            "建案"
+          ],
+          "meta": "行情榜",
+          "image": "",
+          "url": "https://zhaihouse.com/rankings/J/%E7%AB%B9%E5%8C%97%E5%B8%82",
+          "hot": 80
+        },
+        {
+          "category": "invest",
+          "title": "3檔AI權值股進入安全買點（非投資建議）",
+          "summary": "分析師認為台積電、聯發科可先等，鴻海約252元、廣達約336元、緯創約169元已入安全區間。",
+          "tags": [
+            "AI權值股",
+            "拉回",
+            "安全價"
+          ],
+          "meta": "選股",
+          "image": "https://s.newtalk.tw/album/news/1053/6a792dc738197.jpg",
+          "url": "https://newtalk.tw/news/view/2026-08-10/1052317",
+          "hot": 92
+        },
+        {
+          "category": "invest",
+          "title": "台股八月選股：散熱、光通訊、高速傳輸（非投資建議）",
+          "summary": "八月策略選股重於選市，AI鏈帶動下精選具成長性的中小型電子族群。",
+          "tags": [
+            "散熱",
+            "光通訊",
+            "選股"
+          ],
+          "meta": "族群輪動",
+          "image": "https://cimg.cnyes.cool/prod/news/6562609/m/1e436766e1c797643a3545db07483444.jpg",
+          "url": "https://news.cnyes.com/news/id/6562609",
+          "hot": 85
+        },
+        {
+          "category": "invest",
+          "title": "2026 AI概念股七大賽道龍頭（非投資建議）",
+          "summary": "推論市場超越訓練、Agent與人形機器人爆發、CoWoS持續缺貨，散熱/ASIC/ABF/HBM龍頭受惠。",
+          "tags": [
+            "ASIC",
+            "HBM",
+            "CoWoS"
+          ],
+          "meta": "賽道轉折",
+          "image": "https://grenade.tw/wp-content/uploads/2026/05/scimgBtOeCv.webp",
+          "url": "https://grenade.tw/blog/ai-concept-stocks-2026/",
+          "hot": 78
+        },
+        {
+          "category": "news",
+          "title": "台積電法說創高：毛利率67.7%、EPS 27.25元",
+          "summary": "台積電Q2毛利率67.7%超預期、每股盈餘27.25元創新高，Q3美元營收看季增約12%。",
+          "tags": [
+            "台積電",
+            "法說會",
+            "財報"
+          ],
+          "meta": "創新高",
+          "image": "https://s.yimg.com/ny/api/res/1.2/0eqJB5UrBnVNhcb_nYQcaw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD05MDA-/https://s.yimg.com/os/creatr-uploaded-images/2025-01/1cdc9a50-cf1f-11ef-9abe-3b03b443ee6a",
+          "url": "https://tw.stock.yahoo.com/news/%E3%80%90%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E6%9C%83%E3%80%91%E8%B3%BA%E7%BF%BB%EF%BC%81%E7%AC%AC%E4%BA%8C%E5%AD%A3%E6%AF%9B%E5%88%A9%E7%8E%8768-%E6%AF%8F%E8%82%A1%E8%B3%BA%E7%A0%B427%E5%85%83-053448154.html",
+          "hot": 90
+        },
+        {
+          "category": "news",
+          "title": "白海豚颱風動態 外圍影響北台灣",
+          "summary": "中度颱風白海豚外圍環流帶來強風大雨，北部民眾留意即時風雨與停班課訊息。",
+          "tags": [
+            "颱風",
+            "天氣",
+            "白海豚"
+          ],
+          "meta": "留意風雨",
+          "image": "https://today-obs.line-scdn.net/0hei-hcwkSOkYQESZW4eJFEShHNjcjdyBPMnJ1cD1CYXQ0PShCeXNpJTwWN2o0dHQXMCVzIGFFMSQ8KXoULw/w1200",
+          "url": "https://today.line.me/tw/v3/article/VxRYYKy",
+          "hot": 82
+        },
+        {
+          "category": "news",
+          "title": "2026五大科技趨勢：AI邁向自主代理",
+          "summary": "產業展望指AI走向自主代理（Agent），雲端資安聚焦營運韌性成為企業重點。",
+          "tags": [
+            "AI Agent",
+            "雲端資安",
+            "趨勢"
+          ],
+          "meta": "產業展望",
+          "image": "",
+          "url": "https://tw.stock.yahoo.com/news/2026%E5%B9%B4%E4%BA%94%E5%A4%A7%E7%A7%91%E6%8A%80%E8%B6%A8%E5%8B%A2-ai%E9%82%81%E5%90%91%E8%87%AA%E4%B8%BB%E4%BB%A3%E7%90%86-%E9%9B%B2%E7%AB%AF%E8%B3%87%E5%AE%89%E8%81%9A%E7%84%A6%E7%87%9F%E9%81%8B%E9%9F%8C%E6%80%A7-143744659.html",
+          "hot": 70
+        },
+        {
+          "category": "social",
+          "title": "2026東京18大新景點 哈利波特影城開幕",
+          "summary": "東京最新景點含哈利波特影城、澀谷SHIBUYA SKY、東急歌舞伎町TOWER等打卡地標。",
+          "tags": [
+            "東京",
+            "日本旅遊",
+            "新景點"
+          ],
+          "meta": "日韓旅遊",
+          "image": "https://ak-d.tripcdn.com/images/0103w12000a4on9dtB984_C_750_350_R5.png_.webp?proc=autoorient&proc=source%2ftrip",
+          "url": "https://tw.trip.com/blog/tokyo-new-attractions/",
+          "hot": 86
+        },
+        {
+          "category": "social",
+          "title": "2026首爾必去景點40+ 攻略",
+          "summary": "首爾40+景點推薦，涵蓋宮殿韓屋、傳統市場、藝術街區與近郊私房點。",
+          "tags": [
+            "首爾",
+            "韓國旅遊",
+            "自由行"
+          ],
+          "meta": "日韓旅遊",
+          "image": "https://blog-static.kkday.com/zh-tw/blog/wp-content/uploads/2023/02/%E9%A6%96%E7%88%BE%E6%99%AF%E9%BB%9E.jpg",
+          "url": "https://www.kkday.com/zh-tw/blog/4044/asia-korea-seoul-first-visit-spot",
+          "hot": 79
+        },
+        {
+          "category": "social",
+          "title": "2026台灣美食展 6大必吃神店",
+          "summary": "美食展集結必比登名店與古早味排隊美食，謝掌櫃、雲川水月、牛店等人氣名店值得朝聖。",
+          "tags": [
+            "台灣美食",
+            "美食展",
+            "打卡"
+          ],
+          "meta": "台灣美食",
+          "image": "https://ni.yam.com/20260720/scaled-e095008296d5de52.jpg",
+          "url": "https://n.yam.com/Article/20260720472288",
+          "hot": 84
+        },
+        {
+          "category": "social",
+          "title": "資策會公布2026十大AI關鍵技術",
+          "summary": "AI從虛擬躍入實體，實現感知、推理與自主行動的完整演進，成為軟體技術主角。",
+          "tags": [
+            "AI新技術",
+            "資策會",
+            "趨勢"
+          ],
+          "meta": "AI新技術",
+          "image": "https://www.ithome.com.tw/sites/default/files/field/image/1267-jiao_dian_-2p-yan_fen_-zi_ce_hui_ai_tu_biao_1_0.jpg",
+          "url": "https://www.ithome.com.tw/news/172987",
+          "hot": 75
+        }
+      ]
+    },
     {
       "date": "2026-08-11",
       "headline": "AI 需求續旺帶動台股電子與竹北房市；日韓新景點、台灣美食展成社群熱話。",
