@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-13",
+  "updated": "2026-08-14",
   "items": [
     {
       "id": "seed-001",
@@ -218,6 +218,28 @@
       "source": "日誌08-12 社群",
       "url": "https://n.yam.com/Article/20260720472288",
       "addedAt": "2026-08-12"
+    },
+    {
+      "id": "auto-2026-08-14-21",
+      "name": "首爾『淚之女王』商場",
+      "type": "place",
+      "area": "首爾",
+      "note": "熱門韓劇取景商場，IG打卡熱點",
+      "status": "want",
+      "source": "社群",
+      "url": "https://www.klook.com/zh-TW/blog/must-visit-places-in-seoul/",
+      "addedAt": "2026-08-14"
+    },
+    {
+      "id": "auto-2026-08-14-22",
+      "name": "新竹市立動物園",
+      "type": "place",
+      "area": "新竹",
+      "note": "親子放電經典去處，市區交通方便",
+      "status": "want",
+      "source": "日誌08-14",
+      "url": "https://bunnyann.tw/hsinchu-family/",
+      "addedAt": "2026-08-14"
     }
   ]
 }
