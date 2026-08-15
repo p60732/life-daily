@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14",
+  "generatedAt": "2026-08-15",
   "rent": {
     "updated": "2026-08-02",
     "intro": "關新路、新莊街一帶位於新竹市東區，緊鄰竹科（園區二路、新安路）與台鐵新莊車站（六家線），是竹科工程師與雙薪家庭最熱門的租屋圈。生活機能成熟——關新公園、好市多、大遠百／巨城商圈與多所明星學校都在車程內。物件以電梯套房與整層 2–4 房為主；越靠園區、越新的電梯大樓租金越高，整層附平面車位者再往上一階。",
@@ -314,6 +314,201 @@
     ]
   },
   "days": [
+    {
+      "date": "2026-08-15",
+      "headline": "竹北衝百萬宅、台股AI供應鏈為選股主軸；總預算三讀刪480億，經濟成長上修至11.05%創39年新高。",
+      "entries": [
+        {
+          "category": "realty",
+          "title": "竹北衝百萬宅倒數 時華案高樓層創新高",
+          "summary": "竹北住宅單價逼近百萬，時華案最高成交95.35萬/坪，公開一個月售出約85戶。",
+          "tags": [
+            "竹北",
+            "高鐵特區",
+            "建案"
+          ],
+          "meta": "史上首座百萬宅",
+          "image": "https://img.ltn.com.tw/Upload/house/page/2026/07/13/260713-28417-1-tL4ty.jpg",
+          "url": "https://estate.ltn.com.tw/article/28417",
+          "hot": 95
+        },
+        {
+          "category": "realty",
+          "title": "竹科族購屋回流 明湖、光復路9成竹科客",
+          "summary": "明湖路、光復路一段購屋族逾9成為竹科員工，隘口六街同樣以科技族為主力。",
+          "tags": [
+            "東區",
+            "竹科",
+            "熱區"
+          ],
+          "meta": "科技新貴回流",
+          "image": "https://img.ltn.com.tw/Upload/house/page/2024/03/21/240321-20052-1-slkFo.jpeg",
+          "url": "https://estate.ltn.com.tw/article/20052",
+          "hot": 88
+        },
+        {
+          "category": "realty",
+          "title": "台股高漲激勵 竹北賞屋潮明顯增溫",
+          "summary": "AI產業與台股獲利帶動科技族購屋信心，第二季以來賞屋人潮回升，交易頻創新高。",
+          "tags": [
+            "竹北",
+            "買氣",
+            "AI"
+          ],
+          "meta": "量價齊揚",
+          "image": "",
+          "url": "https://estate.ltn.com.tw/article/28417",
+          "hot": 80
+        },
+        {
+          "category": "invest",
+          "title": "台股八月選股 AI供應鏈為核心",
+          "summary": "AI長線趨勢未變，建議逢震盪分批布局半導體、AI伺服器、矽光子、記憶體、CCL與被動元件。（非投資建議）",
+          "tags": [
+            "半導體",
+            "AI伺服器",
+            "選股"
+          ],
+          "meta": "選股重於選市",
+          "image": "https://cimg.cnyes.cool/prod/news/6562609/m/1e436766e1c797643a3545db07483444.jpg",
+          "url": "https://news.cnyes.com/news/id/6562609",
+          "hot": 92
+        },
+        {
+          "category": "invest",
+          "title": "量大強漲股整理 光通訊、記憶體領漲",
+          "summary": "上市統新、富世達、聯茂、建準強勢；上櫃聯亞、宜鼎、M31領漲，聯亞7月營收首破5億。（非投資建議）",
+          "tags": [
+            "強勢股",
+            "光通訊",
+            "記憶體"
+          ],
+          "meta": "量大強漲",
+          "image": "",
+          "url": "https://news.cnyes.com/news/id/6562609",
+          "hot": 84
+        },
+        {
+          "category": "invest",
+          "title": "台積電AI訂單噴發 半導體ETF布局解析",
+          "summary": "台積電AI晶片訂單帶動整條供應鏈，建議分批定期定額，留意估值與景氣循環風險。（非投資建議）",
+          "tags": [
+            "台積電",
+            "ETF",
+            "布局"
+          ],
+          "meta": "分批布局",
+          "image": "https://images.top1market.com/images/cms/uploads/20260727/f40da0e478ddc38598c20fc2e7dca639.jpg",
+          "url": "https://www.top1markets.com/tw/insights/stocks/temc-ai-etf-chance-2026",
+          "hot": 78
+        },
+        {
+          "category": "invest",
+          "title": "代理型AI成主流 SaaS工具整合機會",
+          "summary": "2026代理型AI能自主執行多步驟任務，專業工具生態成形，利於排班軟體等垂直SaaS切入。（非投資建議）",
+          "tags": [
+            "代理型AI",
+            "SaaS",
+            "產品機會"
+          ],
+          "meta": "副業機會",
+          "image": "https://s.yimg.com/lo/mysterio/api/6c7af41d616c3caf0ae04fe564580fafcbcd993f6ef100a5d4eec2559a9b306e/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fko%2Fsunmedia_664%2F25f40ad05faf9f1749065d8d47a17fce",
+          "url": "https://tw.stock.yahoo.com/news/2026%E5%B9%B4ai%E5%B7%A5%E5%85%B7%E7%94%9F%E6%85%8B%E7%B3%BB%E6%88%90%E5%BD%A2-%E5%B0%88%E6%A5%AD%E5%8C%96-%E4%BB%A3%E7%90%86%E5%9E%8Bai%E4%B8%BB%E5%B0%8E%E6%9C%AA%E4%BE%86%E8%B6%A8%E5%8B%A2-124259636.html",
+          "hot": 70
+        },
+        {
+          "category": "news",
+          "title": "總預算案三讀 延宕351天刪減480億",
+          "summary": "史上最晚通過的年度總預算完成三讀，較原案刪減約480億元。",
+          "tags": [
+            "政治",
+            "預算"
+          ],
+          "meta": "史上最晚",
+          "image": "https://img.ltn.com.tw/Upload/news/600/2026/08/15/php00oVfP.jpg",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5540479",
+          "hot": 90
+        },
+        {
+          "category": "news",
+          "title": "今年經濟成長上修至11.05% 創39年新高",
+          "summary": "官方上修全年經濟成長預估至11.05%，為近39年最高。",
+          "tags": [
+            "經濟",
+            "GDP"
+          ],
+          "meta": "39年新高",
+          "image": "",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5540479",
+          "hot": 85
+        },
+        {
+          "category": "news",
+          "title": "藍白3公投案併大選 年底綁大選",
+          "summary": "廢除非核家園、鞭刑、道路罰鍰專用等3項公投案通過，將於年底綁大選。",
+          "tags": [
+            "公投",
+            "政治"
+          ],
+          "meta": "年底併選",
+          "image": "",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5540479",
+          "hot": 80
+        },
+        {
+          "category": "news",
+          "title": "舊法性侵追訴權時效違憲 11受害人可重審",
+          "summary": "大法官認定舊法性侵追訴權時效規定違憲，11名受害人可聲請重審。",
+          "tags": [
+            "司法",
+            "社會"
+          ],
+          "meta": "司法正義",
+          "image": "",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5540479",
+          "hot": 72
+        },
+        {
+          "category": "social",
+          "title": "2026東京新景點 哈利波特影城開幕",
+          "summary": "全球第二座哈利波特影城落腳練馬，加上澀谷SKY、歌舞伎町塔，東京新地標一次收。",
+          "tags": [
+            "日本旅遊",
+            "東京"
+          ],
+          "meta": "日韓旅遊",
+          "image": "https://ak-d.tripcdn.com/images/0103w12000a4on9dtB984_C_750_350_R5.png_.webp?proc=autoorient&proc=source%2ftrip",
+          "url": "https://tw.trip.com/blog/tokyo-new-attractions/",
+          "hot": 88
+        },
+        {
+          "category": "social",
+          "title": "台北必吃口袋名單 隱藏市場日料到五星牛排",
+          "summary": "神樂市場高CP日料、喜來登SUKHOTHAI泰菜、晶華ROBIN'S牛排屋近期話題不斷。",
+          "tags": [
+            "台灣美食",
+            "台北"
+          ],
+          "meta": "美食打卡",
+          "image": "https://bjsmile.tw/wp-content/uploads/2026/04/1-9.jpg",
+          "url": "https://bjsmile.tw/taipei-food/",
+          "hot": 82
+        },
+        {
+          "category": "social",
+          "title": "代理型AI定義2026 工具生態專業化",
+          "summary": "AI從單一聊天機器人走向專業化生態，代理型AI可自主發信、更新CRM、寫程式。",
+          "tags": [
+            "AI新技術",
+            "代理型AI"
+          ],
+          "meta": "AI趨勢",
+          "image": "https://s.yimg.com/lo/mysterio/api/6c7af41d616c3caf0ae04fe564580fafcbcd993f6ef100a5d4eec2559a9b306e/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fko%2Fsunmedia_664%2F25f40ad05faf9f1749065d8d47a17fce",
+          "url": "https://tw.stock.yahoo.com/news/2026%E5%B9%B4ai%E5%B7%A5%E5%85%B7%E7%94%9F%E6%85%8B%E7%B3%BB%E6%88%90%E5%BD%A2-%E5%B0%88%E6%A5%AD%E5%8C%96-%E4%BB%A3%E7%90%86%E5%9E%8Bai%E4%B8%BB%E5%B0%8E%E6%9C%AA%E4%BE%86%E8%B6%A8%E5%8B%A2-124259636.html",
+          "hot": 76
+        }
+      ]
+    },
     {
       "date": "2026-08-14",
       "headline": "週五加碼｜台積2奈米放量撐盤、新竹房市逆勢升溫，週末親子景點與秋季新番片單一次收。",
