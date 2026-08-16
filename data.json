@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15",
+  "generatedAt": "2026-08-16",
   "rent": {
     "updated": "2026-08-02",
     "intro": "關新路、新莊街一帶位於新竹市東區，緊鄰竹科（園區二路、新安路）與台鐵新莊車站（六家線），是竹科工程師與雙薪家庭最熱門的租屋圈。生活機能成熟——關新公園、好市多、大遠百／巨城商圈與多所明星學校都在車程內。物件以電梯套房與整層 2–4 房為主；越靠園區、越新的電梯大樓租金越高，整層附平面車位者再往上一階。",
@@ -314,6 +314,259 @@
     ]
   },
   "days": [
+    {
+      "date": "2026-08-16",
+      "headline": "AI熱潮續撐台股與竹科房市，竹北新案逼近百萬；國際強震與中東情勢牽動全球目光。",
+      "entries": [
+        {
+          "category": "realty",
+          "title": "竹北房價逼近百萬大關",
+          "summary": "AI熱潮與台股資金帶動科技族回流，竹北新案每坪逼近95萬元。",
+          "tags": [
+            "竹北",
+            "房價"
+          ],
+          "meta": "竹北",
+          "image": "https://img.ltn.com.tw/Upload/house/page/2026/07/13/260713-28417-1-tL4ty.jpg",
+          "url": "https://estate.ltn.com.tw/article/28417",
+          "hot": 95
+        },
+        {
+          "category": "realty",
+          "title": "大陸建設「時華」預售破9字頭",
+          "summary": "竹北預售案87%成交單價站上9字頭，最高每坪95.35萬。",
+          "tags": [
+            "竹北",
+            "建案"
+          ],
+          "meta": "建案",
+          "image": "https://annewsmedia.com/wp-content/uploads/2026/06/2026-06-16-132700.jpg",
+          "url": "https://annewsmedia.com/2026/06/16/market-news/19371/",
+          "hot": 88
+        },
+        {
+          "category": "realty",
+          "title": "新竹逆勢！520檔期2大百億案登場",
+          "summary": "北台灣推案創4年新低，新竹昌益、大陸建設兩大案成亮點。",
+          "tags": [
+            "推案",
+            "竹北"
+          ],
+          "meta": "亮點",
+          "image": "https://cimg.cnyes.cool/prod/news/6438095/m/83f09804ac6fcfe68abb88334bccfbe6.jpg",
+          "url": "https://news.cnyes.com/news/id/6438095",
+          "hot": 82
+        },
+        {
+          "category": "realty",
+          "title": "2026新竹房市買氣續低迷",
+          "summary": "2025新竹推案銷售額年減近2成，建商採讓利不讓價策略。",
+          "tags": [
+            "房市",
+            "量縮"
+          ],
+          "meta": "量縮",
+          "image": "",
+          "url": "https://money.udn.com/money/story/5621/9235417",
+          "hot": 76
+        },
+        {
+          "category": "realty",
+          "title": "限貸令鬆綁 第二戶成數升至6成",
+          "summary": "央行放寬第二戶購屋貸款成數，由5成調整為6成。",
+          "tags": [
+            "政策",
+            "房貸"
+          ],
+          "meta": "政策",
+          "image": "",
+          "url": "https://houseloan.tw/%E5%A4%AE%E8%A1%8C%E5%87%BA%E6%89%8B%EF%BC%81%E3%80%8C%E5%9B%9B%E5%A4%A7%E6%8E%AA%E6%96%BD%E3%80%8D%E6%89%93%E7%82%92%E6%88%BF/",
+          "hot": 70
+        },
+        {
+          "category": "invest",
+          "title": "2026 AI概念股進入實質受惠",
+          "summary": "HBM、ABF載板、推論晶片缺貨延續至2028，七大賽道龍頭浮現。",
+          "tags": [
+            "AI",
+            "半導體"
+          ],
+          "meta": "選股",
+          "image": "https://grenade.tw/wp-content/uploads/2026/05/scimgBtOeCv.webp",
+          "url": "https://grenade.tw/blog/ai-concept-stocks-2026/",
+          "hot": 90
+        },
+        {
+          "category": "invest",
+          "title": "費半重挫 留意AI槓桿疑慮",
+          "summary": "NVDA籌資引爆AI槓桿疑慮，費半單日重挫近3%，注意週線20轉折。",
+          "tags": [
+            "費半",
+            "風險"
+          ],
+          "meta": "轉折",
+          "image": "",
+          "url": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1248576",
+          "hot": 85
+        },
+        {
+          "category": "invest",
+          "title": "AI出口動能延續 基金上修台股展望",
+          "summary": "多家基金公司上修2026台股獲利與經濟成長展望。",
+          "tags": [
+            "台股",
+            "展望"
+          ],
+          "meta": "上修",
+          "image": "",
+          "url": "https://www.anuefund.com/investment-article/8deb5b3cc70ad54Z1p7apRrhhXBqXFnqSPM5W7VyGUDAKlCSjB",
+          "hot": 80
+        },
+        {
+          "category": "invest",
+          "title": "半導體ETF 2026布局解析",
+          "summary": "台積電AI訂單噴發，半導體ETF後市與布局重點整理。",
+          "tags": [
+            "ETF",
+            "台積電"
+          ],
+          "meta": "布局",
+          "image": "",
+          "url": "https://www.top1markets.com/tw/insights/stocks/temc-ai-etf-chance-2026",
+          "hot": 74
+        },
+        {
+          "category": "invest",
+          "title": "產品重心：排班軟體 SaaS 機會",
+          "summary": "中小企業排班需求增，排班軟體是本季可積極切入的產品／副業方向。",
+          "tags": [
+            "SaaS",
+            "副業"
+          ],
+          "meta": "機會",
+          "image": "",
+          "url": "",
+          "hot": 68
+        },
+        {
+          "category": "news",
+          "title": "印尼蘇門答臘規模7.7強震",
+          "summary": "死亡增至47人，救援持續進行，餘震不斷。",
+          "tags": [
+            "國際",
+            "地震"
+          ],
+          "meta": "國際",
+          "image": "",
+          "url": "https://www.cna.com.tw/list/aopl.aspx",
+          "hot": 92
+        },
+        {
+          "category": "news",
+          "title": "中央政府總預算三讀通過",
+          "summary": "送入立院351天後，今年度中央政府總預算終於三讀。",
+          "tags": [
+            "台灣",
+            "政治"
+          ],
+          "meta": "台灣",
+          "image": "",
+          "url": "https://news.ltn.com.tw/list/breakingnews",
+          "hot": 86
+        },
+        {
+          "category": "news",
+          "title": "中東升溫 以軍空襲黎巴嫩",
+          "summary": "以色列稱擊斃真主黨指揮官，荷莫茲海峽油輪遭襲。",
+          "tags": [
+            "中東",
+            "國際"
+          ],
+          "meta": "國際",
+          "image": "",
+          "url": "https://www.cna.com.tw/list/aopl.aspx",
+          "hot": 80
+        },
+        {
+          "category": "news",
+          "title": "歐洲野火肆虐 比法約600人撤離",
+          "summary": "比利時與法國西南部野火延燒，約600人撤離家園。",
+          "tags": [
+            "國際",
+            "災害"
+          ],
+          "meta": "國際",
+          "image": "",
+          "url": "https://www.cna.com.tw/list/aopl.aspx",
+          "hot": 72
+        },
+        {
+          "category": "news",
+          "title": "台維斯盃 台灣男網9月對戰瑞典",
+          "summary": "許育修、曾俊欣等亞運國手集結，台北主場迎戰瑞典。",
+          "tags": [
+            "體育",
+            "網球"
+          ],
+          "meta": "體育",
+          "image": "",
+          "url": "https://news.ltn.com.tw/list/breakingnews",
+          "hot": 64
+        },
+        {
+          "category": "social",
+          "title": "2026東京18大新景點",
+          "summary": "哈利波特影城開幕、東急歌舞伎町TOWER成新宿最強新地標。",
+          "tags": [
+            "日韓旅遊",
+            "東京"
+          ],
+          "meta": "日韓旅遊",
+          "image": "https://ak-d.tripcdn.com/images/0103w12000a4on9dtB984_C_750_350_R5.png_.webp?proc=autoorient&proc=source%2ftrip",
+          "url": "https://tw.trip.com/blog/tokyo-new-attractions/",
+          "hot": 88
+        },
+        {
+          "category": "social",
+          "title": "新店美食黑馬 捷運綠線話題店",
+          "summary": "得獎布丁「午甜Woodi」、夏威夷鐵板燒火焰秀「Kamekona」引話題。",
+          "tags": [
+            "台灣美食",
+            "新店"
+          ],
+          "meta": "台灣美食",
+          "image": "https://srice.tw/wp-content/uploads/2025/11/123-1.png",
+          "url": "https://srice.tw/xindian-food/",
+          "hot": 84
+        },
+        {
+          "category": "social",
+          "title": "2026 AI工具走向代理型",
+          "summary": "AI工具高度專業化，代理型AI能自主執行多步驟任務成主流趨勢。",
+          "tags": [
+            "AI新技術",
+            "AI工具"
+          ],
+          "meta": "AI新技術",
+          "image": "https://s.yimg.com/lo/mysterio/api/6c7af41d616c3caf0ae04fe564580fafcbcd993f6ef100a5d4eec2559a9b306e/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fko%2Fsunmedia_664%2F25f40ad05faf9f1749065d8d47a17fce",
+          "url": "https://tw.stock.yahoo.com/news/2026%E5%B9%B4ai%E5%B7%A5%E5%85%B7%E7%94%9F%E6%85%8B%E7%B3%BB%E6%88%90%E5%BD%A2-%E5%B0%88%E6%A5%AD%E5%8C%96-%E4%BB%A3%E7%90%86%E5%9E%8Bai%E4%B8%BB%E5%B0%8E%E6%9C%AA%E4%BE%86%E8%B6%A8%E5%8B%A2-124259636.html",
+          "hot": 80
+        },
+        {
+          "category": "social",
+          "title": "首爾必去景點攻略2026",
+          "summary": "宮殿、韓屋村、美食市場到近郊秘境，四季皆有看點。",
+          "tags": [
+            "日韓旅遊",
+            "首爾"
+          ],
+          "meta": "日韓旅遊",
+          "image": "https://blog-static.kkday.com/zh-tw/blog/wp-content/uploads/2023/02/%E9%A6%96%E7%88%BE%E6%99%AF%E9%BB%9E.jpg",
+          "url": "https://www.kkday.com/zh-tw/blog/4044/asia-korea-seoul-first-visit-spot",
+          "hot": 76
+        }
+      ]
+    },
     {
       "date": "2026-08-15",
       "headline": "竹北衝百萬宅、台股AI供應鏈為選股主軸；總預算三讀刪480億，經濟成長上修至11.05%創39年新高。",

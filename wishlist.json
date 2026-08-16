@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-15",
+  "updated": "2026-08-16",
   "items": [
     {
       "id": "seed-001",
@@ -306,6 +306,28 @@
       "source": "日誌08-15 社群",
       "url": "https://bjsmile.tw/taipei-food/",
       "addedAt": "2026-08-15"
+    },
+    {
+      "id": "auto-2026-08-16-29",
+      "name": "午甜 Woodi",
+      "type": "food",
+      "area": "新北新店",
+      "note": "得獎布丁甜點，捷運綠線話題店",
+      "status": "want",
+      "source": "日誌08-16 社群",
+      "url": "https://srice.tw/xindian-food/",
+      "addedAt": "2026-08-16"
+    },
+    {
+      "id": "auto-2026-08-16-30",
+      "name": "Kamekona 夏威夷鐵板燒",
+      "type": "food",
+      "area": "新北新店",
+      "note": "浮誇火焰秀鐵板燒",
+      "status": "want",
+      "source": "日誌08-16 社群",
+      "url": "https://srice.tw/xindian-food/",
+      "addedAt": "2026-08-16"
     }
   ]
 }
