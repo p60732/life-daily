@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16",
+  "generatedAt": "2026-08-17",
   "rent": {
     "updated": "2026-08-02",
     "intro": "關新路、新莊街一帶位於新竹市東區，緊鄰竹科（園區二路、新安路）與台鐵新莊車站（六家線），是竹科工程師與雙薪家庭最熱門的租屋圈。生活機能成熟——關新公園、好市多、大遠百／巨城商圈與多所明星學校都在車程內。物件以電梯套房與整層 2–4 房為主；越靠園區、越新的電梯大樓租金越高，整層附平面車位者再往上一階。",
@@ -314,6 +314,194 @@
     ]
   },
   "days": [
+    {
+      "date": "2026-08-17",
+      "headline": "竹北房價續攻百萬關卡、台股AI供應鏈領軍創高，國際聚焦兩岸軍演口水戰。",
+      "entries": [
+        {
+          "category": "realty",
+          "title": "竹北房價快破百萬 科技新貴回流搶進",
+          "summary": "竹科買氣回溫，竹北高鐵特區直逼史上首座百萬宅。",
+          "tags": [
+            "竹北",
+            "百萬宅"
+          ],
+          "meta": "創新高",
+          "image": "https://img.ltn.com.tw/Upload/house/page/2026/07/13/260713-28417-1-tL4ty.jpg",
+          "url": "https://estate.ltn.com.tw/article/28417",
+          "hot": 95
+        },
+        {
+          "category": "realty",
+          "title": "大新竹不追重劃區 竹北舊市區逆勢熱銷",
+          "summary": "房市降溫下資金回流舊市區，抗跌保值成買方新共識。",
+          "tags": [
+            "竹北",
+            "舊市區"
+          ],
+          "meta": "轉向",
+          "image": "https://img.ltn.com.tw/Upload/house/page/2025/12/25/251225-26465-1-mFnad.jpg",
+          "url": "https://estate.ltn.com.tw/article/26465",
+          "hot": 82
+        },
+        {
+          "category": "realty",
+          "title": "竹北「時華」預售實登首破9字頭",
+          "summary": "大陸建設新案刷新竹北預售天花板，單價站上9字頭。",
+          "tags": [
+            "竹北",
+            "預售"
+          ],
+          "meta": "新高",
+          "image": "https://annewsmedia.com/wp-content/uploads/2026/06/2026-06-16-132700.jpg",
+          "url": "https://annewsmedia.com/2026/06/16/market-news/19371/",
+          "hot": 75
+        },
+        {
+          "category": "realty",
+          "title": "新竹、竹北房市趨勢完整解析",
+          "summary": "科技聚落續撐買氣，東區、竹北、湖口各區走勢分析。",
+          "tags": [
+            "新竹",
+            "趨勢"
+          ],
+          "meta": "各區",
+          "image": "",
+          "url": "https://www.rtube.com.tw/articles/4436",
+          "hot": 60
+        },
+        {
+          "category": "invest",
+          "title": "半導體仍由AI主導 四檔台股入列法人首選",
+          "summary": "AI需求延續，法人點名四檔供應鏈個股布局。非投資建議。",
+          "tags": [
+            "半導體",
+            "AI"
+          ],
+          "meta": "選股",
+          "image": "",
+          "url": "https://www.wealth.com.tw/articles/8dfb772a-24c0-432d-94d4-7845a373eac3",
+          "hot": 90
+        },
+        {
+          "category": "invest",
+          "title": "台股八月量大強漲股整理 選股關鍵公開",
+          "summary": "留意週線轉折與量能放大個股，掌握多空節奏。非投資建議。",
+          "tags": [
+            "台股",
+            "量能"
+          ],
+          "meta": "週線轉折",
+          "image": "https://cimg.cnyes.cool/prod/news/6562609/m/1e436766e1c797643a3545db07483444.jpg",
+          "url": "https://news.cnyes.com/news/id/6562609",
+          "hot": 85
+        },
+        {
+          "category": "invest",
+          "title": "台積電AI訂單噴發 半導體ETF布局解析",
+          "summary": "AI訂單推升晶圓龍頭，下一波ETF行情觀察重點。非投資建議。",
+          "tags": [
+            "台積電",
+            "ETF"
+          ],
+          "meta": "布局",
+          "image": "https://images.top1market.com/images/cms/uploads/20260727/f40da0e478ddc38598c20fc2e7dca639.jpg",
+          "url": "https://www.top1markets.com/tw/insights/stocks/temc-ai-etf-chance-2026",
+          "hot": 78
+        },
+        {
+          "category": "invest",
+          "title": "2026 AI概念股上中下游產業趨勢",
+          "summary": "四圖看懂AI供應鏈上中下游分工與可留意標的。非投資建議。",
+          "tags": [
+            "AI概念股",
+            "供應鏈"
+          ],
+          "meta": "趨勢",
+          "image": "",
+          "url": "https://www.sinotrade.com.tw/richclub/hotstock/2026%E5%B9%B4AI%E6%A6%82%E5%BF%B5%E8%82%A1%E6%9C%89%E5%93%AA%E4%BA%9B%E5%85%AC%E5%8F%B8-%E9%82%84%E5%80%BC%E5%BE%97%E6%8A%95%E8%B3%87%E5%97%8E-4%E5%9C%96%E8%A1%A8%E5%B8%B6%E4%BD%A0%E7%9C%8B%E6%87%82%E4%B8%8A%E4%B8%AD%E4%B8%8B%E6%B8%B8%E7%94%A2%E6%A5%AD%E8%B6%A8%E5%8B%A2--65af4cb1880d9e29902a677f",
+          "hot": 65
+        },
+        {
+          "category": "news",
+          "title": "陸國防部重砲轟漢光演習",
+          "summary": "北京譏諷演習「裝腔作勢、勞民傷財」，兩岸口水再升溫。",
+          "tags": [
+            "兩岸",
+            "漢光"
+          ],
+          "meta": "兩岸",
+          "image": "",
+          "url": "https://tw.news.yahoo.com/%E9%99%B8%E5%9C%8B%E9%98%B2%E9%83%A8%E9%87%8D%E7%A0%B2%E8%BD%9F%E6%BC%A2%E5%85%89%E6%BC%94%E7%BF%92-%E8%AD%8F%E8%AB%B7-%E8%A3%9D%E8%85%94%E4%BD%9C%E5%8B%A2-%E5%8B%9E%E6%B0%91%E5%82%B7%E8%B2%A1%E7%9A%84%E6%8A%8A%E6%88%B2-082835831.html",
+          "hot": 88
+        },
+        {
+          "category": "news",
+          "title": "「這縣市」普發6千元 資格時間一次看",
+          "summary": "地方加碼現金發放，領取資格與時程整理。",
+          "tags": [
+            "普發",
+            "民生"
+          ],
+          "meta": "民生",
+          "image": "",
+          "url": "https://tw.news.yahoo.com/%E6%94%BF%E5%BA%9C%E6%8C%AF%E8%88%88%E9%87%91-%E6%AF%8F%E4%BA%BA%E9%A0%986%E5%8D%83-%E7%99%BC%E6%94%BE%E6%99%82%E9%96%93-%E8%B3%87%E6%A0%BC-%E6%AC%A1%E7%9C%8B-012202323.html",
+          "hot": 80
+        },
+        {
+          "category": "news",
+          "title": "MLB 道奇終結者單週三度砸鍋",
+          "summary": "明星後援連續失手，總教練仍力挺不換人。",
+          "tags": [
+            "MLB",
+            "道奇"
+          ],
+          "meta": "運動",
+          "image": "",
+          "url": "https://tw.news.yahoo.com/mlb%E3%80%8B%E6%98%8E%E6%98%9F%E7%B5%82%E7%B5%90%E8%80%85%E5%96%AE%E9%80%B13%E5%BA%A6%E7%A0%B8%E9%8D%8B%EF%BC%81%E9%81%93%E5%A5%87%E4%B8%BB%E5%B8%A5%E9%82%84%E6%98%AF%E6%B2%92%E6%89%93%E7%AE%97%E6%8F%9B%E4%BA%BA-005800103.html",
+          "hot": 62
+        },
+        {
+          "category": "social",
+          "title": "2026東京18新景點 哈利波特影城開幕",
+          "summary": "新宿新地標與華納哈利波特影城成打卡熱點。",
+          "tags": [
+            "日本旅遊",
+            "東京"
+          ],
+          "meta": "日韓旅遊",
+          "image": "https://ak-d.tripcdn.com/images/0103w12000a4on9dtB984_C_750_350_R5.png_.webp?proc=autoorient&proc=source%2ftrip",
+          "url": "https://tw.trip.com/blog/tokyo-new-attractions/",
+          "hot": 84
+        },
+        {
+          "category": "social",
+          "title": "2026台北美食100間必吃清單",
+          "summary": "日式漢堡排、必比登推介到五星義法，口袋名單一次收。",
+          "tags": [
+            "台灣美食",
+            "台北"
+          ],
+          "meta": "台灣美食",
+          "image": "https://bjsmile.tw/wp-content/uploads/2026/04/1-9.jpg",
+          "url": "https://bjsmile.tw/taipei-food/",
+          "hot": 79
+        },
+        {
+          "category": "social",
+          "title": "2026最新AI熱門工具分類整理",
+          "summary": "代理型AI主導，最新AI工具依用途分類懶人包。",
+          "tags": [
+            "AI新技術",
+            "工具"
+          ],
+          "meta": "AI新技術",
+          "image": "https://api.ahha.com.tw/api/media/sites/wohe_migration_test1/blog/ai-tools-categories.webp?rw=1200",
+          "url": "https://www.ahha.tw/blog/ai-tools-categories",
+          "hot": 73
+        }
+      ]
+    },
     {
       "date": "2026-08-16",
       "headline": "AI熱潮續撐台股與竹科房市，竹北新案逼近百萬；國際強震與中東情勢牽動全球目光。",
