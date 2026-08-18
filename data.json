@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17",
+  "generatedAt": "2026-08-18",
   "rent": {
     "updated": "2026-08-02",
     "intro": "關新路、新莊街一帶位於新竹市東區，緊鄰竹科（園區二路、新安路）與台鐵新莊車站（六家線），是竹科工程師與雙薪家庭最熱門的租屋圈。生活機能成熟——關新公園、好市多、大遠百／巨城商圈與多所明星學校都在車程內。物件以電梯套房與整層 2–4 房為主；越靠園區、越新的電梯大樓租金越高，整層附平面車位者再往上一階。",
@@ -314,6 +314,222 @@
     ]
   },
   "days": [
+    {
+      "date": "2026-08-18",
+      "headline": "竹科撐起新竹房市再創新高，台積2奈米放量帶動台股叩關季線；社群焦點在東京寶可夢樂園與矽谷AI推理引擎。",
+      "entries": [
+        {
+          "category": "realty",
+          "title": "竹北逼近百萬宅，「時華」單價95.35萬創紀錄",
+          "summary": "AI帶動買氣，竹北住宅單價逼近百萬大關，可望誕生首座百萬宅。",
+          "tags": [
+            "竹北",
+            "新建案",
+            "百萬宅"
+          ],
+          "meta": "創新高",
+          "image": "https://img.ltn.com.tw/Upload/house/page/2026/07/13/260713-28417-1-tL4ty.jpg",
+          "url": "https://estate.ltn.com.tw/article/28417",
+          "hot": 95
+        },
+        {
+          "category": "realty",
+          "title": "竹科工程師撐盤，新竹成全台唯一價量俱揚",
+          "summary": "AI擴張帶動就業所得，新案定價上移，新竹房價再創歷史新高。",
+          "tags": [
+            "竹科",
+            "價量俱揚",
+            "新高"
+          ],
+          "meta": "價量俱揚",
+          "image": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/07/24/35168032.jpg&M=1&s=Y&x=0&y=0&sw=1280&sh=853&exp=3600",
+          "url": "https://udn.com/news/story/7241/9649089",
+          "hot": 90
+        },
+        {
+          "category": "realty",
+          "title": "蛋白區逆襲！竹東房價年漲7.3%稱王",
+          "summary": "竹科外溢效應狠甩竹北，竹東在房市買氣降溫下逆勢領漲。",
+          "tags": [
+            "竹東",
+            "外溢",
+            "年漲"
+          ],
+          "meta": "蛋白逆襲",
+          "image": "https://images.chinatimes.com/newsphoto/2026-07-06/656/20260706002121.jfif",
+          "url": "https://www.chinatimes.com/realtimenews/20260706002120-260410",
+          "hot": 82
+        },
+        {
+          "category": "realty",
+          "title": "竹北Q2均價每坪42.6萬，居新竹縣之冠",
+          "summary": "竹北Q2均價全台347區排名第21，較全台中位單價高逾115%。",
+          "tags": [
+            "竹北",
+            "實價登錄",
+            "Q2"
+          ],
+          "meta": "縣內第一",
+          "image": "https://molecular1111.store/api/v1/og?title=2026-Q2+%E7%AB%B9%E5%8C%97%E6%88%BF%E5%83%B9%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90&subtitle=%E8%A1%8C%E6%94%BF%E5%8D%80%E5%B8%82%E5%A0%B6%E5%A3%9F%E6%96%B7%E5%A0%B1&tag=%E6%96%B0%E7%AB%B9%E7%B8%A3",
+          "url": "https://molecular1111.store/sell/hsinchu-county-%E7%AB%B9%E5%8C%97%E5%B8%82",
+          "hot": 75
+        },
+        {
+          "category": "invest",
+          "title": "台積2奈米開始貢獻營收，第三季展望續高",
+          "summary": "AI／HPC與先進製程需求撐盤，法人建議拉回分批承接（非投資建議）。",
+          "tags": [
+            "台積電",
+            "2奈米",
+            "先進製程"
+          ],
+          "meta": "選股",
+          "image": "https://s.newtalk.tw/album/news/975/6a82622f84035.png",
+          "url": "https://newtalk.tw/news/view/2026-08-10/1052438",
+          "hot": 92
+        },
+        {
+          "category": "invest",
+          "title": "美股新高激勵，台股叩關季線但留意外資空單",
+          "summary": "美伊協議露曙光推升道瓊標普創高，台股挑戰季線惟反彈賣壓需防（非投資建議）。",
+          "tags": [
+            "台股",
+            "季線",
+            "外資"
+          ],
+          "meta": "轉折觀察",
+          "image": "https://money.udn.com/static/img/moneyudn.jpg",
+          "url": "https://money.udn.com/money/story/5607/9671355",
+          "hot": 85
+        },
+        {
+          "category": "invest",
+          "title": "AI概念股七大賽道，訂單能見度看到2027-28",
+          "summary": "散熱、ASIC、ABF、HBM等龍頭清單整理，可留意轉折標的（非投資建議）。",
+          "tags": [
+            "AI概念股",
+            "散熱",
+            "HBM"
+          ],
+          "meta": "題材",
+          "image": "https://grenade.tw/wp-content/uploads/2026/05/scimgBtOeCv.webp",
+          "url": "https://grenade.tw/blog/ai-concept-stocks-2026/",
+          "hot": 78
+        },
+        {
+          "category": "news",
+          "title": "川普突下令大砍美韓軍演，稱北韓「沒威脅」",
+          "summary": "美方宣布大幅縮減美韓聯合演習，並點名批評首爾。",
+          "tags": [
+            "國際",
+            "美韓",
+            "川普"
+          ],
+          "meta": "國際",
+          "image": "https://img.ltn.com.tw/Upload/news/600/2026/08/17/phpZob55v.jpg",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5542153",
+          "hot": 90
+        },
+        {
+          "category": "news",
+          "title": "卓榮泰遭凍薪，前大法官批違憲爭議",
+          "summary": "前大法官黃虹霞認為凍結官員薪資違反權力分立原則。",
+          "tags": [
+            "政治",
+            "凍薪",
+            "違憲"
+          ],
+          "meta": "政治",
+          "image": "https://img.ltn.com.tw/Upload/news/600/2026/08/16/5541696_1_1.jpg",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5541696",
+          "hot": 85
+        },
+        {
+          "category": "news",
+          "title": "越航起飛撞擊，台灣乘客曝第一視角",
+          "summary": "越航慕尼黑飛河內班機起飛時發生技術事故，人員最終安全撤離。",
+          "tags": [
+            "國際",
+            "航空",
+            "事故"
+          ],
+          "meta": "國際",
+          "image": "https://img.ltn.com.tw/Upload/news/600/2026/08/16/phpMuwdBl.jpg",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5542089",
+          "hot": 80
+        },
+        {
+          "category": "news",
+          "title": "史丹佛找到關鍵酵素，磨損軟骨有望長回來",
+          "summary": "研究發現阻斷特定酵素可促進退化膝關節軟骨再生。",
+          "tags": [
+            "健康",
+            "醫學",
+            "研究"
+          ],
+          "meta": "醫療",
+          "image": "https://img.ltn.com.tw/Upload/health/page/800/2026/08/16/phpeHb2oj.jpg",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5541777",
+          "hot": 72
+        },
+        {
+          "category": "news",
+          "title": "88歲吳伯雄跌倒，營養師揭防肌少症公式",
+          "summary": "長者防肌少症需均衡飲食、充足蛋白質、維生素D及鈣質。",
+          "tags": [
+            "健康",
+            "長者",
+            "肌少症"
+          ],
+          "meta": "健康",
+          "image": "https://img.ltn.com.tw/Upload/health/page/800/2026/08/16/phpUPuZxq.jpg",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5541461",
+          "hot": 65
+        },
+        {
+          "category": "social",
+          "title": "日韓旅遊｜東京寶可夢樂園、麻布台之丘開幕",
+          "summary": "全球首座寶可夢戶外主題樂園PokéPark KANTO成2026東京必玩焦點。",
+          "tags": [
+            "日韓旅遊",
+            "東京",
+            "新景點"
+          ],
+          "meta": "旅遊",
+          "image": "https://alinalife.tw/wp-content/uploads/2024/11/tokyo-attractions.jpg",
+          "url": "https://alinalife.tw/tokyo-attractions/",
+          "hot": 88
+        },
+        {
+          "category": "social",
+          "title": "台灣美食｜台北必吃：鼎泰豐、雙月食品社",
+          "summary": "從米其林鼎泰豐、金蓬萊到必比登雙月，2026台北美食口袋名單。",
+          "tags": [
+            "台灣美食",
+            "台北",
+            "米其林"
+          ],
+          "meta": "美食",
+          "image": "https://gofunit.com/wp-content/uploads/2021/07/IMG_4416.jpg",
+          "url": "https://gofunit.com/%E5%8F%B0%E5%8C%97%E7%BE%8E%E9%A3%9F%E6%8E%A8%E8%96%A6/",
+          "hot": 80
+        },
+        {
+          "category": "social",
+          "title": "AI新技術｜開源推理引擎RadixArk融資破億美元",
+          "summary": "GPU利用率優化成矽谷核心競爭，推動AI基礎設施效率革命。",
+          "tags": [
+            "AI新技術",
+            "矽谷",
+            "推理引擎"
+          ],
+          "meta": "AI",
+          "image": "https://ni.yam.com/20260801/IMG_1157-1024x562-1e720510275061c8.jpeg",
+          "url": "https://n.yam.com/Article/20260801159939",
+          "hot": 76
+        }
+      ]
+    },
     {
       "date": "2026-08-17",
       "headline": "竹北房價續攻百萬關卡、台股AI供應鏈領軍創高，國際聚焦兩岸軍演口水戰。",
