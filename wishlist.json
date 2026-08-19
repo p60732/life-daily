@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18",
+  "updated": "2026-08-19",
   "items": [
     {
       "id": "seed-001",
@@ -372,6 +372,39 @@
       "source": "日誌08-18 社群",
       "url": "https://gofunit.com/%E5%8F%B0%E5%8C%97%E7%BE%8E%E9%A3%9F%E6%8E%A8%E8%96%A6/",
       "addedAt": "2026-08-18"
+    },
+    {
+      "id": "auto-2026-08-19-35",
+      "name": "樂天塔 SKY BRIDGE",
+      "type": "place",
+      "area": "首爾",
+      "note": "541公尺高空天橋觀景體驗",
+      "status": "want",
+      "source": "日誌08-19 社群",
+      "url": "https://mimigo.tw/seoul-trips/",
+      "addedAt": "2026-08-19"
+    },
+    {
+      "id": "auto-2026-08-19-36",
+      "name": "COEX 星空圖書館",
+      "type": "place",
+      "area": "首爾",
+      "note": "超浪漫大型書牆打卡點",
+      "status": "want",
+      "source": "日誌08-19 社群",
+      "url": "https://mimigo.tw/seoul-trips/",
+      "addedAt": "2026-08-19"
+    },
+    {
+      "id": "auto-2026-08-19-37",
+      "name": "謝掌櫃虱目魚海鮮粥",
+      "type": "food",
+      "area": "台灣美食展",
+      "note": "美食展必吃神店之一",
+      "status": "want",
+      "source": "日誌08-19 社群",
+      "url": "https://www.myhousing.com.tw/l/l04/285225/",
+      "addedAt": "2026-08-19"
     }
   ]
 }
