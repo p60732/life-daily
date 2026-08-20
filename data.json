@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19",
+  "generatedAt": "2026-08-20",
   "rent": {
     "updated": "2026-08-02",
     "intro": "關新路、新莊街一帶位於新竹市東區，緊鄰竹科（園區二路、新安路）與台鐵新莊車站（六家線），是竹科工程師與雙薪家庭最熱門的租屋圈。生活機能成熟——關新公園、好市多、大遠百／巨城商圈與多所明星學校都在車程內。物件以電梯套房與整層 2–4 房為主；越靠園區、越新的電梯大樓租金越高，整層附平面車位者再往上一階。",
@@ -314,6 +314,250 @@
     ]
   },
   "days": [
+    {
+      "date": "2026-08-20",
+      "headline": "科技股拋售潮延燒亞股齊跌、美債殖利率飆19年新高；竹北房價續攻百萬、AI供應鏈短線震盪待轉折。",
+      "entries": [
+        {
+          "category": "realty",
+          "title": "竹北「時華」每坪89.99萬奪冠 北台百億案價比一比",
+          "summary": "竹北高鐵特區豪案單價逼近9字頭，續居北台百億案價格前段班。",
+          "tags": [
+            "竹北",
+            "高鐵特區",
+            "豪宅"
+          ],
+          "meta": "竹北",
+          "image": "https://annewsmedia.com/wp-content/uploads/2026/07/2026-07-23-132008.jpg",
+          "url": "https://annewsmedia.com/2026/07/23/market-news/20300/",
+          "hot": 95
+        },
+        {
+          "category": "realty",
+          "title": "竹北房價快破百萬 科技新貴殺回來",
+          "summary": "科技買盤回流帶動竹北量價齊揚，新竹史上首座百萬宅倒數。",
+          "tags": [
+            "竹北",
+            "科技買盤",
+            "破百萬"
+          ],
+          "meta": "破百萬",
+          "image": "https://img.ltn.com.tw/Upload/house/page/2026/07/13/260713-28417-1-tL4ty.jpg",
+          "url": "https://estate.ltn.com.tw/article/28417",
+          "hot": 90
+        },
+        {
+          "category": "realty",
+          "title": "新竹、竹北房市發展趨勢分析：科技聚落帶動房價",
+          "summary": "竹科聚落擴張支撐買氣，2026購屋與置產全區解析。",
+          "tags": [
+            "新竹",
+            "竹科",
+            "趨勢"
+          ],
+          "meta": "趨勢",
+          "image": "https://cdn.rtube.com.tw/user/3536/article/1_7b86edf6-a7b7-4285-ac4a-89ffc8bbdc88.jpg",
+          "url": "https://www.rtube.com.tw/articles/4436",
+          "hot": 80
+        },
+        {
+          "category": "realty",
+          "title": "竹北高鐵區超保值 最新預售實登單價逼近9字頭",
+          "summary": "高鐵特區預售案實價登錄再創高，保值性受科技買盤追捧。",
+          "tags": [
+            "竹北",
+            "高鐵區",
+            "預售"
+          ],
+          "meta": "高鐵區",
+          "image": "https://i0.wp.com/www.chling0630.com.tw/wp-content/uploads/2026/01/20260124A.jpg?fit=1024%2C1024&ssl=1",
+          "url": "https://www.chling0630.com.tw/2026/01/24/竹北高鐵區超保值-最新預售案實登揭露，單價逼近/",
+          "hot": 75
+        },
+        {
+          "category": "invest",
+          "title": "2026 AI股仍可續漲？產業趨勢與台美標的解析（非投資建議）",
+          "summary": "AI供應鏈仍是台股主軸，留意龍頭與先進封裝短線轉折訊號。",
+          "tags": [
+            "AI",
+            "半導體",
+            "台股"
+          ],
+          "meta": "選股",
+          "image": "https://www.esunsec.com.tw/-/media/EsunSec/Images/Global-Folder/MetaDataIcons/og-image-new.png",
+          "url": "https://www.esunsec.com.tw/article/post/478",
+          "hot": 90
+        },
+        {
+          "category": "invest",
+          "title": "台積電 AI 訂單噴發 半導體 ETF 下一波行情佈局（非投資建議）",
+          "summary": "CoWoS產能吃緊、AI訂單續強，可觀察週線20轉折抓多空。",
+          "tags": [
+            "台積電",
+            "ETF",
+            "CoWoS"
+          ],
+          "meta": "轉折",
+          "image": "https://images.top1market.com/images/cms/uploads/20260727/f40da0e478ddc38598c20fc2e7dca639.jpg",
+          "url": "https://www.top1markets.com/tw/insights/stocks/temc-ai-etf-chance-2026",
+          "hot": 85
+        },
+        {
+          "category": "invest",
+          "title": "2026 AI概念股清單：散熱、ASIC、ABF、HBM 龍頭整理（非投資建議）",
+          "summary": "AI硬體四大子題龍頭清單，供應鏈分散布局的觀察名單。",
+          "tags": [
+            "ASIC",
+            "HBM",
+            "散熱"
+          ],
+          "meta": "名單",
+          "image": "https://grenade.tw/wp-content/uploads/2026/05/scimgBtOeCv.webp",
+          "url": "https://grenade.tw/blog/ai-concept-stocks-2026/",
+          "hot": 80
+        },
+        {
+          "category": "news",
+          "title": "川普稱荷莫茲海峽「新領土」 伊朗願對話但拒投降",
+          "summary": "美伊緊張再升溫，荷莫茲海峽情勢牽動油價與地緣風險。",
+          "tags": [
+            "美伊",
+            "地緣",
+            "油價"
+          ],
+          "meta": "國際",
+          "image": "https://imgcdn.cna.com.tw/www/webphotos/WebOg/600/20260819/808x423_017649278238.jpg",
+          "url": "https://www.cna.com.tw/news/aopl/202608190026.aspx",
+          "hot": 95
+        },
+        {
+          "category": "news",
+          "title": "科技股拋售潮延燒亞股齊跌 三星、SK海力士重挫逾7%",
+          "summary": "記憶體與半導體賣壓擴散，亞股同步下挫、台股承壓。",
+          "tags": [
+            "台股",
+            "半導體",
+            "亞股"
+          ],
+          "meta": "盤勢",
+          "image": "https://imgcdn.cna.com.tw/www/webphotos/WebOg/600/20260819/904x474_580216843067.jpg",
+          "url": "https://www.cna.com.tw/news/afe/202608190074.aspx",
+          "hot": 92
+        },
+        {
+          "category": "news",
+          "title": "首批2架F-16V blk70自美起飛 近期抵台",
+          "summary": "新式戰機交付進度推進，強化台海空防戰力。",
+          "tags": [
+            "國防",
+            "F-16V",
+            "台海"
+          ],
+          "meta": "國防",
+          "image": "https://imgcdn.cna.com.tw/www/webphotos/WebOg/600/20260819/1998x1049_063265822943.jpg",
+          "url": "https://www.cna.com.tw/news/aipl/202608190046.aspx",
+          "hot": 90
+        },
+        {
+          "category": "news",
+          "title": "美債殖利率飆19年新高 通膨、赤字疑慮解析",
+          "summary": "殖利率創19年高點，市場對通膨與財政赤字疑慮升溫。",
+          "tags": [
+            "美債",
+            "殖利率",
+            "通膨"
+          ],
+          "meta": "利率",
+          "image": "https://imgcdn.cna.com.tw/www/webphotos/WebCover/800/20260819/1013x759_052563032575.jpg",
+          "url": "https://www.cna.com.tw/news/aopl/202608190125.aspx",
+          "hot": 88
+        },
+        {
+          "category": "news",
+          "title": "司法院示警：案量暴增無法負荷 司法處於崩潰邊緣",
+          "summary": "司法院指案件量激增、人力吃緊，恐衝擊審理品質與效率。",
+          "tags": [
+            "司法",
+            "政策",
+            "人力"
+          ],
+          "meta": "社會",
+          "image": "https://imgcdn.cna.com.tw/www/webphotos/WebCover/800/20260819/951x713_127366489025.jpg",
+          "url": "https://www.cna.com.tw/news/aipl/202608190079.aspx",
+          "hot": 75
+        },
+        {
+          "category": "social",
+          "title": "2026東京18個新景點 哈利波特影城開幕、新宿最強新地標",
+          "summary": "日韓旅遊熱議：華納兄弟哈利波特影城與新宿新地標成打卡首選。",
+          "tags": [
+            "日韓旅遊",
+            "東京",
+            "新景點"
+          ],
+          "meta": "日韓旅遊",
+          "image": "https://ak-d.tripcdn.com/images/0103w12000a4on9dtB984_C_750_350_R5.png_.webp?proc=autoorient&proc=source%2ftrip",
+          "url": "https://tw.trip.com/blog/tokyo-new-attractions/",
+          "hot": 92
+        },
+        {
+          "category": "social",
+          "title": "AI熱門工具推薦與分類整理（2026更新版）",
+          "summary": "AI新技術：最新生成、辦公、繪圖工具分類整理，快速上手選型。",
+          "tags": [
+            "AI新技術",
+            "工具",
+            "2026"
+          ],
+          "meta": "AI新技術",
+          "image": "https://api.ahha.com.tw/api/media/sites/wohe_migration_test1/blog/ai-tools-categories.webp?rw=1200",
+          "url": "https://www.ahha.tw/blog/ai-tools-categories",
+          "hot": 88
+        },
+        {
+          "category": "social",
+          "title": "2026台北美食100間精選必吃清單",
+          "summary": "台灣美食：日式漢堡排、必比登推介到義法料理一次收藏。",
+          "tags": [
+            "台灣美食",
+            "台北",
+            "必吃"
+          ],
+          "meta": "台灣美食",
+          "image": "https://bjsmile.tw/wp-content/uploads/2026/04/1-9.jpg",
+          "url": "https://bjsmile.tw/taipei-food/",
+          "hot": 85
+        },
+        {
+          "category": "social",
+          "title": "2026台灣美食展 6大必吃神店全攻略",
+          "summary": "台灣美食：年度美食展話題神店整理，排隊打卡不踩雷。",
+          "tags": [
+            "台灣美食",
+            "美食展",
+            "打卡"
+          ],
+          "meta": "台灣美食",
+          "image": "https://ni.yam.com/20260720/scaled-e095008296d5de52.jpg",
+          "url": "https://n.yam.com/Article/20260720472288",
+          "hot": 82
+        },
+        {
+          "category": "social",
+          "title": "2026東京11新景點：美少女戰士劇場、哆啦A夢夢想公園",
+          "summary": "日韓旅遊：東京主題劇場與親子夢想公園齊開，話題度爆棚。",
+          "tags": [
+            "日韓旅遊",
+            "東京",
+            "主題"
+          ],
+          "meta": "日韓旅遊",
+          "image": "https://d1grca2t3zpuug.cloudfront.net/2026/02/TOFROM YAESU TOWER1-876x500-1770019950.webp",
+          "url": "https://tokyo.letsgojp.com/archives/738728/",
+          "hot": 80
+        }
+      ]
+    },
     {
       "date": "2026-08-19",
       "headline": "台股單日重挫548點，AI供應鏈仍是主軸；新竹竹科房市保有韌性，日韓新景點與台灣美食展話題正熱。",
