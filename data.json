@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20",
+  "generatedAt": "2026-08-21",
   "rent": {
     "updated": "2026-08-02",
     "intro": "關新路、新莊街一帶位於新竹市東區，緊鄰竹科（園區二路、新安路）與台鐵新莊車站（六家線），是竹科工程師與雙薪家庭最熱門的租屋圈。生活機能成熟——關新公園、好市多、大遠百／巨城商圈與多所明星學校都在車程內。物件以電梯套房與整層 2–4 房為主；越靠園區、越新的電梯大樓租金越高，整層附平面車位者再往上一階。",
@@ -314,6 +314,361 @@
     ]
   },
   "days": [
+    {
+      "date": "2026-08-21",
+      "headline": "外銷訂單連18紅創新高、AI供應鏈續強；新竹房市洗牌竹北熄火湖口降價，週五加碼親子與新番。",
+      "entries": [
+        {
+          "category": "realty",
+          "title": "新竹房市大洗牌：竹北熄火、湖口傳建商降價",
+          "summary": "買氣轉冷，湖口部分建案傳降價，惟有一區逆勢漲7.3%奪冠。",
+          "tags": [
+            "竹北",
+            "湖口",
+            "洗牌"
+          ],
+          "meta": "洗牌",
+          "image": "https://img.ltn.com.tw/Upload/house/page/2026/07/07/260707-28372-1-9w27D.jpeg",
+          "url": "https://estate.ltn.com.tw/article/28372",
+          "hot": 95
+        },
+        {
+          "category": "realty",
+          "title": "竹北市房價近一年約62萬／坪",
+          "summary": "實價登錄顯示竹北成交行情維持高檔，仍是新竹購屋熱區。",
+          "tags": [
+            "竹北",
+            "實價登錄",
+            "62萬"
+          ],
+          "meta": "竹北",
+          "image": "",
+          "url": "https://www.leju.com.tw/map/region?mode=price&city=J&area=J302",
+          "hot": 80
+        },
+        {
+          "category": "realty",
+          "title": "新竹、竹北房市趨勢分析：科技聚落帶動房價？",
+          "summary": "竹科聚落與人口結構撐盤，2026購屋與置產面臨利率與買氣拉鋸。",
+          "tags": [
+            "竹科",
+            "置產",
+            "利率"
+          ],
+          "meta": "趨勢",
+          "image": "",
+          "url": "https://www.rtube.com.tw/articles/4436",
+          "hot": 72
+        },
+        {
+          "category": "realty",
+          "title": "新竹縣房價走勢與購屋時機一次看",
+          "summary": "近1～5年房價走勢與成交行情整理，供評估進場時機參考。",
+          "tags": [
+            "房價走勢",
+            "成交行情"
+          ],
+          "meta": "新竹縣",
+          "image": "",
+          "url": "https://www.great-home.com.tw/News/Detail.aspx?Num=4946",
+          "hot": 60
+        },
+        {
+          "category": "invest",
+          "title": "2026 AI股仍可續漲？產業趨勢與台美股標的",
+          "summary": "AI資本支出續強，供應鏈龍頭與核心短線受關注；可用週線20判多空轉折。（非投資建議）",
+          "tags": [
+            "AI",
+            "半導體",
+            "週線20"
+          ],
+          "meta": "轉折",
+          "image": "https://www.esunsec.com.tw/-/media/EsunSec/Images/article/post/2025/12/Post478/Post478.jpg",
+          "url": "https://www.esunsec.com.tw/article/post/478",
+          "hot": 92
+        },
+        {
+          "category": "invest",
+          "title": "2026 AI概念股清單：散熱、ASIC、ABF、HBM",
+          "summary": "AI伺服器帶動散熱、ASIC、ABF載板與HBM需求，龍頭清單整理。（非投資建議）",
+          "tags": [
+            "散熱",
+            "ASIC",
+            "HBM"
+          ],
+          "meta": "選股",
+          "image": "https://grenade.tw/wp-content/uploads/2026/05/scimgBtOeCv.webp",
+          "url": "https://grenade.tw/blog/ai-concept-stocks-2026/",
+          "hot": 85
+        },
+        {
+          "category": "invest",
+          "title": "台積電AI訂單噴發，半導體ETF下一波？",
+          "summary": "先進製程與CoWoS產能滿載，市場關注半導體ETF 2026布局。（非投資建議）",
+          "tags": [
+            "台積電",
+            "CoWoS",
+            "ETF"
+          ],
+          "meta": "創新高",
+          "image": "",
+          "url": "https://www.top1markets.com/tw/insights/stocks/temc-ai-etf-chance-2026",
+          "hot": 78
+        },
+        {
+          "category": "invest",
+          "title": "台積電2330年K線與技術分析",
+          "summary": "對照長線K線與均線位階，觀察是否站穩多方；本季自家產品重心排班軟體。（非投資建議）",
+          "tags": [
+            "2330",
+            "技術分析",
+            "排班軟體"
+          ],
+          "meta": "多空",
+          "image": "",
+          "url": "https://goodinfo.tw/tw/ShowK_Chart.asp?STOCK_ID=2330&CHT_CAT=YEAR",
+          "hot": 65
+        },
+        {
+          "category": "news",
+          "title": "7月外銷訂單979.4億美元創新高",
+          "summary": "年增61.9%、連18紅，AI相關需求撐起接單動能。",
+          "tags": [
+            "外銷訂單",
+            "連18紅",
+            "經濟"
+          ],
+          "meta": "創新高",
+          "image": "",
+          "url": "https://www.cna.com.tw/list/headlines.aspx",
+          "hot": 94
+        },
+        {
+          "category": "news",
+          "title": "中選會公告：九合一大選11月28日投票",
+          "summary": "將選出逾1萬名公職人員，選情逐步升溫。",
+          "tags": [
+            "九合一",
+            "選舉",
+            "中選會"
+          ],
+          "meta": "政治",
+          "image": "",
+          "url": "https://www.cna.com.tw/list/headlines.aspx",
+          "hot": 82
+        },
+        {
+          "category": "news",
+          "title": "恆大案一審宣判，許家印被判無期徒刑",
+          "summary": "中國恆大集團案落槌，市場關注後續債務處置。",
+          "tags": [
+            "恆大",
+            "兩岸",
+            "司法"
+          ],
+          "meta": "兩岸",
+          "image": "",
+          "url": "https://www.cna.com.tw/list/headlines.aspx",
+          "hot": 70
+        },
+        {
+          "category": "news",
+          "title": "北韓試射飛彈，疑回應美韓軍演",
+          "summary": "推測落於日本專屬經濟區外，區域緊張再起。",
+          "tags": [
+            "北韓",
+            "飛彈",
+            "國際"
+          ],
+          "meta": "國際",
+          "image": "",
+          "url": "https://www.cna.com.tw/list/headlines.aspx",
+          "hot": 66
+        },
+        {
+          "category": "news",
+          "title": "美國聯邦債務首破40兆美元",
+          "summary": "兩任期內翻倍，引發財政永續與利率討論。",
+          "tags": [
+            "美債",
+            "40兆",
+            "財政"
+          ],
+          "meta": "美國",
+          "image": "",
+          "url": "https://www.cna.com.tw/list/headlines.aspx",
+          "hot": 58
+        },
+        {
+          "category": "social",
+          "title": "2026東京18個新景點：哈利波特影城開幕",
+          "summary": "日韓旅遊熱點，新宿新地標與哈利波特影城成打卡首選。",
+          "tags": [
+            "日韓旅遊",
+            "東京",
+            "打卡"
+          ],
+          "meta": "日韓",
+          "image": "https://ak-d.tripcdn.com/images/0103w12000a4on9dtB984_C_750_350_R5.png_.webp?proc=autoorient&proc=source%2ftrip",
+          "url": "https://tw.trip.com/blog/tokyo-new-attractions/",
+          "hot": 88
+        },
+        {
+          "category": "social",
+          "title": "2026台北美食推薦精選清單",
+          "summary": "台灣美食話題：25間餐廳、下午茶、平價小吃口袋名單。",
+          "tags": [
+            "台灣美食",
+            "台北",
+            "口袋名單"
+          ],
+          "meta": "美食",
+          "image": "",
+          "url": "https://gofunit.com/%E5%8F%B0%E5%8C%97%E7%BE%8E%E9%A3%9F%E6%8E%A8%E8%96%A6/",
+          "hot": 80
+        },
+        {
+          "category": "social",
+          "title": "2026台灣美食展6大必吃神店攻略",
+          "summary": "美食展話題延燒，20大必吃攤位與餐券優惠整理。",
+          "tags": [
+            "台灣美食",
+            "美食展",
+            "必吃"
+          ],
+          "meta": "美食",
+          "image": "",
+          "url": "https://www.4gtv.tv/article/2026072005000085",
+          "hot": 74
+        },
+        {
+          "category": "social",
+          "title": "2026最新AI工具Top榜與趨勢",
+          "summary": "AI新技術：從對話助理到AI Agent，16款熱門工具與趨勢整理。",
+          "tags": [
+            "AI新技術",
+            "工具",
+            "Agent"
+          ],
+          "meta": "AI",
+          "image": "https://www.ibest.com.tw/upload/base_fb_img/tw_web_base_20d01_ak453s3gwj.jpg",
+          "url": "https://www.ibest.com.tw/news-detail/2025-ai-tools/",
+          "hot": 85
+        },
+        {
+          "category": "family",
+          "title": "新竹親子景點懶人包15選",
+          "summary": "室內外、免費、農場一次看，適合暑假帶小孩放電。",
+          "tags": [
+            "新竹",
+            "親子",
+            "懶人包"
+          ],
+          "meta": "新竹",
+          "image": "https://res.klook.com/image/upload/fl_lossy.progressive,w_1200,h_630,c_fill,q_85/v1777476433/zcelexxzy2ujx3w0vxso.jpg",
+          "url": "https://www.klook.com/zh-TW/blog/hsinchu-family-attractions/",
+          "hot": 90
+        },
+        {
+          "category": "family",
+          "title": "桃園親子景點推薦13選",
+          "summary": "室內／戶外／免費／農場親子景點整理，鄰近新竹好順遊。",
+          "tags": [
+            "桃園",
+            "親子",
+            "農場"
+          ],
+          "meta": "桃園",
+          "image": "https://res.klook.com/image/upload/fl_lossy.progressive,w_1200,h_630,c_fill,q_85/v1777456207/snefhv5e8opk7tfbus0z.jpg",
+          "url": "https://www.klook.com/zh-TW/blog/taoyuan-family-attractions/",
+          "hot": 78
+        },
+        {
+          "category": "family",
+          "title": "台北親子景點22大室內外遊樂場館",
+          "summary": "雙北室內外遊樂館整理，雨天備案也不怕。",
+          "tags": [
+            "台北",
+            "室內",
+            "遊樂場"
+          ],
+          "meta": "雙北",
+          "image": "",
+          "url": "https://www.klook.com/zh-TW/blog/activities-for-kids-taipei-taiwan/",
+          "hot": 70
+        },
+        {
+          "category": "family",
+          "title": "全台親子活動與展覽總整理",
+          "summary": "暑假地方活動、展覽、體驗活動一次掌握。",
+          "tags": [
+            "展覽",
+            "體驗",
+            "活動"
+          ],
+          "meta": "展覽",
+          "image": "",
+          "url": "https://www.parenting.com.tw/article/6002339",
+          "hot": 62
+        },
+        {
+          "category": "hobby",
+          "title": "2026夏季必追動畫新番片單",
+          "summary": "從大人系戀愛到經典神作完結篇，本季話題新番整理。",
+          "tags": [
+            "夏番",
+            "動畫",
+            "片單"
+          ],
+          "meta": "新番",
+          "image": "https://5mtz55f1.tinifycdn.com/storage/app/uploads/public/6a5/753/fc2/6a5753fc25867452597623.jpg",
+          "url": "https://www.verse.com.tw/article/summer-anime-2026",
+          "hot": 86
+        },
+        {
+          "category": "hobby",
+          "title": "2026夏季新番：《攻殼機動隊2026》等作",
+          "summary": "經典IP回歸與新作齊發，巴哈整理本季開播清單。",
+          "tags": [
+            "攻殼機動隊",
+            "新番",
+            "開播"
+          ],
+          "meta": "新番",
+          "image": "",
+          "url": "https://gnn.gamer.com.tw/detail.php?sn=306922",
+          "hot": 76
+        },
+        {
+          "category": "hobby",
+          "title": "2026新番動畫推薦25部串流片單",
+          "summary": "Netflix、Disney+、Hami Video等平台片單一次看。",
+          "tags": [
+            "串流",
+            "推薦",
+            "25部"
+          ],
+          "meta": "片單",
+          "image": "",
+          "url": "https://www.beauty321.com/post/71809",
+          "hot": 68
+        },
+        {
+          "category": "hobby",
+          "title": "2026年7月新番表",
+          "summary": "完整開播時間表，追番排程一目了然。",
+          "tags": [
+            "新番表",
+            "排程",
+            "7月"
+          ],
+          "meta": "時間表",
+          "image": "",
+          "url": "https://youranimes.tw/bangumi/202607",
+          "hot": 58
+        }
+      ]
+    },
     {
       "date": "2026-08-20",
       "headline": "科技股拋售潮延燒亞股齊跌、美債殖利率飆19年新高；竹北房價續攻百萬、AI供應鏈短線震盪待轉折。",
